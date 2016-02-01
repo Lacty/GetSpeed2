@@ -1,29 +1,17 @@
-
+ 
 #include <iostream>
 #include <GLFW/glfw3.h>
 
-#include "header/debugIO.hpp"
+#include "header/appNative.hpp"
 
 
 int main() {
-  if (!glfwInit()) return -1;
+  AppNative native(640, 480, "hoge");
+  native.setClearColor(Color::gray());
 
-  GLFWwindow* window = glfwCreateWindow(640, 480, "HELLO", nullptr, nullptr);
-  if (!window) {
-    glfwTerminate();
-    return -1;
+  while (native.isOpen() && !native.isPushKey(GLFW_KEY_ESCAPE)) {
+    native.clearWindowBuff();
+
+    native.updateEvent();
   }
-
-  glfwMakeContextCurrent(window);
-
-  while (!glfwWindowShouldClose(window)) {
-    glClearColor(0.4f, 0.4f, 0.4f, 1.0f);
-    glClear(GL_COLOR_BUFFER_BIT);
-
-    glfwSwapBuffers(window);
-    glfwPollEvents();
-  }
-
-  glfwTerminate();
-  return 0;
 }
