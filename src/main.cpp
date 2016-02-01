@@ -2,6 +2,7 @@
 #include <iostream>
 #include <GLFW/glfw3.h>
 
+#include "header/debugIO.hpp"
 #include "header/appNative.hpp"
 
 
@@ -12,6 +13,9 @@ int main() {
   while (native.isOpen() && !native.isPushKey(GLFW_KEY_ESCAPE)) {
     native.clearWindowBuff();
 
+#if DEBUG_IO
+    TwDraw();
+#endif
     native.updateEvent();
   }
 }

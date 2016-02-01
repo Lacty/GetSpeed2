@@ -1,4 +1,5 @@
 
+#include "header/debugIO.hpp"
 #include "header/appNative.hpp"
 #include <iostream>
 

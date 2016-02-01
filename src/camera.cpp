@@ -1,4 +1,5 @@
 
+#include "header/debugIO.hpp"
 #include "header/camera.hpp"
 #include "header/utility.hpp"
 #include <GLFW/glfw3.h>
