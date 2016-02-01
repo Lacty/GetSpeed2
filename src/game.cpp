@@ -1,17 +1,14 @@
 
 #include "header/game.hpp"
-#include <iostream>
+#include "header/debugIO.hpp"
+#include "header/tweakbar.hpp"
 
 
-Game::Game() {
-  start = std::chrono::high_resolution_clock::now();
+Game::Game() {}
+
+
+void Game::run() {
+#if DEBUG_IO
+  TwDraw();
+#endif
 }
-
-double Game::mticks() {
-  duration = std::chrono::high_resolution_clock::now() - start;
-  return duration.count();
-}
-
-void Game::update() {}
-
-void Game::draw() {}
