@@ -69,6 +69,7 @@ void Camera::lookAt() {
 
 
 void Camera::registerTw() {
+#if DEBUG_IO
   twBar = TwNewBar("camera");
   TwAddVarRW(twBar, "pos",         TW_TYPE_DIR3F, &pos,     "");
   TwAddVarRW(twBar, "target",      TW_TYPE_DIR3F, &target,  "");
@@ -76,6 +77,7 @@ void Camera::registerTw() {
   TwAddVarRW(twBar, "rot",         TW_TYPE_DIR3F, &rot,     "");
   TwAddVarRW(twBar, "transSpeed",  TW_TYPE_FLOAT, &translateSpeedScale, "");
   TwAddVarRW(twBar, "rotateSpeed", TW_TYPE_FLOAT, &rotateSpeedScale,    "");
+#endif
   rotateSpeedScale = 0.2f;
 }
 

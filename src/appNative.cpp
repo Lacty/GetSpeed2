@@ -31,8 +31,11 @@ window_size(width, height)
   glfwSetScrollCallback     (window, (GLFWscrollfun)     TwEventMouseWheelGLFW3);
   glfwSetCharCallback       (window, (GLFWcharfun)       TwEventCharGLFW3);
   glfwSetWindowSizeCallback (window, windowSizeCallback);
+
+#if DEBUG_IO
   TwInit(TW_OPENGL, nullptr);
   TwWindowSize(window_size.x(), window_size.y());
+#endif
 
   // init camera
   camera = Camera(vec3f(0, 0, 0), vec3f(0, 0, -1));
@@ -41,7 +44,9 @@ window_size(width, height)
 }
 
 AppNative::~AppNative() {
+#if DEBUG_IO
   TwTerminate();
+#endif
   glfwTerminate();
 }
 

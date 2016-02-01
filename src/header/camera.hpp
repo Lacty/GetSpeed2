@@ -1,5 +1,6 @@
 
 #pragma once
+#include "debugIO.hpp"
 #include "vector.hpp"
 #include "tweakbar.hpp"
 
@@ -28,7 +29,9 @@ private:
 
   void evaluateRotate();
 
+#if DEBUG_IO
   TwBar* twBar;
+#endif
 
 public:
   Camera() = default;
