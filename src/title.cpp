@@ -3,6 +3,8 @@
 #include "header/sceneMaker.hpp"
 #include <iostream>
 
+#include <GLFW/glfw3.h>
+
 
 Title::Title(AppNative* app) :
 SceneBase(app) {}
@@ -10,9 +12,15 @@ SceneBase(app) {}
 void Title::update() {}
 
 void Title::draw() {
-  if (app->isPushKey(GLFW_KEY_A)) {
-    std::cout << "push A" << std::endl;
-  }
+  GLfloat vtx[] = {
+    0.0, 0.0
+  };
+  glVertexPointer(2, GL_FLOAT, 0, vtx);
+  glPointSize(20);
+  glTranslatef(0, 0, -10);
+  glEnableClientState(GL_VERTEX_ARRAY);
+  glDrawArrays(GL_POINTS, 0, 1);
+  glDisableClientState(GL_VERTEX_ARRAY);
 }
 
 std::shared_ptr<SceneBase> Title::nextScene(AppNative* app) {
