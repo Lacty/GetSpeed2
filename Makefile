@@ -4,9 +4,10 @@ app    = debug/app.o
 camera = debug/camera.o
 game   = debug/game.o
 timer  = debug/timer.o
+title  = debug/title.o
 
 program = debug/program.out
-objs    = $(main) $(app) $(camera) $(game) $(timer)
+objs    = $(main) $(app) $(camera) $(game) $(timer) $(title)
 
 libs = -lglfw -lGL -lAntTweakBar -lX11
 opt  = -Wall -std=c++14
@@ -29,8 +30,11 @@ $(game): src/game.cpp
 $(timer): src/timer.cpp
 	g++ $(opt) $(libs) -c $^ -o $@
 
+$(title): src/title.cpp
+	g++ $(opt) $(libs) -c $^ -o $@
+
 run: $(program)
 	$^
 
 clear:
-	rm $(main) $(app) $(game) $(timer) $(program)
+	rm $(main) $(app) $(camera) $(game) $(timer) $(title) $(program)

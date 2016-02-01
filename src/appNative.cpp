@@ -29,8 +29,12 @@ window_size(width, height)
   glfwSetKeyCallback        (window, keyCallBack);
   glfwSetCursorPosCallback  (window, mousePositionCallBack);
   glfwSetMouseButtonCallback(window, mouseButtonCallBack);
+
+#if DEBUG_IO
   glfwSetScrollCallback     (window, (GLFWscrollfun)     TwEventMouseWheelGLFW3);
   glfwSetCharCallback       (window, (GLFWcharfun)       TwEventCharGLFW3);
+#endif
+
   glfwSetWindowSizeCallback (window, windowSizeCallback);
 
 #if DEBUG_IO
@@ -114,7 +118,9 @@ void AppNative::keyCallBack(GLFWwindow* window,
     native->key_event.popKeyPress(key);
   }
 
+#if DEBUG_IO
   TwEventKeyGLFW3(window, key, scancode, action, mods);
+#endif
 }
 
 void AppNative::mouseButtonCallBack(GLFWwindow* window,
@@ -131,19 +137,25 @@ void AppNative::mouseButtonCallBack(GLFWwindow* window,
     native->mouse_event.popButtonPress(button);
   }
 
+#if DEBUG_IO
   TwEventMouseButtonGLFW3(window, button, action, mods);
+#endif
 }
 
 void AppNative::mousePositionCallBack(GLFWwindow* window,
                                       double xpos, double ypos)
-{ 
+{
+#if DEBUG_IO
   TwEventMousePosGLFW3(window, xpos, ypos);
+#endif
 }
 
 void AppNative::windowSizeCallback(GLFWwindow* window, const int width, const int height) {
   auto native = (AppNative*)glfwGetWindowUserPointer(window);
 
+#if DEBUG_IO
   TwEventWindowSizeGLFW3(window, width, height);
+#endif
   native->camera.setWindowSize(vec2i(width, height));
   glViewport(0, 0, width, height);
 }
