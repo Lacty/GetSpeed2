@@ -1,6 +1,6 @@
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
-set( CMAKE_C_FLAGS "-Wall -g" )
+set( CMAKE_C_FLAGS "-Wall -g” )
 
 file( GLOB SRCS *.cpp )
 file( GLOB HEAD ${CMAKE_SOURCE_DIR}/src/header/*.hpp )
