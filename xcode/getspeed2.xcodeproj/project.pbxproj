@@ -9,22 +9,22 @@
 /* Begin PBXAggregateTarget section */
 		2490358F148041AEBB41A3C2 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = E1299EB83B1A4974AE4AD1CA /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = 7376254CC67D49D48372F6B3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
-				4FA9B487D7AC420286FAC1B7 /* CMake Rules */,
+				2075923C863D46899ACFA435 /* CMake Rules */,
 			);
 			dependencies = (
-				38664021569B47259AF9338E /* PBXTargetDependency */,
-				DC97E83F6AF640CA93A7C70E /* PBXTargetDependency */,
+				058D1C37368E4A3199EDEDC5 /* PBXTargetDependency */,
+				701B8CF3F363415E9FE06820 /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
 		};
 		B535C08D2CBC4124AC3D9B0C /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = D878CB0F84A24255925AB87F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 11B80A73A17D442FB7D3A460 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
-				1F59672EC11B4AB8A3870A29 /* CMake Rules */,
+				CB84DB7CE01542F3811550B6 /* CMake Rules */,
 			);
 			dependencies = (
 			);
@@ -34,229 +34,229 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		08AD8C7777D74CBC87916C41 /* /Users/yanai/Desktop/GetSpeed2/src/camera.cpp */ = {isa = PBXBuildFile; fileRef = BA0C08915F074BE4BEC0EB01 /* /Users/yanai/Desktop/GetSpeed2/src/camera.cpp */; settings = {COMPILER_FLAGS = ""; }; };
-		096BBCBB318042F486E3F8A5 /* /Users/yanai/Desktop/GetSpeed2/src/header/tweakbar.hpp */ = {isa = PBXBuildFile; fileRef = D9F2FEE5285C4F1A9518E763 /* /Users/yanai/Desktop/GetSpeed2/src/header/tweakbar.hpp */; settings = {COMPILER_FLAGS = ""; }; };
-		17D29EF367B54EEBB4994DC0 /* /Users/yanai/Desktop/GetSpeed2/src/appNative.cpp */ = {isa = PBXBuildFile; fileRef = D7F16ED8CD634C30B3274F1C /* /Users/yanai/Desktop/GetSpeed2/src/appNative.cpp */; settings = {COMPILER_FLAGS = ""; }; };
-		1F79C4FD02994A1CAD172D08 /* /Users/yanai/Desktop/GetSpeed2/src/sceneManager.cpp */ = {isa = PBXBuildFile; fileRef = F108C21EF71041788CDC921E /* /Users/yanai/Desktop/GetSpeed2/src/sceneManager.cpp */; settings = {COMPILER_FLAGS = ""; }; };
-		2583C6DA6CDD42B7B3DE3EFE /* /Users/yanai/Desktop/GetSpeed2/src/timer.cpp */ = {isa = PBXBuildFile; fileRef = CD2491170C8142B9AFC70AE2 /* /Users/yanai/Desktop/GetSpeed2/src/timer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
-		2CD6DA5F8C3F4EFEB0FC506D /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneManager.hpp */ = {isa = PBXBuildFile; fileRef = 32C204424D72422E999F7ECE /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneManager.hpp */; settings = {COMPILER_FLAGS = ""; }; };
-		42FE611DBCB44FF19435554E /* /Users/yanai/Desktop/GetSpeed2/src/header/timer.hpp */ = {isa = PBXBuildFile; fileRef = D98861C9336F49BBBFCBA7DA /* /Users/yanai/Desktop/GetSpeed2/src/header/timer.hpp */; settings = {COMPILER_FLAGS = ""; }; };
-		436602EE0A784D79A749DEE0 /* /Users/yanai/Desktop/GetSpeed2/src/main.cpp */ = {isa = PBXBuildFile; fileRef = B1C579A01CAA4419A55EED64 /* /Users/yanai/Desktop/GetSpeed2/src/main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
-		5415A446F1D14DA28336AD4A /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneMaker.hpp */ = {isa = PBXBuildFile; fileRef = 3BFCA65DA96C4A8C926F8AD8 /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneMaker.hpp */; settings = {COMPILER_FLAGS = ""; }; };
-		698CCB4A876D401B9E30DB0C /* /Users/yanai/Desktop/GetSpeed2/src/header/game.hpp */ = {isa = PBXBuildFile; fileRef = 31F8C2861D964021BB9F4D65 /* /Users/yanai/Desktop/GetSpeed2/src/header/game.hpp */; settings = {COMPILER_FLAGS = ""; }; };
-		6BB6B430B1D54D27910385AE /* /Users/yanai/Desktop/GetSpeed2/src/header/key.hpp */ = {isa = PBXBuildFile; fileRef = 030F808C01504B3592F24305 /* /Users/yanai/Desktop/GetSpeed2/src/header/key.hpp */; settings = {COMPILER_FLAGS = ""; }; };
-		7A9C19C8ACEE49BB88016035 /* /Users/yanai/Desktop/GetSpeed2/src/header/mouse.hpp */ = {isa = PBXBuildFile; fileRef = FD856DB83B1E4F11A64763FA /* /Users/yanai/Desktop/GetSpeed2/src/header/mouse.hpp */; settings = {COMPILER_FLAGS = ""; }; };
-		7D4418221AC648FD94839504 /* /Users/yanai/Desktop/GetSpeed2/src/header/debugIO.hpp */ = {isa = PBXBuildFile; fileRef = 06598AA71314457DBF38CC28 /* /Users/yanai/Desktop/GetSpeed2/src/header/debugIO.hpp */; settings = {COMPILER_FLAGS = ""; }; };
-		83B146FD5202485894FA773C /* /Users/yanai/Desktop/GetSpeed2/src/header/color.hpp */ = {isa = PBXBuildFile; fileRef = A70C5BF705F24284B0E8ADF5 /* /Users/yanai/Desktop/GetSpeed2/src/header/color.hpp */; settings = {COMPILER_FLAGS = ""; }; };
-		9362F8101A2443AE89E3D6DE /* /Users/yanai/Desktop/GetSpeed2/src/header/camera.hpp */ = {isa = PBXBuildFile; fileRef = F27BF67F391A433294C80441 /* /Users/yanai/Desktop/GetSpeed2/src/header/camera.hpp */; settings = {COMPILER_FLAGS = ""; }; };
-		9B7DE5B025CF450B9DC46BD0 /* /Users/yanai/Desktop/GetSpeed2/src/header/utility.hpp */ = {isa = PBXBuildFile; fileRef = 95D5CC3401014FD287602D60 /* /Users/yanai/Desktop/GetSpeed2/src/header/utility.hpp */; settings = {COMPILER_FLAGS = ""; }; };
-		A0536AE6804842BEA0AB49B3 /* /Users/yanai/Desktop/GetSpeed2/src/title.cpp */ = {isa = PBXBuildFile; fileRef = 3540F0E6199A4496A8D397D7 /* /Users/yanai/Desktop/GetSpeed2/src/title.cpp */; settings = {COMPILER_FLAGS = ""; }; };
-		BC94BC5C59B24A56A157956D /* /Users/yanai/Desktop/GetSpeed2/src/header/vector.hpp */ = {isa = PBXBuildFile; fileRef = 396F9BE6C39C450A94EC82C7 /* /Users/yanai/Desktop/GetSpeed2/src/header/vector.hpp */; settings = {COMPILER_FLAGS = ""; }; };
-		C4E546FD53704CF29E8F0F28 /* /Users/yanai/Desktop/GetSpeed2/src/header/appNative.hpp */ = {isa = PBXBuildFile; fileRef = E4CEF8F2FA6243BB82EA0EC6 /* /Users/yanai/Desktop/GetSpeed2/src/header/appNative.hpp */; settings = {COMPILER_FLAGS = ""; }; };
-		C6CD514D56D242FEB38011AC /* /Users/yanai/Desktop/GetSpeed2/src/header/title.hpp */ = {isa = PBXBuildFile; fileRef = A22A1C56BF414AD6BA880BF0 /* /Users/yanai/Desktop/GetSpeed2/src/header/title.hpp */; settings = {COMPILER_FLAGS = ""; }; };
-		D5302347040241C8B7AE0F22 /* /Users/yanai/Desktop/GetSpeed2/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 6AD03203E3724A25950E6849 /* /Users/yanai/Desktop/GetSpeed2/src/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
-		E1B52852E4D5405FAD7CE4F5 /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneBase.hpp */ = {isa = PBXBuildFile; fileRef = 00B0A5D214D747E7B2076395 /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneBase.hpp */; settings = {COMPILER_FLAGS = ""; }; };
-		EAB175A1859C48B794731387 /* /Users/yanai/Desktop/GetSpeed2/src/game.cpp */ = {isa = PBXBuildFile; fileRef = DA09642C944F49CBA033CF3B /* /Users/yanai/Desktop/GetSpeed2/src/game.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		034240ADDC12472DA702DCBF /* /Users/yanai/Desktop/GetSpeed2/src/game.cpp */ = {isa = PBXBuildFile; fileRef = 1C5E27D297A44DCFA060DB4E /* /Users/yanai/Desktop/GetSpeed2/src/game.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		061DDD4166A84A83A1BB0CD7 /* /Users/yanai/Desktop/GetSpeed2/src/header/key.hpp */ = {isa = PBXBuildFile; fileRef = 16FB9C3CC32649ACABA83CD3 /* /Users/yanai/Desktop/GetSpeed2/src/header/key.hpp */; settings = {COMPILER_FLAGS = ""; }; };
+		143A32EBCF66427B9DACB589 /* /Users/yanai/Desktop/GetSpeed2/src/header/color.hpp */ = {isa = PBXBuildFile; fileRef = CAA3EEA48BF1457ABF7413A1 /* /Users/yanai/Desktop/GetSpeed2/src/header/color.hpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1B56B63234704EE8B6FA7F9A /* /Users/yanai/Desktop/GetSpeed2/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = BE1ACEF6CFB84E74ADAD786A /* /Users/yanai/Desktop/GetSpeed2/src/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+		317B55A8D8CD4FE382998CAB /* /Users/yanai/Desktop/GetSpeed2/src/header/debugIO.hpp */ = {isa = PBXBuildFile; fileRef = 38659EE4EAC64F2CAEA8CA99 /* /Users/yanai/Desktop/GetSpeed2/src/header/debugIO.hpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4D81D46BCE7B445FB73163A0 /* /Users/yanai/Desktop/GetSpeed2/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 3184B73754944A1897AB2AE7 /* /Users/yanai/Desktop/GetSpeed2/src/main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		687082F279AF4278B2E659D1 /* /Users/yanai/Desktop/GetSpeed2/src/title.cpp */ = {isa = PBXBuildFile; fileRef = 96AD7186670347DABAE64C51 /* /Users/yanai/Desktop/GetSpeed2/src/title.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		717184B594EE4244A64706EE /* /Users/yanai/Desktop/GetSpeed2/src/header/vector.hpp */ = {isa = PBXBuildFile; fileRef = 0C65CA228CDF442CA3BCC93E /* /Users/yanai/Desktop/GetSpeed2/src/header/vector.hpp */; settings = {COMPILER_FLAGS = ""; }; };
+		72F6E21B06F1478C8AC96004 /* /Users/yanai/Desktop/GetSpeed2/src/camera.cpp */ = {isa = PBXBuildFile; fileRef = 714584B16D28408F920D938F /* /Users/yanai/Desktop/GetSpeed2/src/camera.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		788DA175F854409BAF75F052 /* /Users/yanai/Desktop/GetSpeed2/src/header/tweakbar.hpp */ = {isa = PBXBuildFile; fileRef = A6CEABFD02B64A73A4A323DC /* /Users/yanai/Desktop/GetSpeed2/src/header/tweakbar.hpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7F25A894691144BA93C04785 /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneMaker.hpp */ = {isa = PBXBuildFile; fileRef = B03358911D4E4B0390B743B7 /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneMaker.hpp */; settings = {COMPILER_FLAGS = ""; }; };
+		8EAF95A19B4C45209DD57263 /* /Users/yanai/Desktop/GetSpeed2/src/header/appNative.hpp */ = {isa = PBXBuildFile; fileRef = 495D0E9D83A041FA876FCD43 /* /Users/yanai/Desktop/GetSpeed2/src/header/appNative.hpp */; settings = {COMPILER_FLAGS = ""; }; };
+		931C9C6ACCFB490D96D0635C /* /Users/yanai/Desktop/GetSpeed2/src/header/camera.hpp */ = {isa = PBXBuildFile; fileRef = CC495C30659243DE8B16FAE6 /* /Users/yanai/Desktop/GetSpeed2/src/header/camera.hpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B25A554BEC364FE38BD1F939 /* /Users/yanai/Desktop/GetSpeed2/src/header/game.hpp */ = {isa = PBXBuildFile; fileRef = 4CC5E14AE0B740E19BECDB83 /* /Users/yanai/Desktop/GetSpeed2/src/header/game.hpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B315FBFF58AA4E469297F1F9 /* /Users/yanai/Desktop/GetSpeed2/src/sceneManager.cpp */ = {isa = PBXBuildFile; fileRef = 854DE3AEF2094476B4823864 /* /Users/yanai/Desktop/GetSpeed2/src/sceneManager.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BBC36F78EBD74C88A5150E8D /* /Users/yanai/Desktop/GetSpeed2/src/header/utility.hpp */ = {isa = PBXBuildFile; fileRef = E19C899752CA4297B10176C7 /* /Users/yanai/Desktop/GetSpeed2/src/header/utility.hpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BCADA83A749A4278B3D3CB42 /* /Users/yanai/Desktop/GetSpeed2/src/timer.cpp */ = {isa = PBXBuildFile; fileRef = 74B892C222DB42E6AE46BCC5 /* /Users/yanai/Desktop/GetSpeed2/src/timer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BD861E242A5746069749F609 /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneManager.hpp */ = {isa = PBXBuildFile; fileRef = FAC4104DB83C4F359BE49AC0 /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneManager.hpp */; settings = {COMPILER_FLAGS = ""; }; };
+		C3246B9A61AB4E5D8B0E3C49 /* /Users/yanai/Desktop/GetSpeed2/src/appNative.cpp */ = {isa = PBXBuildFile; fileRef = 061E02B3A6CA4F2ABF6B195D /* /Users/yanai/Desktop/GetSpeed2/src/appNative.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		CDF175DBF6A44CEC961D5DEF /* /Users/yanai/Desktop/GetSpeed2/src/header/title.hpp */ = {isa = PBXBuildFile; fileRef = DDC280CFC56442A89E9D22D6 /* /Users/yanai/Desktop/GetSpeed2/src/header/title.hpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E37352FA19F64498B16422E6 /* /Users/yanai/Desktop/GetSpeed2/src/header/timer.hpp */ = {isa = PBXBuildFile; fileRef = 52E5C0677EFC4679AF029D1D /* /Users/yanai/Desktop/GetSpeed2/src/header/timer.hpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E6BAF4BFB56142839C01BAC0 /* /Users/yanai/Desktop/GetSpeed2/src/header/mouse.hpp */ = {isa = PBXBuildFile; fileRef = B8C46D0660F944ACA027E250 /* /Users/yanai/Desktop/GetSpeed2/src/header/mouse.hpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E977EB8F18974749A978E0D4 /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneBase.hpp */ = {isa = PBXBuildFile; fileRef = 1769694B11544E2E883B02BA /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneBase.hpp */; settings = {COMPILER_FLAGS = ""; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		3F49E5F3D1524811A2AE914F /* MinSizeRel */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = MinSizeRel;
-		};
-		74E278A33F834048B3EBD39A /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		AE727695BB004903A110DA3B /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-		C86EEDC5407D4353B065E63D = {
-			isa = PBXBuildStyle;
-		};
-		C8D27E2BA19146CF979FEE09 /* RelWithDebInfo */ = {
+		2A0D91B52C3442A68229E201 /* RelWithDebInfo */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = RelWithDebInfo;
 		};
+		6AF7927DB8EB473DA63DF7A2 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		7A1FE2FA3D8D48C19185BE96 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		C883CA79C40A4211B1455539 = {
+			isa = PBXBuildStyle;
+		};
+		F1CCFFE9E9A64250B22174AB /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		12933E7B185F4A749D4EF4F0 /* PBXContainerItemProxy */ = {
+		26EC37740F7F4C56A7E6BAD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 379EF5FEBECB4CA4B735F0A9 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B535C08D2CBC4124AC3D9B0C;
 			remoteInfo = ZERO_CHECK;
 		};
-		5665932E6AFA41598E7F949E /* PBXContainerItemProxy */ = {
+		7E55E1705476431FB1094804 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 379EF5FEBECB4CA4B735F0A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B535C08D2CBC4124AC3D9B0C;
+			remoteInfo = ZERO_CHECK;
+		};
+		A44E130516A34F9089EEC8F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 379EF5FEBECB4CA4B735F0A9 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A0D29E291FBC43D790F7799E;
 			remoteInfo = getspeed2;
 		};
-		B213ACD3D33145CCA27F3726 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 379EF5FEBECB4CA4B735F0A9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B535C08D2CBC4124AC3D9B0C;
-			remoteInfo = ZERO_CHECK;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00B0A5D214D747E7B2076395 /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneBase.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = sceneBase.hpp; path = src/header/sceneBase.hpp; sourceTree = SOURCE_ROOT; };
-		030F808C01504B3592F24305 /* /Users/yanai/Desktop/GetSpeed2/src/header/key.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = key.hpp; path = src/header/key.hpp; sourceTree = SOURCE_ROOT; };
-		06598AA71314457DBF38CC28 /* /Users/yanai/Desktop/GetSpeed2/src/header/debugIO.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = debugIO.hpp; path = src/header/debugIO.hpp; sourceTree = SOURCE_ROOT; };
-		31F8C2861D964021BB9F4D65 /* /Users/yanai/Desktop/GetSpeed2/src/header/game.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = game.hpp; path = src/header/game.hpp; sourceTree = SOURCE_ROOT; };
-		32C204424D72422E999F7ECE /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = sceneManager.hpp; path = src/header/sceneManager.hpp; sourceTree = SOURCE_ROOT; };
-		3540F0E6199A4496A8D397D7 /* /Users/yanai/Desktop/GetSpeed2/src/title.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = title.cpp; path = src/title.cpp; sourceTree = SOURCE_ROOT; };
-		396F9BE6C39C450A94EC82C7 /* /Users/yanai/Desktop/GetSpeed2/src/header/vector.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = vector.hpp; path = src/header/vector.hpp; sourceTree = SOURCE_ROOT; };
-		3BFCA65DA96C4A8C926F8AD8 /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneMaker.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = sceneMaker.hpp; path = src/header/sceneMaker.hpp; sourceTree = SOURCE_ROOT; };
-		419DA09587414DE293769CB8 /* /Users/yanai/Desktop/GetSpeed2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		6AD03203E3724A25950E6849 /* /Users/yanai/Desktop/GetSpeed2/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		95D5CC3401014FD287602D60 /* /Users/yanai/Desktop/GetSpeed2/src/header/utility.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = utility.hpp; path = src/header/utility.hpp; sourceTree = SOURCE_ROOT; };
-		A22A1C56BF414AD6BA880BF0 /* /Users/yanai/Desktop/GetSpeed2/src/header/title.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = title.hpp; path = src/header/title.hpp; sourceTree = SOURCE_ROOT; };
-		A70C5BF705F24284B0E8ADF5 /* /Users/yanai/Desktop/GetSpeed2/src/header/color.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = color.hpp; path = src/header/color.hpp; sourceTree = SOURCE_ROOT; };
-		B1C579A01CAA4419A55EED64 /* /Users/yanai/Desktop/GetSpeed2/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		BA0C08915F074BE4BEC0EB01 /* /Users/yanai/Desktop/GetSpeed2/src/camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = camera.cpp; path = src/camera.cpp; sourceTree = SOURCE_ROOT; };
-		C589E7835D134F0598ADC3C9 /* /Users/yanai/Desktop/GetSpeed2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		CD2491170C8142B9AFC70AE2 /* /Users/yanai/Desktop/GetSpeed2/src/timer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timer.cpp; path = src/timer.cpp; sourceTree = SOURCE_ROOT; };
-		D7F16ED8CD634C30B3274F1C /* /Users/yanai/Desktop/GetSpeed2/src/appNative.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = appNative.cpp; path = src/appNative.cpp; sourceTree = SOURCE_ROOT; };
-		D98861C9336F49BBBFCBA7DA /* /Users/yanai/Desktop/GetSpeed2/src/header/timer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = timer.hpp; path = src/header/timer.hpp; sourceTree = SOURCE_ROOT; };
-		D9F2FEE5285C4F1A9518E763 /* /Users/yanai/Desktop/GetSpeed2/src/header/tweakbar.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = tweakbar.hpp; path = src/header/tweakbar.hpp; sourceTree = SOURCE_ROOT; };
-		DA09642C944F49CBA033CF3B /* /Users/yanai/Desktop/GetSpeed2/src/game.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = game.cpp; path = src/game.cpp; sourceTree = SOURCE_ROOT; };
-		E09D6321A75948FC9955600D /* getspeed2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = getspeed2; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4CEF8F2FA6243BB82EA0EC6 /* /Users/yanai/Desktop/GetSpeed2/src/header/appNative.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = appNative.hpp; path = src/header/appNative.hpp; sourceTree = SOURCE_ROOT; };
-		F108C21EF71041788CDC921E /* /Users/yanai/Desktop/GetSpeed2/src/sceneManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sceneManager.cpp; path = src/sceneManager.cpp; sourceTree = SOURCE_ROOT; };
-		F27BF67F391A433294C80441 /* /Users/yanai/Desktop/GetSpeed2/src/header/camera.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = camera.hpp; path = src/header/camera.hpp; sourceTree = SOURCE_ROOT; };
-		FD856DB83B1E4F11A64763FA /* /Users/yanai/Desktop/GetSpeed2/src/header/mouse.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = mouse.hpp; path = src/header/mouse.hpp; sourceTree = SOURCE_ROOT; };
+		061E02B3A6CA4F2ABF6B195D /* /Users/yanai/Desktop/GetSpeed2/src/appNative.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = appNative.cpp; path = src/appNative.cpp; sourceTree = SOURCE_ROOT; };
+		0C65CA228CDF442CA3BCC93E /* /Users/yanai/Desktop/GetSpeed2/src/header/vector.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = vector.hpp; path = src/header/vector.hpp; sourceTree = SOURCE_ROOT; };
+		16FB9C3CC32649ACABA83CD3 /* /Users/yanai/Desktop/GetSpeed2/src/header/key.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = key.hpp; path = src/header/key.hpp; sourceTree = SOURCE_ROOT; };
+		1769694B11544E2E883B02BA /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneBase.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = sceneBase.hpp; path = src/header/sceneBase.hpp; sourceTree = SOURCE_ROOT; };
+		1B81CFB756CE455990FA1221 /* /Users/yanai/Desktop/GetSpeed2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1C5E27D297A44DCFA060DB4E /* /Users/yanai/Desktop/GetSpeed2/src/game.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = game.cpp; path = src/game.cpp; sourceTree = SOURCE_ROOT; };
+		3184B73754944A1897AB2AE7 /* /Users/yanai/Desktop/GetSpeed2/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		38659EE4EAC64F2CAEA8CA99 /* /Users/yanai/Desktop/GetSpeed2/src/header/debugIO.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = debugIO.hpp; path = src/header/debugIO.hpp; sourceTree = SOURCE_ROOT; };
+		495D0E9D83A041FA876FCD43 /* /Users/yanai/Desktop/GetSpeed2/src/header/appNative.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = appNative.hpp; path = src/header/appNative.hpp; sourceTree = SOURCE_ROOT; };
+		4CC5E14AE0B740E19BECDB83 /* /Users/yanai/Desktop/GetSpeed2/src/header/game.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = game.hpp; path = src/header/game.hpp; sourceTree = SOURCE_ROOT; };
+		52E5C0677EFC4679AF029D1D /* /Users/yanai/Desktop/GetSpeed2/src/header/timer.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = timer.hpp; path = src/header/timer.hpp; sourceTree = SOURCE_ROOT; };
+		714584B16D28408F920D938F /* /Users/yanai/Desktop/GetSpeed2/src/camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = camera.cpp; path = src/camera.cpp; sourceTree = SOURCE_ROOT; };
+		74B892C222DB42E6AE46BCC5 /* /Users/yanai/Desktop/GetSpeed2/src/timer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timer.cpp; path = src/timer.cpp; sourceTree = SOURCE_ROOT; };
+		7853E339A0034B25AE63FC98 /* getspeed2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = getspeed2; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+		854DE3AEF2094476B4823864 /* /Users/yanai/Desktop/GetSpeed2/src/sceneManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sceneManager.cpp; path = src/sceneManager.cpp; sourceTree = SOURCE_ROOT; };
+		96AD7186670347DABAE64C51 /* /Users/yanai/Desktop/GetSpeed2/src/title.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = title.cpp; path = src/title.cpp; sourceTree = SOURCE_ROOT; };
+		A6CEABFD02B64A73A4A323DC /* /Users/yanai/Desktop/GetSpeed2/src/header/tweakbar.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = tweakbar.hpp; path = src/header/tweakbar.hpp; sourceTree = SOURCE_ROOT; };
+		B03358911D4E4B0390B743B7 /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneMaker.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = sceneMaker.hpp; path = src/header/sceneMaker.hpp; sourceTree = SOURCE_ROOT; };
+		B8C46D0660F944ACA027E250 /* /Users/yanai/Desktop/GetSpeed2/src/header/mouse.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = mouse.hpp; path = src/header/mouse.hpp; sourceTree = SOURCE_ROOT; };
+		BE1ACEF6CFB84E74ADAD786A /* /Users/yanai/Desktop/GetSpeed2/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CAA3EEA48BF1457ABF7413A1 /* /Users/yanai/Desktop/GetSpeed2/src/header/color.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = color.hpp; path = src/header/color.hpp; sourceTree = SOURCE_ROOT; };
+		CC495C30659243DE8B16FAE6 /* /Users/yanai/Desktop/GetSpeed2/src/header/camera.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = camera.hpp; path = src/header/camera.hpp; sourceTree = SOURCE_ROOT; };
+		DDC280CFC56442A89E9D22D6 /* /Users/yanai/Desktop/GetSpeed2/src/header/title.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = title.hpp; path = src/header/title.hpp; sourceTree = SOURCE_ROOT; };
+		E19C899752CA4297B10176C7 /* /Users/yanai/Desktop/GetSpeed2/src/header/utility.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = utility.hpp; path = src/header/utility.hpp; sourceTree = SOURCE_ROOT; };
+		EF57ECD73BDB4BF8801FE7DA /* /Users/yanai/Desktop/GetSpeed2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FAC4104DB83C4F359BE49AC0 /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = sceneManager.hpp; path = src/header/sceneManager.hpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		1BB8487C8452423B9708A304 /* Sources */ = {
+		294F5D327FF14BACB9E57F52 /* getspeed2 */ = {
 			isa = PBXGroup;
 			children = (
-				DA569B78CB634FB8863D926F /* ALL_BUILD */,
-				6C1C1E0339E844A2892F62B3 /* ZERO_CHECK */,
-				CBBEA5FC52F1476BADDC8D25 /* getspeed2 */,
-			);
-			name = Sources;
-			sourceTree = "<group>";
-		};
-		1F86627B55D1437A876ECFE9 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		5876EE0D4CEB4BBC86660282 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		587C95C51C6541988B8F68F2 /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				D7F16ED8CD634C30B3274F1C /* /Users/yanai/Desktop/GetSpeed2/src/appNative.cpp */,
-				BA0C08915F074BE4BEC0EB01 /* /Users/yanai/Desktop/GetSpeed2/src/camera.cpp */,
-				DA09642C944F49CBA033CF3B /* /Users/yanai/Desktop/GetSpeed2/src/game.cpp */,
-				B1C579A01CAA4419A55EED64 /* /Users/yanai/Desktop/GetSpeed2/src/main.cpp */,
-				F108C21EF71041788CDC921E /* /Users/yanai/Desktop/GetSpeed2/src/sceneManager.cpp */,
-				CD2491170C8142B9AFC70AE2 /* /Users/yanai/Desktop/GetSpeed2/src/timer.cpp */,
-				3540F0E6199A4496A8D397D7 /* /Users/yanai/Desktop/GetSpeed2/src/title.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		5946C96F83B643F189D12C14 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E09D6321A75948FC9955600D /* getspeed2 */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6C1C1E0339E844A2892F62B3 /* ZERO_CHECK */ = {
-			isa = PBXGroup;
-			children = (
-				5876EE0D4CEB4BBC86660282 /* CMake Rules */,
-				C589E7835D134F0598ADC3C9 /* /Users/yanai/Desktop/GetSpeed2/CMakeLists.txt */,
-			);
-			name = ZERO_CHECK;
-			sourceTree = "<group>";
-		};
-		7C3125265823404D83708C05 /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				E4CEF8F2FA6243BB82EA0EC6 /* /Users/yanai/Desktop/GetSpeed2/src/header/appNative.hpp */,
-				F27BF67F391A433294C80441 /* /Users/yanai/Desktop/GetSpeed2/src/header/camera.hpp */,
-				A70C5BF705F24284B0E8ADF5 /* /Users/yanai/Desktop/GetSpeed2/src/header/color.hpp */,
-				06598AA71314457DBF38CC28 /* /Users/yanai/Desktop/GetSpeed2/src/header/debugIO.hpp */,
-				31F8C2861D964021BB9F4D65 /* /Users/yanai/Desktop/GetSpeed2/src/header/game.hpp */,
-				030F808C01504B3592F24305 /* /Users/yanai/Desktop/GetSpeed2/src/header/key.hpp */,
-				FD856DB83B1E4F11A64763FA /* /Users/yanai/Desktop/GetSpeed2/src/header/mouse.hpp */,
-				00B0A5D214D747E7B2076395 /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneBase.hpp */,
-				3BFCA65DA96C4A8C926F8AD8 /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneMaker.hpp */,
-				32C204424D72422E999F7ECE /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneManager.hpp */,
-				D98861C9336F49BBBFCBA7DA /* /Users/yanai/Desktop/GetSpeed2/src/header/timer.hpp */,
-				A22A1C56BF414AD6BA880BF0 /* /Users/yanai/Desktop/GetSpeed2/src/header/title.hpp */,
-				D9F2FEE5285C4F1A9518E763 /* /Users/yanai/Desktop/GetSpeed2/src/header/tweakbar.hpp */,
-				95D5CC3401014FD287602D60 /* /Users/yanai/Desktop/GetSpeed2/src/header/utility.hpp */,
-				396F9BE6C39C450A94EC82C7 /* /Users/yanai/Desktop/GetSpeed2/src/header/vector.hpp */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		875BFC6310F64583B84D03C9 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		CBBEA5FC52F1476BADDC8D25 /* getspeed2 */ = {
-			isa = PBXGroup;
-			children = (
-				587C95C51C6541988B8F68F2 /* Source Files */,
-				7C3125265823404D83708C05 /* Header Files */,
-				6AD03203E3724A25950E6849 /* /Users/yanai/Desktop/GetSpeed2/src/CMakeLists.txt */,
+				6E0693EDB35A4055950329AB /* Source Files */,
+				EADA0F680C9C4C55B136E394 /* Header Files */,
+				BE1ACEF6CFB84E74ADAD786A /* /Users/yanai/Desktop/GetSpeed2/src/CMakeLists.txt */,
 			);
 			name = getspeed2;
 			sourceTree = "<group>";
 		};
-		DA569B78CB634FB8863D926F /* ALL_BUILD */ = {
+		2A126B87299C421B8FDA3C44 /* ZERO_CHECK */ = {
 			isa = PBXGroup;
 			children = (
-				1F86627B55D1437A876ECFE9 /* CMake Rules */,
-				419DA09587414DE293769CB8 /* /Users/yanai/Desktop/GetSpeed2/CMakeLists.txt */,
+				32A81EDA7704416CBFCEF173 /* CMake Rules */,
+				EF57ECD73BDB4BF8801FE7DA /* /Users/yanai/Desktop/GetSpeed2/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		32A81EDA7704416CBFCEF173 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		50C6294ABA4E463983E681A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7853E339A0034B25AE63FC98 /* getspeed2 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57F901BFAF7B492B82BBA26B /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				8B3A15BE2ECA421EAD99A2BD /* CMake Rules */,
+				1B81CFB756CE455990FA1221 /* /Users/yanai/Desktop/GetSpeed2/CMakeLists.txt */,
 			);
 			name = ALL_BUILD;
 			sourceTree = "<group>";
 		};
-		F41F1F5DC8FE4AE9AE25DEBD = {
+		6E0693EDB35A4055950329AB /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				1BB8487C8452423B9708A304 /* Sources */,
-				875BFC6310F64583B84D03C9 /* Resources */,
-				5946C96F83B643F189D12C14 /* Products */,
+				061E02B3A6CA4F2ABF6B195D /* /Users/yanai/Desktop/GetSpeed2/src/appNative.cpp */,
+				714584B16D28408F920D938F /* /Users/yanai/Desktop/GetSpeed2/src/camera.cpp */,
+				1C5E27D297A44DCFA060DB4E /* /Users/yanai/Desktop/GetSpeed2/src/game.cpp */,
+				3184B73754944A1897AB2AE7 /* /Users/yanai/Desktop/GetSpeed2/src/main.cpp */,
+				854DE3AEF2094476B4823864 /* /Users/yanai/Desktop/GetSpeed2/src/sceneManager.cpp */,
+				74B892C222DB42E6AE46BCC5 /* /Users/yanai/Desktop/GetSpeed2/src/timer.cpp */,
+				96AD7186670347DABAE64C51 /* /Users/yanai/Desktop/GetSpeed2/src/title.cpp */,
 			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		7568C0C28A93436881563A0F = {
+			isa = PBXGroup;
+			children = (
+				ABF9538E9FEB47F3BF1B170A /* Sources */,
+				F019A20837EF434099617354 /* Resources */,
+				50C6294ABA4E463983E681A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B3A15BE2ECA421EAD99A2BD /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		ABF9538E9FEB47F3BF1B170A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				57F901BFAF7B492B82BBA26B /* ALL_BUILD */,
+				2A126B87299C421B8FDA3C44 /* ZERO_CHECK */,
+				294F5D327FF14BACB9E57F52 /* getspeed2 */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		EADA0F680C9C4C55B136E394 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				495D0E9D83A041FA876FCD43 /* /Users/yanai/Desktop/GetSpeed2/src/header/appNative.hpp */,
+				CC495C30659243DE8B16FAE6 /* /Users/yanai/Desktop/GetSpeed2/src/header/camera.hpp */,
+				CAA3EEA48BF1457ABF7413A1 /* /Users/yanai/Desktop/GetSpeed2/src/header/color.hpp */,
+				38659EE4EAC64F2CAEA8CA99 /* /Users/yanai/Desktop/GetSpeed2/src/header/debugIO.hpp */,
+				4CC5E14AE0B740E19BECDB83 /* /Users/yanai/Desktop/GetSpeed2/src/header/game.hpp */,
+				16FB9C3CC32649ACABA83CD3 /* /Users/yanai/Desktop/GetSpeed2/src/header/key.hpp */,
+				B8C46D0660F944ACA027E250 /* /Users/yanai/Desktop/GetSpeed2/src/header/mouse.hpp */,
+				1769694B11544E2E883B02BA /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneBase.hpp */,
+				B03358911D4E4B0390B743B7 /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneMaker.hpp */,
+				FAC4104DB83C4F359BE49AC0 /* /Users/yanai/Desktop/GetSpeed2/src/header/sceneManager.hpp */,
+				52E5C0677EFC4679AF029D1D /* /Users/yanai/Desktop/GetSpeed2/src/header/timer.hpp */,
+				DDC280CFC56442A89E9D22D6 /* /Users/yanai/Desktop/GetSpeed2/src/header/title.hpp */,
+				A6CEABFD02B64A73A4A323DC /* /Users/yanai/Desktop/GetSpeed2/src/header/tweakbar.hpp */,
+				E19C899752CA4297B10176C7 /* /Users/yanai/Desktop/GetSpeed2/src/header/utility.hpp */,
+				0C65CA228CDF442CA3BCC93E /* /Users/yanai/Desktop/GetSpeed2/src/header/vector.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		F019A20837EF434099617354 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,18 +264,18 @@
 /* Begin PBXNativeTarget section */
 		A0D29E291FBC43D790F7799E /* getspeed2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 139A0C5B94344C6D873A02A5 /* Build configuration list for PBXNativeTarget "getspeed2" */;
+			buildConfigurationList = EF21FE1B870F496FB5694F00 /* Build configuration list for PBXNativeTarget "getspeed2" */;
 			buildPhases = (
-				F1A3C9371FF94E1DAF5DB93E /* Sources */,
+				AB73688A5CCC4BDA8959790D /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				43253E2C65084E66B55B3D4C /* PBXTargetDependency */,
+				F13E7AE80AC649F1A2119531 /* PBXTargetDependency */,
 			);
 			name = getspeed2;
 			productName = getspeed2;
-			productReference = E09D6321A75948FC9955600D /* getspeed2 */;
+			productReference = 7853E339A0034B25AE63FC98 /* getspeed2 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -286,18 +286,18 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 			};
-			buildConfigurationList = 01069C89D7A94F6494A4333C /* Build configuration list for PBXProject "getspeed2" */;
+			buildConfigurationList = 509F1C3E7B0741A6B24AFCE7 /* Build configuration list for PBXProject "getspeed2" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				AE727695BB004903A110DA3B /* Debug */,
-				74E278A33F834048B3EBD39A /* Release */,
-				3F49E5F3D1524811A2AE914F /* MinSizeRel */,
-				C8D27E2BA19146CF979FEE09 /* RelWithDebInfo */,
+				6AF7927DB8EB473DA63DF7A2 /* Debug */,
+				7A1FE2FA3D8D48C19185BE96 /* Release */,
+				F1CCFFE9E9A64250B22174AB /* MinSizeRel */,
+				2A0D91B52C3442A68229E201 /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = F41F1F5DC8FE4AE9AE25DEBD;
+			mainGroup = 7568C0C28A93436881563A0F;
 			projectDirPath = ../;
 			projectRoot = "";
 			targets = (
@@ -309,7 +309,18 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0CBB3BAACBA64BE58C67FFF7 = {
+		2075923C863D46899ACFA435 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/yanai/Desktop/GetSpeed2/xcode -f /Users/yanai/Desktop/GetSpeed2/xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		4B08DEF50DE04C1EAC132311 = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -324,7 +335,7 @@
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		1F59672EC11B4AB8A3870A29 /* CMake Rules */ = {
+		CB84DB7CE01542F3811550B6 /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -335,18 +346,7 @@ exit 0";
 			shellScript = "make -C /Users/yanai/Desktop/GetSpeed2/xcode -f /Users/yanai/Desktop/GetSpeed2/xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
 			showEnvVarsInLog = 0;
 		};
-		4FA9B487D7AC420286FAC1B7 /* CMake Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake Rules";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C /Users/yanai/Desktop/GetSpeed2/xcode -f /Users/yanai/Desktop/GetSpeed2/xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
-			showEnvVarsInLog = 0;
-		};
-		D66535737A114E7CB875E8D9 = {
+		EEBED2B08D6E43F7BFC8055C = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -364,42 +364,42 @@ exit 0";
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F1A3C9371FF94E1DAF5DB93E /* Sources */ = {
+		AB73688A5CCC4BDA8959790D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17D29EF367B54EEBB4994DC0 /* /Users/yanai/Desktop/GetSpeed2/src/appNative.cpp */,
-				08AD8C7777D74CBC87916C41 /* /Users/yanai/Desktop/GetSpeed2/src/camera.cpp */,
-				EAB175A1859C48B794731387 /* /Users/yanai/Desktop/GetSpeed2/src/game.cpp */,
-				436602EE0A784D79A749DEE0 /* /Users/yanai/Desktop/GetSpeed2/src/main.cpp */,
-				1F79C4FD02994A1CAD172D08 /* /Users/yanai/Desktop/GetSpeed2/src/sceneManager.cpp */,
-				2583C6DA6CDD42B7B3DE3EFE /* /Users/yanai/Desktop/GetSpeed2/src/timer.cpp */,
-				A0536AE6804842BEA0AB49B3 /* /Users/yanai/Desktop/GetSpeed2/src/title.cpp */,
+				C3246B9A61AB4E5D8B0E3C49 /* /Users/yanai/Desktop/GetSpeed2/src/appNative.cpp */,
+				72F6E21B06F1478C8AC96004 /* /Users/yanai/Desktop/GetSpeed2/src/camera.cpp */,
+				034240ADDC12472DA702DCBF /* /Users/yanai/Desktop/GetSpeed2/src/game.cpp */,
+				4D81D46BCE7B445FB73163A0 /* /Users/yanai/Desktop/GetSpeed2/src/main.cpp */,
+				B315FBFF58AA4E469297F1F9 /* /Users/yanai/Desktop/GetSpeed2/src/sceneManager.cpp */,
+				BCADA83A749A4278B3D3CB42 /* /Users/yanai/Desktop/GetSpeed2/src/timer.cpp */,
+				687082F279AF4278B2E659D1 /* /Users/yanai/Desktop/GetSpeed2/src/title.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		38664021569B47259AF9338E /* PBXTargetDependency */ = {
+		058D1C37368E4A3199EDEDC5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B535C08D2CBC4124AC3D9B0C /* ZERO_CHECK */;
-			targetProxy = B213ACD3D33145CCA27F3726 /* PBXContainerItemProxy */;
+			targetProxy = 26EC37740F7F4C56A7E6BAD0 /* PBXContainerItemProxy */;
 		};
-		43253E2C65084E66B55B3D4C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B535C08D2CBC4124AC3D9B0C /* ZERO_CHECK */;
-			targetProxy = 12933E7B185F4A749D4EF4F0 /* PBXContainerItemProxy */;
-		};
-		DC97E83F6AF640CA93A7C70E /* PBXTargetDependency */ = {
+		701B8CF3F363415E9FE06820 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A0D29E291FBC43D790F7799E /* getspeed2 */;
-			targetProxy = 5665932E6AFA41598E7F949E /* PBXContainerItemProxy */;
+			targetProxy = A44E130516A34F9089EEC8F4 /* PBXContainerItemProxy */;
+		};
+		F13E7AE80AC649F1A2119531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B535C08D2CBC4124AC3D9B0C /* ZERO_CHECK */;
+			targetProxy = 7E55E1705476431FB1094804 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		05B8B3F68968468EAF505E6B /* Debug */ = {
+		1E77862D360C4054BAB8D248 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -411,7 +411,47 @@ exit 0";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		488582DB28E3447B8697A318 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		4BB52B7935674ACA945ED98F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode;
 				USE_HEADERMAP = NO;
@@ -419,112 +459,7 @@ exit 0";
 			};
 			name = Debug;
 		};
-		0CE1542491EB457C8BD0D7C5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
-				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode/build;
-			};
-			name = Release;
-		};
-		1BC43D45A2E24105B87AA8C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/yanai/Desktop/GetSpeed2/include, );
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = "     -std=c++14";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/yanai/Desktop/GetSpeed2/lib/OSX/libglfw3.a -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = getspeed2;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode/src;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = Debug;
-		};
-		287A52C425EE449095F8A74D /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
-				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode/build;
-			};
-			name = RelWithDebInfo;
-		};
-		41A9AAA5045E4BF58F728187 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/yanai/Desktop/GetSpeed2/include, );
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG   -std=c++14";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/yanai/Desktop/GetSpeed2/lib/OSX/libglfw3.a -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = getspeed2;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode/src;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = RelWithDebInfo;
-		};
-		5BF782DB4BB145DCA35D5D51 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
-				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode/build;
-			};
-			name = MinSizeRel;
-		};
-		75774FBA7A3F41A8A402531E /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/yanai/Desktop/GetSpeed2/include, );
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG   -std=c++14";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/yanai/Desktop/GetSpeed2/lib/OSX/libglfw3.a -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = getspeed2;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode/src;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = MinSizeRel;
-		};
-		770F8A8F171A457A8F7A5FFD /* Release */ = {
+		4E1C9EFFB9664EC88211FB38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -535,11 +470,11 @@ exit 0";
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (/Users/yanai/Desktop/GetSpeed2/include, );
+				HEADER_SEARCH_PATHS = (/Users/yanai/Desktop/GetSpeed2/include, /Users/yanai/Desktop/GetSpeed2/include/freetype2, );
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG   -std=c++14";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/yanai/Desktop/GetSpeed2/lib/OSX/libglfw3.a -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo /Users/yanai/Desktop/GetSpeed2/lib/OSX/libglfw3.a /Users/yanai/Desktop/GetSpeed2/lib/OSX/libfreetype.a /Users/yanai/Desktop/GetSpeed2/lib/OSX/libFTGL.a";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = getspeed2;
 				SECTORDER_FLAGS = "";
@@ -549,7 +484,7 @@ exit 0";
 			};
 			name = Release;
 		};
-		8C78D0BA1A5E4BAF8BFB1E7D /* Release */ = {
+		5BBCF68DD37F46DA917F31CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -569,127 +504,27 @@ exit 0";
 			};
 			name = Release;
 		};
-		8D84C85AFD024A759C6009A1 /* Debug */ = {
+		5E1E1E35B2EB43AD9A5A05A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = Debug;
-		};
-		AD158E36BB7D41AD9ABFF919 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode/build;
 			};
 			name = Release;
 		};
-		B19862E3806243C1888D8928 /* RelWithDebInfo */ = {
+		5F27C15A681648B4B75FEDF0 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode/build;
 			};
 			name = RelWithDebInfo;
 		};
-		BAF57188CE9642A7B35CB204 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = MinSizeRel;
-		};
-		BBB37F9CC22B4B85B98AFD5B /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = RelWithDebInfo;
-		};
-		D55EC71FDB16406799C63984 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = MinSizeRel;
-		};
-		E24127E6BC4E4DCFB97D518D /* Debug */ = {
+		65399FAB8E9D46DC904E0152 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -699,49 +534,214 @@ exit 0";
 			};
 			name = Debug;
 		};
+		6A80D3BC2331403FBD2FC8E4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/yanai/Desktop/GetSpeed2/include, /Users/yanai/Desktop/GetSpeed2/include/freetype2, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG   -std=c++14";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo /Users/yanai/Desktop/GetSpeed2/lib/OSX/libglfw3.a /Users/yanai/Desktop/GetSpeed2/lib/OSX/libfreetype.a /Users/yanai/Desktop/GetSpeed2/lib/OSX/libFTGL.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = getspeed2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		6B89CF4AB4594F0DA0F7C815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		6DE25BA791F24E8B92343ACA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/yanai/Desktop/GetSpeed2/include, /Users/yanai/Desktop/GetSpeed2/include/freetype2, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG   -std=c++14";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo /Users/yanai/Desktop/GetSpeed2/lib/OSX/libglfw3.a /Users/yanai/Desktop/GetSpeed2/lib/OSX/libfreetype.a /Users/yanai/Desktop/GetSpeed2/lib/OSX/libFTGL.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = getspeed2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		6DF39497A5A14EF9AB8CD950 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		A226C7CC83364C64882317DA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		C776396D16034DB28EE8A097 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		E9D61C0EB63D428DBE33D8EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/yanai/Desktop/GetSpeed2/include, /Users/yanai/Desktop/GetSpeed2/include/freetype2, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "     -std=c++14";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo /Users/yanai/Desktop/GetSpeed2/lib/OSX/libglfw3.a /Users/yanai/Desktop/GetSpeed2/lib/OSX/libfreetype.a /Users/yanai/Desktop/GetSpeed2/lib/OSX/libFTGL.a";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = getspeed2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		FEDC88FA576448FCAC5E7C0D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/yanai/Desktop/GetSpeed2/xcode/build;
+			};
+			name = MinSizeRel;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01069C89D7A94F6494A4333C /* Build configuration list for PBXProject "getspeed2" */ = {
+		11B80A73A17D442FB7D3A460 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E24127E6BC4E4DCFB97D518D /* Debug */,
-				0CE1542491EB457C8BD0D7C5 /* Release */,
-				5BF782DB4BB145DCA35D5D51 /* MinSizeRel */,
-				287A52C425EE449095F8A74D /* RelWithDebInfo */,
+				6B89CF4AB4594F0DA0F7C815 /* Debug */,
+				5BBCF68DD37F46DA917F31CA /* Release */,
+				6DF39497A5A14EF9AB8CD950 /* MinSizeRel */,
+				A226C7CC83364C64882317DA /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		139A0C5B94344C6D873A02A5 /* Build configuration list for PBXNativeTarget "getspeed2" */ = {
+		509F1C3E7B0741A6B24AFCE7 /* Build configuration list for PBXProject "getspeed2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1BC43D45A2E24105B87AA8C3 /* Debug */,
-				770F8A8F171A457A8F7A5FFD /* Release */,
-				75774FBA7A3F41A8A402531E /* MinSizeRel */,
-				41A9AAA5045E4BF58F728187 /* RelWithDebInfo */,
+				65399FAB8E9D46DC904E0152 /* Debug */,
+				5E1E1E35B2EB43AD9A5A05A9 /* Release */,
+				FEDC88FA576448FCAC5E7C0D /* MinSizeRel */,
+				5F27C15A681648B4B75FEDF0 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		D878CB0F84A24255925AB87F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		7376254CC67D49D48372F6B3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				05B8B3F68968468EAF505E6B /* Debug */,
-				8C78D0BA1A5E4BAF8BFB1E7D /* Release */,
-				BAF57188CE9642A7B35CB204 /* MinSizeRel */,
-				BBB37F9CC22B4B85B98AFD5B /* RelWithDebInfo */,
+				4BB52B7935674ACA945ED98F /* Debug */,
+				488582DB28E3447B8697A318 /* Release */,
+				1E77862D360C4054BAB8D248 /* MinSizeRel */,
+				C776396D16034DB28EE8A097 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		E1299EB83B1A4974AE4AD1CA /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		EF21FE1B870F496FB5694F00 /* Build configuration list for PBXNativeTarget "getspeed2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D84C85AFD024A759C6009A1 /* Debug */,
-				AD158E36BB7D41AD9ABFF919 /* Release */,
-				D55EC71FDB16406799C63984 /* MinSizeRel */,
-				B19862E3806243C1888D8928 /* RelWithDebInfo */,
+				E9D61C0EB63D428DBE33D8EF /* Debug */,
+				4E1C9EFFB9664EC88211FB38 /* Release */,
+				6A80D3BC2331403FBD2FC8E4 /* MinSizeRel */,
+				6DE25BA791F24E8B92343ACA /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

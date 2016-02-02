@@ -29,15 +29,11 @@ window_size(width, height)
   glfwSetKeyCallback        (window, keyCallBack);
   glfwSetCursorPosCallback  (window, mousePositionCallBack);
   glfwSetMouseButtonCallback(window, mouseButtonCallBack);
+  glfwSetWindowSizeCallback (window, windowSizeCallback);
 
 #if DEBUG_IO
   glfwSetScrollCallback     (window, (GLFWscrollfun)     TwEventMouseWheelGLFW3);
   glfwSetCharCallback       (window, (GLFWcharfun)       TwEventCharGLFW3);
-#endif
-
-  glfwSetWindowSizeCallback (window, windowSizeCallback);
-
-#if DEBUG_IO
   TwInit(TW_OPENGL, nullptr);
   TwWindowSize(window_size.x(), window_size.y());
 #endif

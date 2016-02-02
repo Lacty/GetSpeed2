@@ -4,7 +4,14 @@
 
 
 Title::Title(AppNative* app) :
-SceneBase(app) {}
+SceneBase(app),
+font("assets/rounded-l-mplus-1c-regular.ttf")
+{
+  if (font.Error()) {
+    D_LOG("font did not loaded\n");
+  }
+  font.FaceSize(100);
+}
 
 void Title::update() {
   if (app->isPushKey(GLFW_KEY_A)) {
@@ -25,6 +32,8 @@ void Title::draw() {
   glEnableClientState(GL_VERTEX_ARRAY);
   glDrawArrays(GL_POINTS, 0, 1);
   glDisableClientState(GL_VERTEX_ARRAY);
+
+  font.Render("TITLE", 5, FTPoint(200.0f, 250.0f));
 }
 
 std::shared_ptr<SceneBase> Title::nextScene(AppNative* app) {
