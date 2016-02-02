@@ -2,12 +2,10 @@
 #pragma once
 #include "sceneBase.hpp"
 
-#include <FTGL/ftgl.h>
-
 
 class Title : public SceneBase {
 private:
-  FTPixmapFont font;
+  Font font;
 
 public:
   Title(AppNative* app);

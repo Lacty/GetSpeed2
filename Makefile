@@ -6,9 +6,10 @@ timer        = debug/timer.o
 scenemanager = debug/scenemanager.o
 game         = debug/game.o
 title        = debug/title.o
+font         = debug/font.o
 
 program = debug/program.out
-objs    = $(main) $(app) $(camera) $(scenemanager) $(game) $(timer) $(title)
+objs    = $(main) $(app) $(camera) $(scenemanager) $(game) $(timer) $(title) $(font)
 
 libs = -lglfw -lGL -lAntTweakBar -lX11 -lftgl -I/usr/include/freetype2
 opt  = -Wall -std=c++14
@@ -35,6 +36,9 @@ $(game): src/game.cpp
 	g++ $(opt) $(libs) -c $^ -o $@
 
 $(title): src/title.cpp
+	g++ $(opt) $(libs) -c $^ -o $@
+
+$(font): src/font.cpp
 	g++ $(opt) $(libs) -c $^ -o $@
 
 run: $(program)

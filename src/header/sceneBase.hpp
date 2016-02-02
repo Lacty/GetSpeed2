@@ -7,6 +7,8 @@
 #include "appNative.hpp"
 #include "utility.hpp"
 
+#include "font.hpp"
+
 
 class SceneBase {
 protected:

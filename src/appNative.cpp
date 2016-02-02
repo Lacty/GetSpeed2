@@ -153,5 +153,10 @@ void AppNative::windowSizeCallback(GLFWwindow* window, const int width, const in
   TwEventWindowSizeGLFW3(window, width, height);
 #endif
   native->camera.setWindowSize(vec2i(width, height));
+
   glViewport(0, 0, width, height);
+  glLoadIdentity();
+  glOrtho(-width * 0.5f, width * 0.5f,
+          -height * 0.5f, height * 0.5f,
+          0.0f, 1.0f);
 }

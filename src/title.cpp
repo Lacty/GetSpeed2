@@ -7,11 +7,9 @@ Title::Title(AppNative* app) :
 SceneBase(app),
 font("assets/rounded-l-mplus-1c-regular.ttf")
 {
-  if (font.Error()) {
-    D_LOG("font did not loaded\n");
-  }
-  font.FaceSize(100);
+  font.setSize(50);
 }
+
 
 void Title::update() {
   if (app->isPushKey(GLFW_KEY_A)) {
@@ -22,18 +20,23 @@ void Title::update() {
 
 void Title::draw() {
   GLfloat vtx[] = {
-    0.0, 0.0
+    0.0f, 0.433f, 0.0f,
+    -0.5f, -0.433f, 0.0f,
+    0.5f, -0.433f, 0.0f
   };
-  glVertexPointer(2, GL_FLOAT, 0, vtx);
-  glPointSize(20);
-  glTranslatef(0, 0, -10);
-  glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+  glPushMatrix();
+    glVertexPointer(3, GL_FLOAT, 0, vtx);
+    glTranslatef(0, 0, -10);
+    glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
 
-  glEnableClientState(GL_VERTEX_ARRAY);
-  glDrawArrays(GL_POINTS, 0, 1);
-  glDisableClientState(GL_VERTEX_ARRAY);
+    glEnableClientState(GL_VERTEX_ARRAY);
+    glDrawArrays(GL_TRIANGLES, 0, 3);
+    glDisableClientState(GL_VERTEX_ARRAY);
+  glPopMatrix();
 
-  font.Render("TITLE", 5, FTPoint(200.0f, 250.0f));
+  std::string str("hoge");
+  font.draw(str, vec2f(0, 0));
+  font.drawCenter(str, vec2f(100, 200));
 }
 
 std::shared_ptr<SceneBase> Title::nextScene(AppNative* app) {
