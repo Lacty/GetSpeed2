@@ -1,13 +1,14 @@
 
-main   = debug/main.o
-app    = debug/app.o
-camera = debug/camera.o
-game   = debug/game.o
-timer  = debug/timer.o
-title  = debug/title.o
+main         = debug/main.o
+app          = debug/app.o
+camera       = debug/camera.o
+timer        = debug/timer.o
+scenemanager = debug/scenemanager.o
+game         = debug/game.o
+title        = debug/title.o
 
 program = debug/program.out
-objs    = $(main) $(app) $(camera) $(game) $(timer) $(title)
+objs    = $(main) $(app) $(camera) $(scenemanager) $(game) $(timer) $(title)
 
 libs = -lglfw -lGL -lAntTweakBar -lX11
 opt  = -Wall -std=c++14
@@ -24,10 +25,13 @@ $(app): src/appNative.cpp
 $(camera): src/camera.cpp
 	g++ $(opt) $(libs) -c $^ -o $@
 
-$(game): src/game.cpp
+$(timer): src/timer.cpp
 	g++ $(opt) $(libs) -c $^ -o $@
 
-$(timer): src/timer.cpp
+$(scenemanager): src/sceneManager.cpp
+	g++ $(opt) $(libs) -c $^ -o $@
+
+$(game): src/game.cpp
 	g++ $(opt) $(libs) -c $^ -o $@
 
 $(title): src/title.cpp
@@ -37,4 +41,4 @@ run: $(program)
 	$^
 
 clear:
-	rm $(main) $(app) $(camera) $(game) $(timer) $(title) $(program)
+	rm $(main) $(app) $(camera) $(timer) $(scenemanager) $(game) $(title) $(program)

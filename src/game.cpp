@@ -1,31 +1,30 @@
 
 #include "header/game.hpp"
-#include "header/debugIO.hpp"
-#include "header/tweakbar.hpp"
+#include "header/sceneMaker.hpp"
+#include <iostream>
 
-#include "header/title.hpp"
+#include <GLFW/glfw3.h>
 
 
 Game::Game(AppNative* app) :
-app(app) {
-  scene = sceneCreate<Title>(app);
-}
+SceneBase(app) {}
 
-
-void Game::update() {
-  scene->update();
-  if (scene->shouldClose()) { scene = scene->nextScene(app); }
-}
+void Game::update() {}
 
 void Game::draw() {
-  scene->draw();
+  GLfloat vtx[] = {
+    0.0, 0.0
+  };
+  glVertexPointer(2, GL_FLOAT, 0, vtx);
+  glPointSize(20);
+  glTranslatef(0, 0, -10);
+  glColor4f(1.0f, 0.f, 0.f, 1.0f);
+
+  glEnableClientState(GL_VERTEX_ARRAY);
+  glDrawArrays(GL_POINTS, 0, 1);
+  glDisableClientState(GL_VERTEX_ARRAY);
 }
 
-void Game::run() {
-  update();
-  draw();
-
-#if DEBUG_IO
-  TwDraw();
-#endif
+std::shared_ptr<SceneBase> Game::nextScene(AppNative* app) {
+  return sceneCreate<Title>(app);
 }
