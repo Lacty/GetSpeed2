@@ -10,7 +10,7 @@ title        = debug/title.o
 program = debug/program.out
 objs    = $(main) $(app) $(camera) $(scenemanager) $(game) $(timer) $(title)
 
-libs = -lglfw -lGL -lAntTweakBar -lX11
+libs = -lglfw -lGL -lAntTweakBar -lX11 -lftgl -I/usr/include/freetype2
 opt  = -Wall -std=c++14
 
 $(program): $(objs)
