@@ -76,6 +76,10 @@ const vec2i& AppNative::windowSize() const {
   return window_size;
 }
 
+const vec2i& AppNative::getWindowCenter() const {
+  return window_size * 0.5;
+}
+
 
 bool AppNative::isPushKey(int key) { return key_event.isPush(key); }
 bool AppNative::isPullKey(int key) { return key_event.isPull(key); }
@@ -152,6 +156,8 @@ void AppNative::windowSizeCallback(GLFWwindow* window, const int width, const in
 #if DEBUG_IO
   TwEventWindowSizeGLFW3(window, width, height);
 #endif
+
+  native->window_size = vec2i(width, height);
   native->camera.setWindowSize(vec2i(width, height));
 
   glViewport(0, 0, width, height);

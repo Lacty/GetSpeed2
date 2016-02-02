@@ -37,6 +37,7 @@ public:
   void setClearColor(const Color& color);
 
   const vec2i& windowSize() const;
+  const vec2i& getWindowCenter() const;
 
 
   // Key Events

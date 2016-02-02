@@ -19,24 +19,9 @@ void Title::update() {
 }
 
 void Title::draw() {
-  GLfloat vtx[] = {
-    0.0f, 0.433f, 0.0f,
-    -0.5f, -0.433f, 0.0f,
-    0.5f, -0.433f, 0.0f
-  };
-  glPushMatrix();
-    glVertexPointer(3, GL_FLOAT, 0, vtx);
-    glTranslatef(0, 0, -10);
-    glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
-
-    glEnableClientState(GL_VERTEX_ARRAY);
-    glDrawArrays(GL_TRIANGLES, 0, 3);
-    glDisableClientState(GL_VERTEX_ARRAY);
-  glPopMatrix();
-
-  std::string str("hoge");
-  font.draw(str, vec2f(0, 0));
-  font.drawCenter(str, vec2f(100, 200));
+  std::string str("- Title -");
+  font.drawCenter(str, vec2f(app->windowSize().x() * 0.5f,
+                             app->windowSize().y() * 0.5f));
 }
 
 std::shared_ptr<SceneBase> Title::nextScene(AppNative* app) {
