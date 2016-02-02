@@ -9,7 +9,11 @@
 Game::Game(AppNative* app) :
 SceneBase(app) {}
 
-void Game::update() {}
+void Game::update() {
+  if (app->isPushKey(GLFW_KEY_A)) {
+    isFinish = true;
+  }
+}
 
 void Game::draw() {
   GLfloat vtx[] = {

@@ -12,7 +12,9 @@ protected:
   bool       isFinish;
 
 public:
-  SceneBase(AppNative* app) : app(app) {}
+  SceneBase(AppNative* app) :
+  app(app),
+  isFinish(false) {}
 
   virtual void update() = 0;
   virtual void draw()   = 0;
