@@ -3,8 +3,6 @@
 #include "header/debugIO.hpp"
 #include "header/tweakbar.hpp"
 
-#include "header/title.hpp"
-
 
 SceneManager::SceneManager(AppNative* app) :
 app(app) {
