@@ -1,9 +1,6 @@
 
 #include "header/title.hpp"
 #include "header/sceneMaker.hpp"
-#include <iostream>
-
-#include <GLFW/glfw3.h>
 
 
 Title::Title(AppNative* app) :

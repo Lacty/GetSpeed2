@@ -1,9 +1,6 @@
 
 #include "header/game.hpp"
 #include "header/sceneMaker.hpp"
-#include <iostream>
-
-#include <GLFW/glfw3.h>
 
 
 Game::Game(AppNative* app) :

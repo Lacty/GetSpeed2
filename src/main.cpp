@@ -1,7 +1,4 @@
  
-#include <iostream>
-#include <GLFW/glfw3.h>
-
 #include "header/appNative.hpp"
 #include "header/sceneManager.hpp"
 

@@ -1,7 +1,9 @@
 
 #pragma once
 #include <GLFW/glfw3.h>
+#include <iostream>
 #include <memory>
+
 #include "appNative.hpp"
 #include "utility.hpp"
 

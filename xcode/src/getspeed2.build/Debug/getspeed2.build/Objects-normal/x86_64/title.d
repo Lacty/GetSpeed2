@@ -1,7 +1,8 @@
 dependencies: /Users/yanai/Desktop/GetSpeed2/src/title.cpp \
   /Users/yanai/Desktop/GetSpeed2/src/header/title.hpp \
-  /Users/yanai/Desktop/GetSpeed2/src/header/appNative.hpp \
+  /Users/yanai/Desktop/GetSpeed2/src/header/sceneBase.hpp \
   /Users/yanai/Desktop/GetSpeed2/include/GLFW/glfw3.h \
+  /Users/yanai/Desktop/GetSpeed2/src/header/appNative.hpp \
   /Users/yanai/Desktop/GetSpeed2/src/header/vector.hpp \
   /Users/yanai/Desktop/GetSpeed2/include/Eigen/Core \
   /Users/yanai/Desktop/GetSpeed2/include/Eigen/src/Core/util/DisableStupidWarnings.h \
@@ -146,7 +147,6 @@ dependencies: /Users/yanai/Desktop/GetSpeed2/src/title.cpp \
   /Users/yanai/Desktop/GetSpeed2/src/header/tweakbar.hpp \
   /Users/yanai/Desktop/GetSpeed2/src/header/debugIO.hpp \
   /Users/yanai/Desktop/GetSpeed2/src/header/camera.hpp \
-  /Users/yanai/Desktop/GetSpeed2/src/header/sceneBase.hpp \
   /Users/yanai/Desktop/GetSpeed2/src/header/utility.hpp \
   /Users/yanai/Desktop/GetSpeed2/src/header/sceneMaker.hpp \
   /Users/yanai/Desktop/GetSpeed2/src/header/game.hpp

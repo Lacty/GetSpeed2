@@ -1,6 +1,5 @@
 
 #pragma once
-#include "appNative.hpp"
 #include "sceneBase.hpp"
 
 
