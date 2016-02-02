@@ -3,6 +3,7 @@
 #include <GLFW/glfw3.h>
 #include <memory>
 #include "appNative.hpp"
+#include "utility.hpp"
 
 
 class SceneBase {

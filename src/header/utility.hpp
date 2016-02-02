@@ -1,14 +1,17 @@
 
 #pragma once
 #include <cmath>
+#include <string>
+#include <iostream>
 #include "vector.hpp"
+#include "debugIO.hpp"
 
 
-float toRadians(float deg) {
+static float toRadians(float deg) {
   return (deg * M_PI) / 180.0f;
 }
 
-mat4f rotMatrix(const vec3f& vec) {
+static mat4f rotMatrix(const vec3f& vec) {
   float x = toRadians(vec.x());
   float y = toRadians(vec.y());
   float z = toRadians(vec.z());
@@ -34,7 +37,7 @@ mat4f rotMatrix(const vec3f& vec) {
   return matX * matY * matZ;
 }
 
-mat4f transMatrix(const vec3f& vec) {
+static mat4f transMatrix(const vec3f& vec) {
   float x = vec.x();
   float y = vec.y();
   float z = vec.z();
@@ -48,9 +51,17 @@ mat4f transMatrix(const vec3f& vec) {
   return m;
 }
 
-double toSita(const vec2f& v1, const vec2f& v2) {
+static double toSita(const vec2f& v1, const vec2f& v2) {
   double cosSita = v1.dot(v2) / (v1.norm() * v2.norm());
   double sita = acos(cosSita);
   sita = sita * 180.0 / M_PI;
   return sita;
+}
+
+// operation only debug mode
+template<typename T>
+static void D_LOG(const T& src) {
+#if !RELEASE_IO
+  std::cout << src << std::endl;
+#endif
 }

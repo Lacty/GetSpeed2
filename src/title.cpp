@@ -9,10 +9,10 @@
 Title::Title(AppNative* app) :
 SceneBase(app) {}
 
-
 void Title::update() {
   if (app->isPushKey(GLFW_KEY_A)) {
     isFinish = true;
+    D_LOG(isFinish);
   }
 }
 
