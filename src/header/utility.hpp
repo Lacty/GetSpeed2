@@ -58,6 +58,20 @@ static double toSita(const vec2f& v1, const vec2f& v2) {
   return sita;
 }
 
+static vec3f getPointBezier(float t,
+                            const vec3f& start,
+                            const vec3f& v1,
+                            const vec3f& v2,
+                            const vec3f& end)
+{
+  float tp = 1 - t;
+  vec3f pos(0, 0, 0);
+  pos.x() = t*t*t*end.x() + 3*t*t*tp*v2.x() + 3*t*tp*tp*v1.x() + tp*tp*tp*start.x();
+  pos.y() = t*t*t*end.y() + 3*t*t*tp*v2.y() + 3*t*tp*tp*v1.y() + tp*tp*tp*start.y();
+  pos.z() = t*t*t*end.z() + 3*t*t*tp*v2.z() + 3*t*tp*tp*v1.z() + tp*tp*tp*start.z();
+  return pos;
+}
+
 // operation only debug mode
 template<typename T>
 static void D_LOG(const T& src) {

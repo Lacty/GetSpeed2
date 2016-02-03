@@ -5,8 +5,10 @@
 #include <memory>
 
 #include "appNative.hpp"
-#include "utility.hpp"
+#include "debugIO.hpp"
 
+#include "utility.hpp"
+#include "tweakbar.hpp"
 #include "font.hpp"
 
 
@@ -14,6 +16,10 @@ class SceneBase {
 protected:
   AppNative* app;
   bool       isFinish;
+
+#if DEBUG_IO
+  TwBar* twBar;
+#endif
 
 public:
   SceneBase(AppNative* app) :
