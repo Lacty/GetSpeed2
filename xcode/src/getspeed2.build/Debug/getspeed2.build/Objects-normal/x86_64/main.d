@@ -148,8 +148,7 @@ dependencies: /Users/yanai/Desktop/GetSpeed2/src/main.cpp \
   /Users/yanai/Desktop/GetSpeed2/src/header/sceneManager.hpp \
   /Users/yanai/Desktop/GetSpeed2/src/header/sceneBase.hpp \
   /Users/yanai/Desktop/GetSpeed2/src/header/utility.hpp \
-  /Users/yanai/Desktop/GetSpeed2/src/header/sceneMaker.hpp \
-  /Users/yanai/Desktop/GetSpeed2/src/header/title.hpp \
+  /Users/yanai/Desktop/GetSpeed2/src/header/font.hpp \
   /Users/yanai/Desktop/GetSpeed2/include/FTGL/ftgl.h \
   /Users/yanai/Desktop/GetSpeed2/include/freetype2/ft2build.h \
   /Users/yanai/Desktop/GetSpeed2/include/freetype2/config/ftheader.h \
@@ -186,4 +185,6 @@ dependencies: /Users/yanai/Desktop/GetSpeed2/src/main.cpp \
   /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTGLTextureFont.h \
   /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTLayout.h \
   /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTSimpleLayout.h \
+  /Users/yanai/Desktop/GetSpeed2/src/header/sceneMaker.hpp \
+  /Users/yanai/Desktop/GetSpeed2/src/header/title.hpp \
   /Users/yanai/Desktop/GetSpeed2/src/header/game.hpp

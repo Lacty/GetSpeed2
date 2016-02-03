@@ -1,8 +1,41 @@
-dependencies: /Users/yanai/Desktop/GetSpeed2/src/game.cpp \
-  /Users/yanai/Desktop/GetSpeed2/src/header/game.hpp \
-  /Users/yanai/Desktop/GetSpeed2/src/header/sceneBase.hpp \
-  /Users/yanai/Desktop/GetSpeed2/include/GLFW/glfw3.h \
-  /Users/yanai/Desktop/GetSpeed2/src/header/appNative.hpp \
+dependencies: /Users/yanai/Desktop/GetSpeed2/src/font.cpp \
+  /Users/yanai/Desktop/GetSpeed2/src/header/font.hpp \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/ftgl.h \
+  /Users/yanai/Desktop/GetSpeed2/include/freetype2/ft2build.h \
+  /Users/yanai/Desktop/GetSpeed2/include/freetype2/config/ftheader.h \
+  /Users/yanai/Desktop/GetSpeed2/include/freetype2/freetype.h \
+  /Users/yanai/Desktop/GetSpeed2/include/freetype2/config/ftconfig.h \
+  /Users/yanai/Desktop/GetSpeed2/include/freetype2/config/ftoption.h \
+  /Users/yanai/Desktop/GetSpeed2/include/freetype2/config/ftstdlib.h \
+  /Users/yanai/Desktop/GetSpeed2/include/freetype2/fttypes.h \
+  /Users/yanai/Desktop/GetSpeed2/include/freetype2/ftsystem.h \
+  /Users/yanai/Desktop/GetSpeed2/include/freetype2/ftimage.h \
+  /Users/yanai/Desktop/GetSpeed2/include/freetype2/fterrors.h \
+  /Users/yanai/Desktop/GetSpeed2/include/freetype2/ftmoderr.h \
+  /Users/yanai/Desktop/GetSpeed2/include/freetype2/fterrdef.h \
+  /Users/yanai/Desktop/GetSpeed2/include/freetype2/ftglyph.h \
+  /Users/yanai/Desktop/GetSpeed2/include/freetype2/ftoutln.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTPoint.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTBBox.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTBuffer.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTGlyph.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTBitmapGlyph.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTBufferGlyph.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTExtrdGlyph.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTOutlineGlyph.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTPixmapGlyph.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTPolyGlyph.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTTextureGlyph.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTFont.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTGLBitmapFont.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTBufferFont.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTGLExtrdFont.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTGLOutlineFont.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTGLPixmapFont.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTGLPolygonFont.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTGLTextureFont.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTLayout.h \
+  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTSimpleLayout.h \
   /Users/yanai/Desktop/GetSpeed2/src/header/vector.hpp \
   /Users/yanai/Desktop/GetSpeed2/include/Eigen/Core \
   /Users/yanai/Desktop/GetSpeed2/include/Eigen/src/Core/util/DisableStupidWarnings.h \
@@ -140,50 +173,4 @@ dependencies: /Users/yanai/Desktop/GetSpeed2/src/game.cpp \
   /Users/yanai/Desktop/GetSpeed2/include/Eigen/src/Geometry/ParametrizedLine.h \
   /Users/yanai/Desktop/GetSpeed2/include/Eigen/src/Geometry/AlignedBox.h \
   /Users/yanai/Desktop/GetSpeed2/include/Eigen/src/Geometry/Umeyama.h \
-  /Users/yanai/Desktop/GetSpeed2/include/Eigen/src/Geometry/arch/Geometry_SSE.h \
-  /Users/yanai/Desktop/GetSpeed2/src/header/color.hpp \
-  /Users/yanai/Desktop/GetSpeed2/src/header/key.hpp \
-  /Users/yanai/Desktop/GetSpeed2/src/header/mouse.hpp \
-  /Users/yanai/Desktop/GetSpeed2/src/header/tweakbar.hpp \
-  /Users/yanai/Desktop/GetSpeed2/src/header/debugIO.hpp \
-  /Users/yanai/Desktop/GetSpeed2/src/header/camera.hpp \
-  /Users/yanai/Desktop/GetSpeed2/src/header/utility.hpp \
-  /Users/yanai/Desktop/GetSpeed2/src/header/font.hpp \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/ftgl.h \
-  /Users/yanai/Desktop/GetSpeed2/include/freetype2/ft2build.h \
-  /Users/yanai/Desktop/GetSpeed2/include/freetype2/config/ftheader.h \
-  /Users/yanai/Desktop/GetSpeed2/include/freetype2/freetype.h \
-  /Users/yanai/Desktop/GetSpeed2/include/freetype2/config/ftconfig.h \
-  /Users/yanai/Desktop/GetSpeed2/include/freetype2/config/ftoption.h \
-  /Users/yanai/Desktop/GetSpeed2/include/freetype2/config/ftstdlib.h \
-  /Users/yanai/Desktop/GetSpeed2/include/freetype2/fttypes.h \
-  /Users/yanai/Desktop/GetSpeed2/include/freetype2/ftsystem.h \
-  /Users/yanai/Desktop/GetSpeed2/include/freetype2/ftimage.h \
-  /Users/yanai/Desktop/GetSpeed2/include/freetype2/fterrors.h \
-  /Users/yanai/Desktop/GetSpeed2/include/freetype2/ftmoderr.h \
-  /Users/yanai/Desktop/GetSpeed2/include/freetype2/fterrdef.h \
-  /Users/yanai/Desktop/GetSpeed2/include/freetype2/ftglyph.h \
-  /Users/yanai/Desktop/GetSpeed2/include/freetype2/ftoutln.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTPoint.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTBBox.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTBuffer.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTGlyph.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTBitmapGlyph.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTBufferGlyph.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTExtrdGlyph.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTOutlineGlyph.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTPixmapGlyph.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTPolyGlyph.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTTextureGlyph.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTFont.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTGLBitmapFont.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTBufferFont.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTGLExtrdFont.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTGLOutlineFont.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTGLPixmapFont.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTGLPolygonFont.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTGLTextureFont.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTLayout.h \
-  /Users/yanai/Desktop/GetSpeed2/include/FTGL/FTSimpleLayout.h \
-  /Users/yanai/Desktop/GetSpeed2/src/header/sceneMaker.hpp \
-  /Users/yanai/Desktop/GetSpeed2/src/header/title.hpp
+  /Users/yanai/Desktop/GetSpeed2/include/Eigen/src/Geometry/arch/Geometry_SSE.h

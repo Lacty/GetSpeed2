@@ -148,6 +148,7 @@ dependencies: /Users/yanai/Desktop/GetSpeed2/src/title.cpp \
   /Users/yanai/Desktop/GetSpeed2/src/header/debugIO.hpp \
   /Users/yanai/Desktop/GetSpeed2/src/header/camera.hpp \
   /Users/yanai/Desktop/GetSpeed2/src/header/utility.hpp \
+  /Users/yanai/Desktop/GetSpeed2/src/header/font.hpp \
   /Users/yanai/Desktop/GetSpeed2/include/FTGL/ftgl.h \
   /Users/yanai/Desktop/GetSpeed2/include/freetype2/ft2build.h \
   /Users/yanai/Desktop/GetSpeed2/include/freetype2/config/ftheader.h \
