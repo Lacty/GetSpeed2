@@ -5,6 +5,8 @@
 
 class Game : public SceneBase {
 private:
+  Font font;
+
 public:
   Game(AppNative* app);
   

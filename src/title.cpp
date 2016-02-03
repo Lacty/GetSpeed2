@@ -14,7 +14,6 @@ font("assets/rounded-l-mplus-1c-regular.ttf")
 void Title::update() {
   if (app->isPushKey(GLFW_KEY_A)) {
     isFinish = true;
-    D_LOG(isFinish);
   }
 }
 
