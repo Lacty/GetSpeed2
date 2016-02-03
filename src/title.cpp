@@ -8,7 +8,7 @@ SceneBase(app),
 t(0.0),
 start(-5, 0, 0),
 v1(-2, 3, 0),
-v2(1, 4, 0),
+v2(1, -4, 0),
 end(5, 0, 0),
 font("assets/rounded-l-mplus-1c-regular.ttf")
 {
@@ -16,7 +16,7 @@ font("assets/rounded-l-mplus-1c-regular.ttf")
 
 #if DEBUG_IO
   twBar = TwNewBar("title");
-  TwAddVarRW(twBar, "t", TW_TYPE_FLOAT, &t, "");
+  TwAddVarRW(twBar, "t", TW_TYPE_FLOAT, &t, "min=0 max=1");
 #endif
 }
 
@@ -24,6 +24,10 @@ font("assets/rounded-l-mplus-1c-regular.ttf")
 void Title::update() {
   if (app->isPushKey(GLFW_KEY_A)) {
     isFinish = true;
+  }
+  if (app->isPressKey(GLFW_KEY_T)) {
+    if (t >= 1) t = 1;
+    t += 0.01f;
   }
 }
 
@@ -36,8 +40,7 @@ void Title::draw() {
     glTranslatef(0, 0, -10);
 
     vec3f p = getPointBezier(t, start, v1, v2, end);
-    glTranslatef(p.x() * 0.1f, p.y() * 0.1, p.z() * 0.1);
-    D_LOG(p);
+    glTranslatef(p.x() * 0.4f, p.y() * 0.4f, p.z() * 0.4f);
     GLfloat vtx[] = {
       0.0f, 0.433f, 0.0f,
       -0.5f, -0.433f, 0.0f,

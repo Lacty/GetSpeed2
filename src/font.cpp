@@ -7,7 +7,7 @@ font(str.c_str()) {}
 
 
 void Font::setSize(int _size) {
-  font.FaceSize(100);
+  font.FaceSize(_size);
 }
 
 void Font::draw(const std::string& str, const vec2f& pos) {
