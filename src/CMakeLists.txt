@@ -48,6 +48,7 @@ elseif(MSVC)
     ${CMAKE_SOURCE_DIR}/lib/Windows/lib/freetyped.lib
     ${CMAKE_SOURCE_DIR}/lib/Windows/lib/ftgld.lib
     ${CMAKE_SOURCE_DIR}/lib/Windows/lib/glfw3d.lib
+    ${CMAKE_SOURCE_DIR}/lib/Windows/lib/AntTweakBar64.lib
   )
 endif()
 
@@ -55,3 +56,13 @@ endif()
 # --- Set Library to project
 #
 target_link_libraries(GetSpeed2 ${EXTRA_LIBS})
+
+
+# --- copy AntTweakBar.dll to dir[vs2015/src/Debug]
+#
+# file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/vs2015/src)
+file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/vs2015/src/Debug)
+execute_process(COMMAND
+  cp ${CMAKE_SOURCE_DIR}/lib/Windows/lib/AntTweakBar64.dll
+     ${CMAKE_SOURCE_DIR}/vs2015/src/Debug
+)
