@@ -18,7 +18,10 @@ endif()
 # --- Load Source Files
 #
 file(GLOB SRCS *.c *.cpp)
-file(GLOB HEAD *.h *.hpp)
+file(GLOB HEAD
+  *.h *.hpp
+  TwBar/*.h TwBar/*.hpp
+)
 
 
 # --- Set Source Files to Project
