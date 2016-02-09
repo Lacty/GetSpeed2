@@ -36,7 +36,7 @@ if (APPLE)
   set(EXTRA_LIBS
     ${COCOA_LIBRARY}
     ${OpenGL_LIBRARY}
-    ${IOKit_LIBRARY}
+    ${IOKIT_LIBRARY}
     ${COREVIDEO_LIBRARY}
     ${CMAKE_SOURCE_DIR}/lib/OSX/libglfw3.a
     ${CMAKE_SOURCE_DIR}/lib/OSX/libfreetype.a
