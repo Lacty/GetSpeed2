@@ -1,0 +1,3 @@
+C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/ALL_BUILD.dir
+C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/ZERO_CHECK.dir
+C:/Users/USER/Desktop/GetSpeed2/vs2015/src/CMakeFiles/GetSpeed2.dir
