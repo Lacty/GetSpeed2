@@ -1,5 +1,6 @@
 
 if(APPLE)
+set(CMAKE_C_FLAGS "-Wall -g")
 add_definitions("-std=c++14")
 endif()
 
