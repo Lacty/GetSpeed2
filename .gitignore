@@ -1,0 +1,10 @@
+
+.DS_Siore
+build/
+Build/
+
+*.sdf
+*.suo
+*.opensdf
+Debug/
+Release/
