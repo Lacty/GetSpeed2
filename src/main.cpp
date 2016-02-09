@@ -21,6 +21,8 @@ int main() {
     glfwSwapBuffers(window);
     glfwPollEvents();
   }
+  
+  // hoge
 
   glfwTerminate();
   return 0;
