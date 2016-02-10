@@ -17,10 +17,41 @@ endif()
 
 # --- Load Source Files
 #
-file(GLOB SRCS *.c *.cpp)
+file(GLOB SRCS
+            *.cpp
+  AppNative/*.cpp
+     Camera/*.cpp
+      Color/*.cpp
+       Font/*.cpp
+        Key/*.cpp
+      Mouse/*.cpp
+      Scene/*.cpp
+      Timer/*.cpp
+      TwBar/*.cpp
+    Utility/*.cpp
+     Vector/*.cpp
+   LoadPath/*.cpp
+
+  Scene/Title/*.cpp
+  Scene/Game/*.cpp
+)
 file(GLOB HEAD
-  *.h *.hpp
-  TwBar/*.h TwBar/*.hpp
+            *.h            *.hpp
+  AppNative/*.h  AppNative/*.hpp
+     Camera/*.h     Camera/*.hpp
+      Color/*.h      Color/*.hpp
+       Font/*.h       Font/*.hpp
+        Key/*.h        Key/*.hpp
+      Mouse/*.h      Mouse/*.hpp
+      Scene/*.h      Scene/*.hpp
+      Timer/*.h      Timer/*.hpp
+      TwBar/*.h      TwBar/*.hpp
+    Utility/*.h    Utility/*.hpp
+     Vector/*.h     Vector/*.hpp
+   LoadPath/*.h   LoadPath/*.hpp
+  
+  Scene/Title/*.h  Scene/Title/*.hpp
+   Scene/Game/*.h   Scene/Game/*.hpp
 )
 
 
@@ -51,6 +82,13 @@ elseif(MSVC)
     ${CMAKE_SOURCE_DIR}/lib/Windows/lib/freetyped.lib
     ${CMAKE_SOURCE_DIR}/lib/Windows/lib/ftgld.lib
     ${CMAKE_SOURCE_DIR}/lib/Windows/lib/glfw3d.lib
+    ${CMAKE_SOURCE_DIR}/lib/Windows/lib/AntTweakBar64.lib
+  )
+  set(EXTRA_LIBS_RELEASE
+    ${CMAKE_SOURCE_DIR}/lib/Windows/lib/OpenGL32.lib
+    ${CMAKE_SOURCE_DIR}/lib/Windows/lib/freetype.lib
+    ${CMAKE_SOURCE_DIR}/lib/Windows/lib/ftgl.lib
+    ${CMAKE_SOURCE_DIR}/lib/Windows/lib/glfw3.lib
     ${CMAKE_SOURCE_DIR}/lib/Windows/lib/AntTweakBar64.lib
   )
 endif()

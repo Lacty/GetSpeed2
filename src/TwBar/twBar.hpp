@@ -13,7 +13,7 @@ inline void TwEventMousePosGLFW3(GLFWwindow* window, double xpos, double ypos) {
 }
 
 inline void TwEventMouseWheelGLFW3(GLFWwindow* window, double xoffset, double yoffset) {
-  TwMouseWheel(yoffset);
+  TwMouseWheel(int(yoffset));
 }
 
 inline void TwEventKeyGLFW3(GLFWwindow* window, int key, int scancode, int action, int mods) {
