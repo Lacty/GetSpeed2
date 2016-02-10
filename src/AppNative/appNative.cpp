@@ -4,12 +4,12 @@
 
 
 AppNative::AppNative(int width, int height, const char* title) :
-window_size(width, height)
+  window_size(width, height)
 {
-  if (!glfwInit()) exit(1);
+  if(!glfwInit()) exit(1);
 
   window = glfwCreateWindow(width, height, title, nullptr, nullptr);
-  if (!window) {
+  if(!window) {
     glfwTerminate();
     exit(1);
   }
@@ -26,15 +26,15 @@ window_size(width, height)
   // set Viewport
   std::cout << "window size\n" << window_size << std::endl;
   glViewport(0, 0, window_size.x(), window_size.y());
-  
+
   // set callback func
   glfwSetKeyCallback        (window, keyCallBack);
   glfwSetCursorPosCallback  (window, mousePositionCallBack);
   glfwSetMouseButtonCallback(window, mouseButtonCallBack);
   glfwSetWindowSizeCallback (window, windowSizeCallback);
 
-  glfwSetScrollCallback     (window, (GLFWscrollfun)     TwEventMouseWheelGLFW3);
-  glfwSetCharCallback       (window, (GLFWcharfun)       TwEventCharGLFW3);
+  glfwSetScrollCallback     (window, (GLFWscrollfun)TwEventMouseWheelGLFW3);
+  glfwSetCharCallback       (window, (GLFWcharfun)TwEventCharGLFW3);
   TwInit(TW_OPENGL, nullptr);
   TwWindowSize(window_size.x(), window_size.y());
 
@@ -102,16 +102,16 @@ void AppNative::camTranslate(const vec3f& quant) {
 
 
 void AppNative::keyCallBack(GLFWwindow* window,
-                            const int key,    const int scancode,
+                            const int key, const int scancode,
                             const int action, const int mods)
 {
   auto native = (AppNative*)glfwGetWindowUserPointer(window);
-  
-  if (action == GLFW_PRESS) {
+
+  if(action == GLFW_PRESS) {
     native->key_event.setKeyPush(key);
     native->key_event.setKeyPress(key);
   }
-  if (action == GLFW_RELEASE) {
+  if(action == GLFW_RELEASE) {
     native->key_event.setKeyPull(key);
     native->key_event.popKeyPress(key);
   }
@@ -123,11 +123,11 @@ void AppNative::mouseButtonCallBack(GLFWwindow* window,
 {
   auto native = (AppNative*)glfwGetWindowUserPointer(window);
 
-  if (action == GLFW_PRESS) {
+  if(action == GLFW_PRESS) {
     native->mouse_event.setButtonPush(button);
     native->mouse_event.setButtonPress(button);
   }
-  if (action == GLFW_RELEASE) {
+  if(action == GLFW_RELEASE) {
     native->mouse_event.setButtonPull(button);
     native->mouse_event.popButtonPress(button);
   }

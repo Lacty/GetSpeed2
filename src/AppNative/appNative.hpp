@@ -13,6 +13,7 @@
 #include "../Timer/timer.hpp"
 #include "../Utility/utility.hpp"
 #include "../LoadPath/loadPath.hpp"
+#include "../Fps/fps.hpp"
 
 
 class AppNative {
@@ -24,6 +25,8 @@ private:
   Mouse mouse_event;
 
   Camera camera;
+
+  Fps fps;
 
 public:
   AppNative(int width, int height, const char* title);
@@ -75,6 +78,8 @@ public:
   float getCamFovy() const { return camera.getFovy(); }
   float getCamNear() const { return camera.getNear(); }
   float getCamFar() const { return camera.getFar(); }
+
+  double getFps() { return fps.get(); }
 
 private:
   static void keyCallBack(GLFWwindow* window,

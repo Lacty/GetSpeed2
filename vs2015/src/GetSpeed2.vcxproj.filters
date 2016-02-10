@@ -28,6 +28,9 @@
     <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\LoadPath\loadPath.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\Fps\fps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\Scene\Title\title.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -76,6 +79,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\USER\Desktop\GetSpeed2\src\LoadPath\loadPath.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\USER\Desktop\GetSpeed2\src\Fps\fps.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\USER\Desktop\GetSpeed2\src\Scene\Title\title.hpp">
