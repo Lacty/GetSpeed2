@@ -75,6 +75,7 @@ if (APPLE)
     ${CMAKE_SOURCE_DIR}/lib/OSX/libglfw3.a
     ${CMAKE_SOURCE_DIR}/lib/OSX/libfreetype.a
     ${CMAKE_SOURCE_DIR}/lib/OSX/libFTGL.a
+    ${CMAKE_SOURCE_DIR}/lib/OSX/libAntTweakBar.a
   )
 elseif(MSVC)
   set(EXTRA_LIBS

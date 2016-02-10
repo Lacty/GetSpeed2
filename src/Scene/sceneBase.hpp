@@ -10,8 +10,6 @@ protected:
   AppNative* app;
   bool       isFinish;
 
-  TwBar* twBar;
-
 public:
   SceneBase(AppNative* app) :
   app(app),

@@ -12,6 +12,7 @@
 #include "../Font/font.hpp"
 #include "../Timer/timer.hpp"
 #include "../Utility/utility.hpp"
+#include "../LoadPath/loadPath.hpp"
 
 
 class AppNative {

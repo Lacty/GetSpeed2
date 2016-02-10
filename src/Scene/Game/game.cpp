@@ -5,7 +5,7 @@
 
 Game::Game(AppNative* app) :
 SceneBase(app),
-font("assets/rounded-l-mplus-1c-regular.ttf")
+font(loadAssets("rounded-l-mplus-1c-regular.ttf"))
 {
   font.setSize(50);
 }

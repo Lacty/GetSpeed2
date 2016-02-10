@@ -1,7 +1,6 @@
 
 #include "title.hpp"
 #include "../sceneMaker.hpp"
-#include "../../LoadPath/loadPath.hpp"
 
 
 Title::Title(AppNative* app) :
@@ -17,6 +16,10 @@ font(loadAssets("rounded-l-mplus-1c-regular.ttf"))
 
   twBar = TwNewBar("title");
   TwAddVarRW(twBar, "t", TW_TYPE_FLOAT, &t, "min=0 max=1");
+}
+
+Title::~Title() {
+  TwDeleteBar(twBar);
 }
 
 

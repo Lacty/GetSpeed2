@@ -5,7 +5,8 @@
 std::string loadAssets(const char* c) {
 #if _WINDOWS
   std::string path("../../assets/");
-#elif _APPLE
+#else
+  std::string path("../../../assets/");
 #endif
   path += c;
   return path;

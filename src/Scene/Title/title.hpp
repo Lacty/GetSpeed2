@@ -12,9 +12,12 @@ private:
   vec3f v2;
   vec3f end;
   float t;
+  
+  TwBar* twBar;
 
 public:
   Title(AppNative* app);
+  ~Title();
 
   void update();
   void draw();
