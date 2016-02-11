@@ -5,12 +5,12 @@
 
 Title::Title(AppNative* app) :
 SceneBase(app),
-t(0.0),
+font(loadAssets("rounded-l-mplus-1c-regular.ttf")),
 start(-5, 0, 0),
 v1(-2, 3, 0),
 v2(1, -4, 0),
 end(5, 0, 0),
-font(loadAssets("rounded-l-mplus-1c-regular.ttf"))
+t(0.0)
 {
   font.setSize(50);
 
@@ -35,8 +35,7 @@ void Title::update() {
 
 void Title::draw() {
   std::string str("- Title -");
-  font.drawCenter(str, vec2f(app->windowSize().x() * 0.5f,
-                             app->windowSize().y() * 0.5f));
+  font.drawCenter(str, app->windowHalff());
 
   std::string str_fps;
   str_fps = std::to_string(app->getFps());

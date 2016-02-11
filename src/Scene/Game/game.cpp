@@ -18,8 +18,7 @@ void Game::update() {
 
 void Game::draw() {
   std::string str("- Game -");
-  font.drawCenter(str, vec2f(app->windowSize().x() * 0.5f,
-                             app->windowSize().y() * 0.5f));
+  font.drawCenter(str, app->windowHalff());
 }
 
 std::shared_ptr<SceneBase> Game::nextScene(AppNative* app) {

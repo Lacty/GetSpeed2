@@ -43,9 +43,10 @@ public:
 
   void setClearColor(const Color& color);
 
-  const vec2i& windowSize() const;
-  const vec2i& getWindowCenter() const;
-
+  const vec2i& windowSize()  const;
+  const vec2f  windowSizef() const;
+  const vec2i  windowHalf()  const;
+  const vec2f  windowHalff() const;
 
   // Key Events
   bool isPushKey(int key);

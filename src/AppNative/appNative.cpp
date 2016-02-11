@@ -74,8 +74,16 @@ const vec2i& AppNative::windowSize() const {
   return window_size;
 }
 
-const vec2i& AppNative::getWindowCenter() const {
-  return vec2i(window_size.x() * 0.5, window_size.y() * 0.5);
+const vec2f AppNative::windowSizef() const {
+  return vec2f(window_size.x(), window_size.y());
+}
+
+const vec2i AppNative::windowHalf() const {
+  return vec2i(window_size.x() * 0.5f, window_size.y() * 0.5f);
+}
+
+const vec2f AppNative::windowHalff() const {
+  return vec2f(window_size.x() * 0.5f, window_size.y() * 0.5f);
 }
 
 
