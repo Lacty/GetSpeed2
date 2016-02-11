@@ -9,6 +9,7 @@ private:
 
 public:
   Game(AppNative* app);
+  ~Game();
   
   void update();
   void draw();

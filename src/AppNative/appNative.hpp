@@ -14,6 +14,7 @@
 #include "../Utility/utility.hpp"
 #include "../LoadPath/loadPath.hpp"
 #include "../Fps/fps.hpp"
+#include "../Fade/fade.hpp"
 
 
 class AppNative {
@@ -27,6 +28,8 @@ private:
   Camera camera;
 
   Fps fps;
+  
+  Fade fade;
 
 public:
   AppNative(int width, int height, const char* title);
@@ -81,6 +84,9 @@ public:
   float getCamFar() const { return camera.getFar(); }
 
   double getFps() { return fps.get(); }
+  
+  void startFade(Fade::Type type, float speed = 2);
+  bool isFinishFade();
 
 private:
   static void keyCallBack(GLFWwindow* window,

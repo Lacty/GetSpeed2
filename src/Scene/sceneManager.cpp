@@ -10,7 +10,9 @@ app(app) {
 
 void SceneManager::update() {
   scene->update();
-  if (scene->shouldClose()) { scene = scene->nextScene(app); }
+  if (scene->shouldClose() && app->isFinishFade()) {
+    scene = scene->nextScene(app);
+  }
 }
 
 void SceneManager::draw() {

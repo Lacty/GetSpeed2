@@ -32,6 +32,7 @@ file(GLOB SRCS
      Vector/*.cpp
    LoadPath/*.cpp
         Fps/*.cpp
+       Fade/*.cpp
 
   Scene/Title/*.cpp
   Scene/Game/*.cpp
@@ -51,6 +52,7 @@ file(GLOB HEAD
      Vector/*.h     Vector/*.hpp
    LoadPath/*.h   LoadPath/*.hpp
         Fps/*.h        Fps/*.hpp
+       Fade/*.h       Fade/*.hpp
   
   Scene/Title/*.h  Scene/Title/*.hpp
    Scene/Game/*.h   Scene/Game/*.hpp

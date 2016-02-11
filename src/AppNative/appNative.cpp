@@ -4,7 +4,8 @@
 
 
 AppNative::AppNative(int width, int height, const char* title) :
-  window_size(width, height)
+window_size(width, height),
+fade(Fade::Type::In)
 {
   if(!glfwInit()) exit(1);
 
@@ -59,6 +60,12 @@ void AppNative::clearWindowBuff() {
 }
 
 void AppNative::updateEvent() {
+  glMatrixMode(GL_PROJECTION);
+  glLoadIdentity();
+  glMatrixMode(GL_MODELVIEW);
+  glLoadIdentity();
+  fade.draw(this);
+  
   key_event.clear();
   mouse_event.clear();
   glfwSwapBuffers(window);
@@ -98,6 +105,14 @@ bool AppNative::isPressButton(int button) { return mouse_event.isPress(button); 
 const vec2d& AppNative::mousePos() { return mouse_event.getPos(window); }
 void AppNative::setMousePos(const vec2d& pos) { glfwSetCursorPos(window, pos.x(), pos.y()); }
 
+
+void AppNative::startFade(Fade::Type _type, float _speed) {
+  fade = Fade(_type, _speed);
+}
+
+bool AppNative::isFinishFade() {
+  return fade.isFinish();
+}
 
 // Camera
 void AppNative::camRotate(const vec3f& dist) {

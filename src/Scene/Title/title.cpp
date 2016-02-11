@@ -12,20 +12,27 @@ v2(1, -4, 0),
 end(5, 0, 0),
 t(0.0)
 {
+  std::cout << "start title" << std::endl;
+
   font.setSize(50);
 
   twBar = TwNewBar("title");
   TwAddVarRW(twBar, "t", TW_TYPE_FLOAT, &t, "min=0 max=1");
+  
+  app->startFade(Fade::Type::In);
 }
 
 Title::~Title() {
   TwDeleteBar(twBar);
+  
+  std::cout << "end title" << std::endl;
 }
 
 
 void Title::update() {
   if (app->isPushKey(GLFW_KEY_A)) {
     isFinish = true;
+    app->startFade(Fade::Type::Out);
   }
   if (app->isPressKey(GLFW_KEY_T)) {
     if (t >= 1) t = 1;

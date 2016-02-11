@@ -7,12 +7,21 @@ Game::Game(AppNative* app) :
 SceneBase(app),
 font(loadAssets("rounded-l-mplus-1c-regular.ttf"))
 {
+  std::cout << "start Game" << std::endl;
+
   font.setSize(50);
+  app->startFade(Fade::Type::In);
 }
+
+Game::~Game() {
+  std::cout << "end Game" << std::endl;
+}
+
 
 void Game::update() {
   if (app->isPushKey(GLFW_KEY_A)) {
     isFinish = true;
+    app->startFade(Fade::Type::Out);
   }
 }
 
