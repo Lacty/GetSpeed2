@@ -116,7 +116,7 @@ bool AppNative::isFinishFade() {
 }
 
 float AppNative::getWindowScale() {
-  return window_size.norm() / defSize.norm();
+  return float(window_size.x() + window_size.y()) / (defSize.x() + defSize.y());
 }
 
 // Camera
