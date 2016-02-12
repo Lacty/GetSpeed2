@@ -15,9 +15,6 @@ fade(Fade::Type::In)
     exit(1);
   }
 
-  // suppress frame interval
-  glfwSwapInterval(1);
-
   // set pointer to glfw
   glfwSetWindowUserPointer(window, this);
 

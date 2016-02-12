@@ -328,6 +328,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\USER\Desktop\GetSpeed2\src\Vector\vector.hpp" />
     <ClInclude Include="C:\Users\USER\Desktop\GetSpeed2\src\LoadPath\loadPath.hpp" />
     <ClInclude Include="C:\Users\USER\Desktop\GetSpeed2\src\Fps\fps.hpp" />
+    <ClInclude Include="C:\Users\USER\Desktop\GetSpeed2\src\Fade\fade.hpp" />
     <ClInclude Include="C:\Users\USER\Desktop\GetSpeed2\src\Scene\Title\title.hpp" />
     <ClInclude Include="C:\Users\USER\Desktop\GetSpeed2\src\Scene\Game\game.hpp" />
     <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\main.cpp"  />
@@ -340,6 +341,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\Utility\utility.cpp"  />
     <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\LoadPath\loadPath.cpp"  />
     <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\Fps\fps.cpp"  />
+    <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\Fade\fade.cpp"  />
     <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\Scene\Title\title.cpp"  />
     <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\Scene\Game\game.cpp"  />
   </ItemGroup>

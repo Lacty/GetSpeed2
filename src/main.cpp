@@ -9,6 +9,8 @@ int main() {
 
   SceneManager scene(&app);
 
+  glfwSwapInterval(1);
+  
   while(app.isOpen() && !app.isPressKey(GLFW_KEY_ESCAPE)) {
     app.clearWindowBuff();
 
