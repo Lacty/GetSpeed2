@@ -83,8 +83,6 @@ public:
   float getCamFovy() const { return camera.getFovy(); }
   float getCamNear() const { return camera.getNear(); }
   float getCamFar() const { return camera.getFar(); }
-
-  double getFps() { return fps.get(); }
   
   void startFade(Fade::Type type, float speed = 4.0f);
   bool isFinishFade();

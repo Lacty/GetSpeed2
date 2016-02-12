@@ -7,9 +7,12 @@ class Fps {
 private:
   double current;
   double last;
+  int fps;
+  double must;
 
 public:
-  Fps();
+  Fps(const int _fps = 60);
 
-  double get();
+  void setFps(const int _fps);
+  void swapInterval();
 };

@@ -34,6 +34,15 @@
     <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\Fade\fade.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\Airframe\airframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\Mesh\mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\MeshLoader\meshLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\Scene\Title\title.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -88,6 +97,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\USER\Desktop\GetSpeed2\src\Fade\fade.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\USER\Desktop\GetSpeed2\src\Airframe\airframe.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\USER\Desktop\GetSpeed2\src\Mesh\mesh.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\USER\Desktop\GetSpeed2\src\MeshLoader\meshLoader.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\USER\Desktop\GetSpeed2\src\Scene\Title\title.hpp">

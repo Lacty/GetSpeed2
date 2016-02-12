@@ -43,11 +43,6 @@ void Title::draw() {
   std::string str("- Title -");
   font.drawCenter(str, app->windowHalff());
 
-  std::string str_fps;
-  str_fps = std::to_string(app->getFps());
-  font.drawCenter(str_fps, vec2f(app->windowSize().x() * 0.5f,
-                                 app->windowSize().y() * 0.2f));
-
   glPushMatrix();
     glTranslatef(0, 0, -10);
 

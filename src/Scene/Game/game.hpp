@@ -1,11 +1,13 @@
 
 #pragma once
 #include "../sceneBase.hpp"
+#include "../../Airframe/airframe.hpp"
 
 
 class Game : public SceneBase {
 private:
   Font font;
+  Airframe airframe;
 
 public:
   Game(AppNative* app);

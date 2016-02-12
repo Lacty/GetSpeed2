@@ -18,42 +18,48 @@ endif()
 # --- Load Source Files
 #
 file(GLOB SRCS
-            *.cpp
-  AppNative/*.cpp
-     Camera/*.cpp
-      Color/*.cpp
-       Font/*.cpp
-        Key/*.cpp
-      Mouse/*.cpp
-      Scene/*.cpp
-      Timer/*.cpp
-      TwBar/*.cpp
-    Utility/*.cpp
-     Vector/*.cpp
-   LoadPath/*.cpp
-        Fps/*.cpp
-       Fade/*.cpp
+             *.cpp
+   AppNative/*.cpp
+      Camera/*.cpp
+       Color/*.cpp
+        Font/*.cpp
+         Key/*.cpp
+       Mouse/*.cpp
+       Scene/*.cpp
+       Timer/*.cpp
+       TwBar/*.cpp
+     Utility/*.cpp
+      Vector/*.cpp
+    LoadPath/*.cpp
+         Fps/*.cpp
+        Fade/*.cpp
+    Airframe/*.cpp
+        Mesh/*.cpp
+  MeshLoader/*.cpp
 
   Scene/Title/*.cpp
   Scene/Game/*.cpp
 )
 file(GLOB HEAD
-            *.h            *.hpp
-  AppNative/*.h  AppNative/*.hpp
-     Camera/*.h     Camera/*.hpp
-      Color/*.h      Color/*.hpp
-       Font/*.h       Font/*.hpp
-        Key/*.h        Key/*.hpp
-      Mouse/*.h      Mouse/*.hpp
-      Scene/*.h      Scene/*.hpp
-      Timer/*.h      Timer/*.hpp
-      TwBar/*.h      TwBar/*.hpp
-    Utility/*.h    Utility/*.hpp
-     Vector/*.h     Vector/*.hpp
-   LoadPath/*.h   LoadPath/*.hpp
-        Fps/*.h        Fps/*.hpp
-       Fade/*.h       Fade/*.hpp
-  
+             *.h             *.hpp
+   AppNative/*.h   AppNative/*.hpp
+      Camera/*.h      Camera/*.hpp
+       Color/*.h       Color/*.hpp
+        Font/*.h        Font/*.hpp
+         Key/*.h         Key/*.hpp
+       Mouse/*.h       Mouse/*.hpp
+       Scene/*.h       Scene/*.hpp
+       Timer/*.h       Timer/*.hpp
+       TwBar/*.h       TwBar/*.hpp
+     Utility/*.h     Utility/*.hpp
+      Vector/*.h      Vector/*.hpp
+    LoadPath/*.h    LoadPath/*.hpp
+         Fps/*.h         Fps/*.hpp
+        Fade/*.h        Fade/*.hpp
+    Airframe/*.h    Airframe/*.hpp
+        Mesh/*.h        Mesh/*.hpp
+  MeshLoader/*.h  MeshLoader/*.hpp
+
   Scene/Title/*.h  Scene/Title/*.hpp
    Scene/Game/*.h   Scene/Game/*.hpp
 )

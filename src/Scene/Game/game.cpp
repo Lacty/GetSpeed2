@@ -9,6 +9,9 @@ font(loadAssets("rounded-l-mplus-1c-regular.ttf"))
 {
   std::cout << "start Game" << std::endl;
 
+  airframe = Airframe(Airframe::Type::Normal,
+                      Airframe::State::Ready);
+
   app->startFade(Fade::Type::In);
 }
 
@@ -28,6 +31,8 @@ void Game::update() {
 void Game::draw() {
   std::string str("- Game -");
   font.drawCenter(str, app->windowHalff());
+
+  airframe.draw();
 }
 
 std::shared_ptr<SceneBase> Game::nextScene(AppNative* app) {

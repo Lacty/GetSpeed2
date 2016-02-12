@@ -23,7 +23,7 @@ fade(Fade::Type::In)
   glfwSetWindowUserPointer(window, this);
 
   // set fps 60
-  glfwSwapInterval(1);
+  //glfwSwapInterval(1);
 
   // set Viewport
   std::cout << "window size\n" << window_size << std::endl;
@@ -66,6 +66,8 @@ void AppNative::updateEvent() {
   glMatrixMode(GL_MODELVIEW);
   glLoadIdentity();
   fade.draw(this);
+
+  fps.swapInterval();
   
   key_event.clear();
   mouse_event.clear();
