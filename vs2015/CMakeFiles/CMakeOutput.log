@@ -9,7 +9,7 @@ The output was:
 Microsoft (R) Build Engine バージョン 14.0.24728.2
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-2016/02/12 8:22:37 にビルドを開始しました。
+2016/02/13 2:43:21 にビルドを開始しました。
 "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" にある BeforeTargets 属性に一覧表示されているターゲット "BeforeGenerateProjectPriFile" はプロジェクト内に存在しないため、無視されます。
 ノード 1 上のプロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\3.5.0-rc1\CompilerIdC\CompilerIdC.vcxproj" (既定のターゲット)。
 PrepareForBuild:
@@ -36,7 +36,7 @@ FinalizeBuildStatus:
     0 個の警告
     0 エラー
 
-経過時間 00:00:01.03
+経過時間 00:00:00.88
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -55,7 +55,7 @@ The output was:
 Microsoft (R) Build Engine バージョン 14.0.24728.2
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-2016/02/12 8:22:38 にビルドを開始しました。
+2016/02/13 2:43:22 にビルドを開始しました。
 "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" にある BeforeTargets 属性に一覧表示されているターゲット "BeforeGenerateProjectPriFile" はプロジェクト内に存在しないため、無視されます。
 ノード 1 上のプロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\3.5.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (既定のターゲット)。
 PrepareForBuild:
@@ -82,7 +82,7 @@ FinalizeBuildStatus:
     0 個の警告
     0 エラー
 
-経過時間 00:00:00.90
+経過時間 00:00:00.74
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -94,161 +94,161 @@ The CXX compiler identification is MSVC, found in "C:/Users/USER/Desktop/GetSpee
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_5ed4b.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_033dc.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine バージョン 14.0.24728.2
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-2016/02/12 8:22:40 にビルドを開始しました。
+2016/02/13 2:43:23 にビルドを開始しました。
 "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" にある BeforeTargets 属性に一覧表示されているターゲット "BeforeGenerateProjectPriFile" はプロジェクト内に存在しないため、無視されます。
-ノード 1 上のプロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_5ed4b.vcxproj" (既定のターゲット)。
+ノード 1 上のプロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_033dc.vcxproj" (既定のターゲット)。
 PrepareForBuild:
-  ディレクトリ "cmTC_5ed4b.dir\Debug\" を作成しています。
+  ディレクトリ "cmTC_033dc.dir\Debug\" を作成しています。
   ディレクトリ "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\" を作成しています。
-  ディレクトリ "cmTC_5ed4b.dir\Debug\cmTC_5ed4b.tlog\" を作成しています。
+  ディレクトリ "cmTC_033dc.dir\Debug\cmTC_033dc.tlog\" を作成しています。
 InitializeBuildStatus:
-  "AlwaysCreate" が指定されたため "cmTC_5ed4b.dir\Debug\cmTC_5ed4b.tlog\unsuccessfulbuild" を作成しています。
+  "AlwaysCreate" が指定されたため "cmTC_033dc.dir\Debug\cmTC_033dc.tlog\unsuccessfulbuild" を作成しています。
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5ed4b.dir\Debug\\" /Fd"cmTC_5ed4b.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\testCCompiler.c
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_033dc.dir\Debug\\" /Fd"cmTC_033dc.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\testCCompiler.c
   Microsoft(R) C/C++ Optimizing Compiler Version 19.00.23506 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5ed4b.dir\Debug\\" /Fd"cmTC_5ed4b.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\testCCompiler.c
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_033dc.dir\Debug\\" /Fd"cmTC_033dc.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\testCCompiler.c
   
   testCCompiler.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_5ed4b.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_5ed4b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_5ed4b.lib" /MACHINE:X64  /machine:x64 cmTC_5ed4b.dir\Debug\testCCompiler.obj
-  cmTC_5ed4b.vcxproj -> C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_5ed4b.exe
-  cmTC_5ed4b.vcxproj -> C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_5ed4b.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_033dc.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_033dc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_033dc.lib" /MACHINE:X64  /machine:x64 cmTC_033dc.dir\Debug\testCCompiler.obj
+  cmTC_033dc.vcxproj -> C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_033dc.exe
+  cmTC_033dc.vcxproj -> C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_033dc.pdb (Full PDB)
 FinalizeBuildStatus:
-  ファイル "cmTC_5ed4b.dir\Debug\cmTC_5ed4b.tlog\unsuccessfulbuild" を削除しています。
-  "cmTC_5ed4b.dir\Debug\cmTC_5ed4b.tlog\cmTC_5ed4b.lastbuildstate" のタッチ タスクを実行しています。
-プロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_5ed4b.vcxproj" (既定のターゲット) のビルドが完了しました。
+  ファイル "cmTC_033dc.dir\Debug\cmTC_033dc.tlog\unsuccessfulbuild" を削除しています。
+  "cmTC_033dc.dir\Debug\cmTC_033dc.tlog\cmTC_033dc.lastbuildstate" のタッチ タスクを実行しています。
+プロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_033dc.vcxproj" (既定のターゲット) のビルドが完了しました。
 
 ビルドに成功しました。
     0 個の警告
     0 エラー
 
-経過時間 00:00:01.03
+経過時間 00:00:00.81
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_55341.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_21c2b.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine バージョン 14.0.24728.2
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-2016/02/12 8:22:41 にビルドを開始しました。
+2016/02/13 2:43:25 にビルドを開始しました。
 "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" にある BeforeTargets 属性に一覧表示されているターゲット "BeforeGenerateProjectPriFile" はプロジェクト内に存在しないため、無視されます。
-ノード 1 上のプロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_55341.vcxproj" (既定のターゲット)。
+ノード 1 上のプロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_21c2b.vcxproj" (既定のターゲット)。
 PrepareForBuild:
-  ディレクトリ "cmTC_55341.dir\Debug\" を作成しています。
+  ディレクトリ "cmTC_21c2b.dir\Debug\" を作成しています。
   ディレクトリ "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\" を作成しています。
-  ディレクトリ "cmTC_55341.dir\Debug\cmTC_55341.tlog\" を作成しています。
+  ディレクトリ "cmTC_21c2b.dir\Debug\cmTC_21c2b.tlog\" を作成しています。
 InitializeBuildStatus:
-  "AlwaysCreate" が指定されたため "cmTC_55341.dir\Debug\cmTC_55341.tlog\unsuccessfulbuild" を作成しています。
+  "AlwaysCreate" が指定されたため "cmTC_21c2b.dir\Debug\cmTC_21c2b.tlog\unsuccessfulbuild" を作成しています。
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_55341.dir\Debug\\" /Fd"cmTC_55341.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Program Files\Git\usr\share\cmake-3.5\Modules\CMakeCCompilerABI.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_21c2b.dir\Debug\\" /Fd"cmTC_21c2b.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Program Files\Git\usr\share\cmake-3.5\Modules\CMakeCCompilerABI.c"
   Microsoft(R) C/C++ Optimizing Compiler Version 19.00.23506 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_55341.dir\Debug\\" /Fd"cmTC_55341.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Program Files\Git\usr\share\cmake-3.5\Modules\CMakeCCompilerABI.c"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_21c2b.dir\Debug\\" /Fd"cmTC_21c2b.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Program Files\Git\usr\share\cmake-3.5\Modules\CMakeCCompilerABI.c"
   
   CMakeCCompilerABI.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_55341.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_55341.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_55341.lib" /MACHINE:X64  /machine:x64 cmTC_55341.dir\Debug\CMakeCCompilerABI.obj
-  cmTC_55341.vcxproj -> C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_55341.exe
-  cmTC_55341.vcxproj -> C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_55341.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_21c2b.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_21c2b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_21c2b.lib" /MACHINE:X64  /machine:x64 cmTC_21c2b.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_21c2b.vcxproj -> C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_21c2b.exe
+  cmTC_21c2b.vcxproj -> C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_21c2b.pdb (Full PDB)
 FinalizeBuildStatus:
-  ファイル "cmTC_55341.dir\Debug\cmTC_55341.tlog\unsuccessfulbuild" を削除しています。
-  "cmTC_55341.dir\Debug\cmTC_55341.tlog\cmTC_55341.lastbuildstate" のタッチ タスクを実行しています。
-プロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_55341.vcxproj" (既定のターゲット) のビルドが完了しました。
+  ファイル "cmTC_21c2b.dir\Debug\cmTC_21c2b.tlog\unsuccessfulbuild" を削除しています。
+  "cmTC_21c2b.dir\Debug\cmTC_21c2b.tlog\cmTC_21c2b.lastbuildstate" のタッチ タスクを実行しています。
+プロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_21c2b.vcxproj" (既定のターゲット) のビルドが完了しました。
 
 ビルドに成功しました。
     0 個の警告
     0 エラー
 
-経過時間 00:00:01.15
+経過時間 00:00:00.80
 
 
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_c15e4.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_d0bf7.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine バージョン 14.0.24728.2
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-2016/02/12 8:22:43 にビルドを開始しました。
+2016/02/13 2:43:26 にビルドを開始しました。
 "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" にある BeforeTargets 属性に一覧表示されているターゲット "BeforeGenerateProjectPriFile" はプロジェクト内に存在しないため、無視されます。
-ノード 1 上のプロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_c15e4.vcxproj" (既定のターゲット)。
+ノード 1 上のプロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_d0bf7.vcxproj" (既定のターゲット)。
 PrepareForBuild:
-  ディレクトリ "cmTC_c15e4.dir\Debug\" を作成しています。
+  ディレクトリ "cmTC_d0bf7.dir\Debug\" を作成しています。
   ディレクトリ "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\" を作成しています。
-  ディレクトリ "cmTC_c15e4.dir\Debug\cmTC_c15e4.tlog\" を作成しています。
+  ディレクトリ "cmTC_d0bf7.dir\Debug\cmTC_d0bf7.tlog\" を作成しています。
 InitializeBuildStatus:
-  "AlwaysCreate" が指定されたため "cmTC_c15e4.dir\Debug\cmTC_c15e4.tlog\unsuccessfulbuild" を作成しています。
+  "AlwaysCreate" が指定されたため "cmTC_d0bf7.dir\Debug\cmTC_d0bf7.tlog\unsuccessfulbuild" を作成しています。
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c15e4.dir\Debug\\" /Fd"cmTC_c15e4.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d0bf7.dir\Debug\\" /Fd"cmTC_d0bf7.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
   Microsoft(R) C/C++ Optimizing Compiler Version 19.00.23506 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c15e4.dir\Debug\\" /Fd"cmTC_c15e4.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d0bf7.dir\Debug\\" /Fd"cmTC_d0bf7.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
   
   testCXXCompiler.cxx
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_c15e4.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_c15e4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_c15e4.lib" /MACHINE:X64  /machine:x64 cmTC_c15e4.dir\Debug\testCXXCompiler.obj
-  cmTC_c15e4.vcxproj -> C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_c15e4.exe
-  cmTC_c15e4.vcxproj -> C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_c15e4.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_d0bf7.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_d0bf7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_d0bf7.lib" /MACHINE:X64  /machine:x64 cmTC_d0bf7.dir\Debug\testCXXCompiler.obj
+  cmTC_d0bf7.vcxproj -> C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_d0bf7.exe
+  cmTC_d0bf7.vcxproj -> C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_d0bf7.pdb (Full PDB)
 FinalizeBuildStatus:
-  ファイル "cmTC_c15e4.dir\Debug\cmTC_c15e4.tlog\unsuccessfulbuild" を削除しています。
-  "cmTC_c15e4.dir\Debug\cmTC_c15e4.tlog\cmTC_c15e4.lastbuildstate" のタッチ タスクを実行しています。
-プロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_c15e4.vcxproj" (既定のターゲット) のビルドが完了しました。
+  ファイル "cmTC_d0bf7.dir\Debug\cmTC_d0bf7.tlog\unsuccessfulbuild" を削除しています。
+  "cmTC_d0bf7.dir\Debug\cmTC_d0bf7.tlog\cmTC_d0bf7.lastbuildstate" のタッチ タスクを実行しています。
+プロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_d0bf7.vcxproj" (既定のターゲット) のビルドが完了しました。
 
 ビルドに成功しました。
     0 個の警告
     0 エラー
 
-経過時間 00:00:01.08
+経過時間 00:00:00.85
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_4d68c.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_a366c.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine バージョン 14.0.24728.2
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-2016/02/12 8:22:44 にビルドを開始しました。
+2016/02/13 2:43:27 にビルドを開始しました。
 "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" にある BeforeTargets 属性に一覧表示されているターゲット "BeforeGenerateProjectPriFile" はプロジェクト内に存在しないため、無視されます。
-ノード 1 上のプロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_4d68c.vcxproj" (既定のターゲット)。
+ノード 1 上のプロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_a366c.vcxproj" (既定のターゲット)。
 PrepareForBuild:
-  ディレクトリ "cmTC_4d68c.dir\Debug\" を作成しています。
+  ディレクトリ "cmTC_a366c.dir\Debug\" を作成しています。
   ディレクトリ "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\" を作成しています。
-  ディレクトリ "cmTC_4d68c.dir\Debug\cmTC_4d68c.tlog\" を作成しています。
+  ディレクトリ "cmTC_a366c.dir\Debug\cmTC_a366c.tlog\" を作成しています。
 InitializeBuildStatus:
-  "AlwaysCreate" が指定されたため "cmTC_4d68c.dir\Debug\cmTC_4d68c.tlog\unsuccessfulbuild" を作成しています。
+  "AlwaysCreate" が指定されたため "cmTC_a366c.dir\Debug\cmTC_a366c.tlog\unsuccessfulbuild" を作成しています。
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4d68c.dir\Debug\\" /Fd"cmTC_4d68c.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Program Files\Git\usr\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_a366c.dir\Debug\\" /Fd"cmTC_a366c.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Program Files\Git\usr\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"
   Microsoft(R) C/C++ Optimizing Compiler Version 19.00.23506 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4d68c.dir\Debug\\" /Fd"cmTC_4d68c.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Program Files\Git\usr\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_a366c.dir\Debug\\" /Fd"cmTC_a366c.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Program Files\Git\usr\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"
   
   CMakeCXXCompilerABI.cpp
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_4d68c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_4d68c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_4d68c.lib" /MACHINE:X64  /machine:x64 cmTC_4d68c.dir\Debug\CMakeCXXCompilerABI.obj
-  cmTC_4d68c.vcxproj -> C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_4d68c.exe
-  cmTC_4d68c.vcxproj -> C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_4d68c.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_a366c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_a366c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_a366c.lib" /MACHINE:X64  /machine:x64 cmTC_a366c.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_a366c.vcxproj -> C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_a366c.exe
+  cmTC_a366c.vcxproj -> C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_a366c.pdb (Full PDB)
 FinalizeBuildStatus:
-  ファイル "cmTC_4d68c.dir\Debug\cmTC_4d68c.tlog\unsuccessfulbuild" を削除しています。
-  "cmTC_4d68c.dir\Debug\cmTC_4d68c.tlog\cmTC_4d68c.lastbuildstate" のタッチ タスクを実行しています。
-プロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_4d68c.vcxproj" (既定のターゲット) のビルドが完了しました。
+  ファイル "cmTC_a366c.dir\Debug\cmTC_a366c.tlog\unsuccessfulbuild" を削除しています。
+  "cmTC_a366c.dir\Debug\cmTC_a366c.tlog\cmTC_a366c.lastbuildstate" のタッチ タスクを実行しています。
+プロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_a366c.vcxproj" (既定のターゲット) のビルドが完了しました。
 
 ビルドに成功しました。
     0 個の警告
     0 エラー
 
-経過時間 00:00:01.48
+経過時間 00:00:00.87
 
 
 
@@ -256,41 +256,41 @@ FinalizeBuildStatus:
 Detecting CXX [] compiler features compiled with the following output:
 Change Dir: C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_da674.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_73591.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine バージョン 14.0.24728.2
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-2016/02/12 8:22:46 にビルドを開始しました。
+2016/02/13 2:43:28 にビルドを開始しました。
 "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" にある BeforeTargets 属性に一覧表示されているターゲット "BeforeGenerateProjectPriFile" はプロジェクト内に存在しないため、無視されます。
-ノード 1 上のプロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_da674.vcxproj" (既定のターゲット)。
+ノード 1 上のプロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_73591.vcxproj" (既定のターゲット)。
 PrepareForBuild:
-  ディレクトリ "cmTC_da674.dir\Debug\" を作成しています。
+  ディレクトリ "cmTC_73591.dir\Debug\" を作成しています。
   ディレクトリ "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\" を作成しています。
-  ディレクトリ "cmTC_da674.dir\Debug\cmTC_da674.tlog\" を作成しています。
+  ディレクトリ "cmTC_73591.dir\Debug\cmTC_73591.tlog\" を作成しています。
 InitializeBuildStatus:
-  "AlwaysCreate" が指定されたため "cmTC_da674.dir\Debug\cmTC_da674.tlog\unsuccessfulbuild" を作成しています。
+  "AlwaysCreate" が指定されたため "cmTC_73591.dir\Debug\cmTC_73591.tlog\unsuccessfulbuild" を作成しています。
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_da674.dir\Debug\\" /Fd"cmTC_da674.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\feature_tests.cxx
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_73591.dir\Debug\\" /Fd"cmTC_73591.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\feature_tests.cxx
   Microsoft(R) C/C++ Optimizing Compiler Version 19.00.23506 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_da674.dir\Debug\\" /Fd"cmTC_da674.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\feature_tests.cxx
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_73591.dir\Debug\\" /Fd"cmTC_73591.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\feature_tests.cxx
   
   feature_tests.cxx
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_da674.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_da674.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_da674.lib" /MACHINE:X64  /machine:x64 cmTC_da674.dir\Debug\feature_tests.obj
-  cmTC_da674.vcxproj -> C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_da674.exe
-  cmTC_da674.vcxproj -> C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_da674.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_73591.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_73591.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_73591.lib" /MACHINE:X64  /machine:x64 cmTC_73591.dir\Debug\feature_tests.obj
+  cmTC_73591.vcxproj -> C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\Debug\cmTC_73591.exe
+  cmTC_73591.vcxproj -> C:/Users/USER/Desktop/GetSpeed2/vs2015/CMakeFiles/CMakeTmp/Debug/cmTC_73591.pdb (Full PDB)
 FinalizeBuildStatus:
-  ファイル "cmTC_da674.dir\Debug\cmTC_da674.tlog\unsuccessfulbuild" を削除しています。
-  "cmTC_da674.dir\Debug\cmTC_da674.tlog\cmTC_da674.lastbuildstate" のタッチ タスクを実行しています。
-プロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_da674.vcxproj" (既定のターゲット) のビルドが完了しました。
+  ファイル "cmTC_73591.dir\Debug\cmTC_73591.tlog\unsuccessfulbuild" を削除しています。
+  "cmTC_73591.dir\Debug\cmTC_73591.tlog\cmTC_73591.lastbuildstate" のタッチ タスクを実行しています。
+プロジェクト "C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\CMakeTmp\cmTC_73591.vcxproj" (既定のターゲット) のビルドが完了しました。
 
 ビルドに成功しました。
     0 個の警告
     0 エラー
 
-経過時間 00:00:01.18
+経過時間 00:00:00.85
 
 
     Feature record: CXX_FEATURE:1cxx_alias_templates

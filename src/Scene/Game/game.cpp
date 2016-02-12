@@ -9,7 +9,6 @@ font(loadAssets("rounded-l-mplus-1c-regular.ttf"))
 {
   std::cout << "start Game" << std::endl;
 
-  font.setSize(50);
   app->startFade(Fade::Type::In);
 }
 
@@ -23,6 +22,7 @@ void Game::update() {
     isFinish = true;
     app->startFade(Fade::Type::Out);
   }
+  font.setSize(50.0f * app->getWindowScale());
 }
 
 void Game::draw() {

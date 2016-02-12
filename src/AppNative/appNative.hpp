@@ -21,6 +21,7 @@ class AppNative {
 private:
   GLFWwindow* window;
   vec2i window_size;
+  vec2i defSize;
   
   Key   key_event;
   Mouse mouse_event;
@@ -85,8 +86,10 @@ public:
 
   double getFps() { return fps.get(); }
   
-  void startFade(Fade::Type type, float speed = 2);
+  void startFade(Fade::Type type, float speed = 4.0f);
   bool isFinishFade();
+
+  float getWindowScale();
 
 private:
   static void keyCallBack(GLFWwindow* window,

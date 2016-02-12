@@ -19,7 +19,7 @@ private:
 public:
   // [speed] is fade speed
   // input 0 ~ 100
-  Fade(Type _type, float _speed = 14);
+  Fade(Type _type, float _speed = 4.0f);
   
   void draw(AppNative* app);
   

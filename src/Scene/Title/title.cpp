@@ -14,8 +14,6 @@ t(0.0)
 {
   std::cout << "start title" << std::endl;
 
-  font.setSize(50);
-
   twBar = TwNewBar("title");
   TwAddVarRW(twBar, "t", TW_TYPE_FLOAT, &t, "min=0 max=1");
   
@@ -38,6 +36,7 @@ void Title::update() {
     if (t >= 1) t = 1;
     t += 0.01f;
   }
+  font.setSize(50.0f * app->getWindowScale());
 }
 
 void Title::draw() {
@@ -59,6 +58,7 @@ void Title::draw() {
       -0.5f, -0.433f, 0.0f,
       0.5f, -0.433f, 0.0f
     };
+    glColor3f(1.0f, 1.0f, 1.0f);
     glVertexPointer(3, GL_FLOAT, 0, vtx);
     glEnableClientState(GL_VERTEX_ARRAY);
     glDrawArrays(GL_TRIANGLES, 0, 3);

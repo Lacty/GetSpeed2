@@ -5,6 +5,7 @@
 
 AppNative::AppNative(int width, int height, const char* title) :
 window_size(width, height),
+defSize(width, height),
 fade(Fade::Type::In)
 {
   if(!glfwInit()) exit(1);
@@ -15,11 +16,14 @@ fade(Fade::Type::In)
     exit(1);
   }
 
+  // make window
+  glfwMakeContextCurrent(window);
+
   // set pointer to glfw
   glfwSetWindowUserPointer(window, this);
 
-  // make window
-  glfwMakeContextCurrent(window);
+  // set fps 60
+  glfwSwapInterval(1);
 
   // set Viewport
   std::cout << "window size\n" << window_size << std::endl;
@@ -109,6 +113,10 @@ void AppNative::startFade(Fade::Type _type, float _speed) {
 
 bool AppNative::isFinishFade() {
   return fade.isFinish();
+}
+
+float AppNative::getWindowScale() {
+  return window_size.norm() / defSize.norm();
 }
 
 // Camera
