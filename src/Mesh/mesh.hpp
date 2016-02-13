@@ -11,6 +11,7 @@ public:
   std::vector<float> vertex;
   std::vector<float> color;
 
+  const int VertexNum() const;
   float* pVertex(const unsigned int _index = 0);
   float* pColor (const unsigned int _index = 0);
   vec3f& Vertex (const unsigned int _index = 0);

@@ -9,6 +9,9 @@ private:
   Font font;
   Airframe airframe;
 
+  float angle;
+  TwBar* twBar;
+
 public:
   Game(AppNative* app);
   ~Game();

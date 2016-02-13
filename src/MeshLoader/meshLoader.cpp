@@ -1,6 +1,8 @@
 
 #include "meshLoader.hpp"
 #include "../Mesh/mesh.hpp"
+#include <map>
+#include <vector>
 
 
 MeshLoader::MeshLoader(const std::string& _path,
@@ -29,16 +31,33 @@ Mesh MeshLoader::get() {
 
   auto obj = val.get<picojson::object>();
 
-  auto sclae = obj["Scale"].get<double>();
+  auto scale  = obj["Scale"].get<double>();
   auto vertex = obj["Vertex"].get<picojson::array>();
   auto color  = obj["Color"].get<picojson::array>();
+  auto index  = obj["Index"].get<picojson::array>();
 
   Mesh mesh;
-  for (const auto& it : vertex) {
-    mesh.vertex.push_back(it.get<double>() * sclae);
+
+  std::map<int, std::vector<double>> vertex_list;
+  int k = 1;
+  for(auto it : vertex) {
+    for(auto d : it.get<picojson::array>()) {
+      vertex_list[k].push_back(d.get<double>());
+    }
+    k++;
   }
-  for (const auto& it : color) {
-    mesh.color.push_back(it.get<double>());
+  for(auto ind : index) {
+    for(auto i : ind.get<picojson::array>()) {
+      for(auto it : vertex_list[i.get<double>()]) {
+        mesh.vertex.push_back(it * scale);
+      }
+    }
+  }
+
+  for(int i = 0; i < mesh.VertexNum(); i++) {
+    for(auto it : color) {
+      mesh.color.push_back(it.get<double>());
+    }
   }
 
   return mesh;

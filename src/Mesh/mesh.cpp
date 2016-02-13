@@ -3,6 +3,11 @@
 #include <cassert>
 
 
+const int Mesh::VertexNum() const {
+  assert(!(vertex.size() % 3));
+  return (int)vertex.size() / 3;
+}
+
 float* Mesh::pVertex(const unsigned int _index) {
   // 配列外にアクセスしたらエラー
   assert(_index < (int)vertex.size());
