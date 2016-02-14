@@ -31,23 +31,18 @@ void Game::update() {
     isFinish = true;
     app->startFade(Fade::Type::Out);
   }
+  if(app->isPressKey(GLFW_KEY_W)) {
+    airframe.accel();
+  }
   font.setSize(50.0f * app->getWindowScale());
 }
 
 void Game::draw() {
   std::string str("- Game -");
-  //font.drawCenter(str, app->windowHalff());
+  font.drawCenter(str, app->windowHalff());
   
-  // Stage
-  glPushMatrix();
   stage.draw();
-  glPopMatrix();
-
-  // Airframe
-  glPushMatrix();
-  glRotatef(angle, 0, 1, 0);
   airframe.draw();
-  glPopMatrix();
 }
 
 std::shared_ptr<SceneBase> Game::nextScene(AppNative* app) {

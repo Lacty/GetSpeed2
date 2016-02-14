@@ -12,7 +12,7 @@ public:
 private:
   Type type;
   State state;
-
+  
   Mesh<std::vector<float>> mesh;
 
   vec3f pos;
@@ -24,11 +24,11 @@ private:
   float speedRate;
 
 public:
-  Airframe() = default;
+  Airframe();
   Airframe(Type _type, State _state);
 
   void accel();
-  void handle(const float _angle);
+  void handle(const float _rate);
 
   void update();
   void draw();
