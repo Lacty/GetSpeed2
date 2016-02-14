@@ -1,6 +1,5 @@
 
 #include "meshLoader.hpp"
-#include "../Mesh/mesh.hpp"
 #include <map>
 #include <vector>
 
@@ -13,7 +12,7 @@ objName(_objName) {
 }
 
 
-Mesh MeshLoader::get() {
+Mesh<std::vector<float>> MeshLoader::get() {
   std::stringstream data;
   std::ifstream     file;
 
@@ -36,7 +35,7 @@ Mesh MeshLoader::get() {
   auto color  = obj["Color"].get<picojson::array>();
   auto index  = obj["Index"].get<picojson::array>();
 
-  Mesh mesh;
+  Mesh<std::vector<float>> mesh;
 
   std::map<int, std::vector<double>> vertex_list;
   int k = 1;

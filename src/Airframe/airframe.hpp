@@ -13,7 +13,7 @@ private:
   Type type;
   State state;
 
-  Mesh mesh;
+  Mesh<std::vector<float>> mesh;
 
   vec3f pos;
   vec3f center;

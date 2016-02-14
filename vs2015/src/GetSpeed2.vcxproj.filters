@@ -37,10 +37,10 @@
     <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\Airframe\airframe.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\Mesh\mesh.cpp">
+    <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\MeshLoader\meshLoader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\MeshLoader\meshLoader.cpp">
+    <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\Stage\stage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\USER\Desktop\GetSpeed2\src\Scene\Title\title.cpp">
@@ -106,6 +106,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\USER\Desktop\GetSpeed2\src\MeshLoader\meshLoader.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\USER\Desktop\GetSpeed2\src\Stage\stage.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\USER\Desktop\GetSpeed2\src\Scene\Title\title.hpp">

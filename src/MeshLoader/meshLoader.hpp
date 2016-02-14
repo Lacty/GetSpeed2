@@ -5,9 +5,8 @@
 #include <fstream>
 #include <vector>
 #include <picojson.h>
+#include "../Mesh/mesh.hpp"
 
-
-class Mesh;
 
 class MeshLoader {
 private:
@@ -18,5 +17,5 @@ public:
   MeshLoader(const std::string& _path,
              const std::string& _objName);
 
-  Mesh get();
+  Mesh<std::vector<float>> get();
 };
