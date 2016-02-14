@@ -37,7 +37,13 @@ void Game::update() {
 void Game::draw() {
   std::string str("- Game -");
   //font.drawCenter(str, app->windowHalff());
+  
+  // Stage
+  glPushMatrix();
+  stage.draw();
+  glPopMatrix();
 
+  // Airframe
   glPushMatrix();
   glRotatef(angle, 0, 1, 0);
   airframe.draw();

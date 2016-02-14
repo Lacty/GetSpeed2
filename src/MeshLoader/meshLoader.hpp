@@ -17,5 +17,5 @@ public:
   MeshLoader(const std::string& _path,
              const std::string& _objName);
 
-  Mesh<std::vector<float>> get();
+  Mesh get();
 };

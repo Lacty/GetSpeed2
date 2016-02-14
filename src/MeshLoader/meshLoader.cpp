@@ -12,7 +12,7 @@ objName(_objName) {
 }
 
 
-Mesh<std::vector<float>> MeshLoader::get() {
+Mesh MeshLoader::get() {
   std::stringstream data;
   std::ifstream     file;
 
@@ -35,7 +35,7 @@ Mesh<std::vector<float>> MeshLoader::get() {
   auto color  = obj["Color"].get<picojson::array>();
   auto index  = obj["Index"].get<picojson::array>();
 
-  Mesh<std::vector<float>> mesh;
+  Mesh mesh;
 
   std::map<int, std::vector<double>> vertex_list;
   int k = 1;

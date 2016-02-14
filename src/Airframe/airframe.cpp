@@ -40,7 +40,6 @@ void Airframe::draw() {
   // draw Wire
   glColor4i(0, 0, 0, 1);
   for(int i = 0; i < mesh.vertex.size(); i+=9) {
-    std::cout << i << std::endl;
     glVertexPointer(3, GL_FLOAT, 0, mesh.pVertex(i));
     glEnableClientState(GL_VERTEX_ARRAY);
     glDrawArrays(GL_LINE_LOOP, 0, 3);
