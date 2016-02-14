@@ -28,8 +28,18 @@ public:
   Airframe(Type _type, State _state);
 
   void accel();
-  void handle(float _angle);
+  void handle(const float _angle);
 
   void update();
   void draw();
+
+  const vec3f& getPos() const;
+  const vec3f& getCenter() const;
+  const vec3f& getSide() const;
+  const vec3f& getForward() const;
+
+  void setPos(const vec3f& _pos);
+  void setCenter(const vec3f& _center);
+  void setSide(const vec3f& _side);
+  void setForward(const vec3f& _forward);
 };
