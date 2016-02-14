@@ -12,7 +12,7 @@ state(_state)
 {
   std::array<std::string, 1> typeToText{ "Normal" };
   MeshLoader loader(loadAssets("airframe.json"), typeToText[(int)type]);
-  mesh = loader.get();
+  mesh = loader.get<std::vector<float>>();
 }
 
 

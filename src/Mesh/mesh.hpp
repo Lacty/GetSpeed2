@@ -1,15 +1,17 @@
 
 #pragma once
 #include <vector>
+#include <deque>
 #include "../Vector/vector.hpp"
 #include "../Color/color.hpp"
 
 
+template<typename T>
 class Mesh {
 public:
   Mesh() = default;
-  std::vector<float> vertex;
-  std::vector<float> color;
+  T vertex;
+  T color;
 
   const int VertexNum() const {
     assert(!(vertex.size() % 3));

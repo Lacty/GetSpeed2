@@ -6,7 +6,7 @@
 
 class Stage {
 private:
-  Mesh mesh;
+  Mesh<std::deque<float>> mesh;
 
 public:
   Stage();
