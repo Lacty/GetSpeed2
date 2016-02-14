@@ -27,12 +27,14 @@ Game::~Game() {
 
 
 void Game::update() {
-  if (app->isPushKey(GLFW_KEY_A)) {
-    isFinish = true;
-    app->startFade(Fade::Type::Out);
-  }
   if(app->isPressKey(GLFW_KEY_W)) {
     airframe.accel();
+  }
+  if(app->isPressKey(GLFW_KEY_A)) {
+    airframe.handle(Airframe::Left);
+  }
+  if(app->isPressKey(GLFW_KEY_D)) {
+    airframe.handle(Airframe::Right);
   }
   font.setSize(50.0f * app->getWindowScale());
 }

@@ -8,6 +8,7 @@ class Airframe {
 public:
   enum class Type { Normal };
   enum class State { Ready, Active, Dead };
+  enum { Left = -1, Right = 1 };
 
 private:
   Type type;
