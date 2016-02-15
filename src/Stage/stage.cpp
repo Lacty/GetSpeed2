@@ -15,11 +15,10 @@ Stage::Stage() {
 void Stage::update() {}
 
 void Stage::draw() {
-  // Deque‚Íƒ|ƒCƒ“ƒ^‚ª‚Â‚È‚ª‚Á‚Ä‚È‚¢‚Ì‚Å
   // gl‚É“n‚¹‚é‚æ‚¤‚Évector‚ÉˆêŽž•Û‘¶‚·‚é
-  std::vector<GLfloat> vtx(mesh.vertex.size());
+  vtx.resize(mesh.vertex.size());
   vtx.assign(mesh.vertex.begin(), mesh.vertex.end());
-  std::vector<GLfloat> col(mesh.color.size());
+  col.resize(mesh.color.size());
   col.assign(mesh.color.begin(), mesh.color.end());
 
   // Mesh
