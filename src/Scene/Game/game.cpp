@@ -36,11 +36,13 @@ void Game::update() {
   if(app->isPressKey(GLFW_KEY_D)) {
     airframe.handle(Airframe::Right);
   }
-  font.setSize(50.0f * app->getWindowScale());
+  airframe.update();
+  stage.update();
 }
 
 void Game::draw() {
   std::string str("- Game -");
+  font.setSize(50.0f * app->getWindowScale());
   font.drawCenter(str, app->windowHalff());
   
   stage.draw();

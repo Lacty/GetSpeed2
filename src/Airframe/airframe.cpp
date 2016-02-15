@@ -14,7 +14,6 @@ speedRate(0.2)
 {
   forward = center - pos;
   side = forward.cross(up);
-  std::cout << side << std::endl;
 }
 
 Airframe::Airframe(Type _type, State _state) :

@@ -12,15 +12,15 @@ Stage::Stage() {
 }
 
 
-void Stage::update() {}
-
-void Stage::draw() {
+void Stage::update() {
   // gl‚É“n‚¹‚é‚æ‚¤‚Évector‚ÉˆêŽž•Û‘¶‚·‚é
   vtx.resize(mesh.vertex.size());
   vtx.assign(mesh.vertex.begin(), mesh.vertex.end());
   col.resize(mesh.color.size());
   col.assign(mesh.color.begin(), mesh.color.end());
+}
 
+void Stage::draw() {
   // Mesh
   glVertexPointer(3, GL_FLOAT, 0, &vtx[0]);
   glColorPointer(4, GL_FLOAT, 0, &col[0]);
@@ -41,4 +41,13 @@ void Stage::draw() {
   glDrawArrays(GL_LINE_STRIP, 0, mesh.VertexNum());
   glDisableClientState(GL_COLOR_ARRAY);
   glDisableClientState(GL_VERTEX_ARRAY);
+}
+
+
+const std::vector<float>& Stage::getVtx() const {
+  return vtx;
+}
+
+const std::vector<float>& Stage::getCol() const {
+  return col;
 }

@@ -15,4 +15,7 @@ public:
 
   void update();
   void draw();
+
+  const std::vector<float>& getVtx() const;
+  const std::vector<float>& getCol() const;
 };
