@@ -12,7 +12,7 @@ Airframe::Airframe() :
 pos(0, 0, 0),
 center(0, 0, -1),
 up(0, 1, 0),
-speedRate(0.2)
+speedRate(0.01)
 {
   forward = center - pos;
   side = forward.cross(up);
@@ -30,10 +30,22 @@ Airframe()
 
 
 void Airframe::evCenter(const std::vector<float>& _vtx) {
-  int index = 0;
-  near = nearPosOnLine(pos,
-                       arrayToVec3f(&_vtx[index]),
-                       arrayToVec3f(&_vtx[index + 3]));
+  int index = 12;
+  nearOnLine = nearPosOnLine(pos,
+                             arrayToVec3f(&_vtx[index]),
+                             arrayToVec3f(&_vtx[index + 3]));
+  float percentAN = vec3f(arrayToVec3f(&_vtx[index + 3]) - arrayToVec3f(&_vtx[index])).norm() / vec3f(nearOnLine - arrayToVec3f(&_vtx[index])).norm();
+  std::cout << percentAN << std::endl;
+
+  vec3f distCD = arrayToVec3f(&_vtx[index + 9]) - arrayToVec3f(&_vtx[index + 6]);
+  vec3f distCN = distCD / percentAN;
+  nextOnLine1 = arrayToVec3f(&_vtx[index + 6]) + distCN;
+
+  std::cout << "index + 6 ";
+  V3_LOG(arrayToVec3f(&_vtx[index + 6]));
+
+  std::cout << "nextOnLine1 ";
+  V3_LOG(nextOnLine1);
 }
 
 void Airframe::evForward() {
@@ -44,7 +56,10 @@ void Airframe::evForward() {
 
 void Airframe::drawUI() {
   // 機体とステージのLineの一番近い点を描画
-  drawRect(near, vec2f(0.1f, 0.1f), Color::red());
+  drawRect(nearOnLine, vec2f(0.1f, 0.1f), Color::red());
+
+  // 次のLineの点（日本語にできない
+  drawRect(nextOnLine1, vec2f(0.1f, 0.1f), Color::red());
 }
 
 void Airframe::accel() {

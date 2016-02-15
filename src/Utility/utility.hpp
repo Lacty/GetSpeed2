@@ -30,3 +30,6 @@ template<typename T>
 inline void D_LOG(const T& src) {
   std::cout << src << std::endl;
 }
+
+void V2_LOG(const vec2f& src);
+void V3_LOG(const vec3f& src);

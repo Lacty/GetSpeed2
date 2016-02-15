@@ -4,10 +4,10 @@
 
 void drawRect(const vec3f& pos, const vec2f& size, const Color& color) {
   std::vector<GLfloat> vtx{
-    pos.x() - size.x() * 0.5f, pos.y() + size.y() * 0.5f, 0,
-    pos.x() - size.x() * 0.5f, pos.y() - size.y() * 0.5f, 0,
-    pos.x() + size.x() * 0.5f, pos.y() - size.y() * 0.5f, 0,
-    pos.x() + size.x() * 0.5f, pos.y() + size.y() * 0.5f, 0
+    pos.x() - size.x() * 0.5f, pos.y() + size.y() * 0.5f, pos.z(),
+    pos.x() - size.x() * 0.5f, pos.y() - size.y() * 0.5f, pos.z(),
+    pos.x() + size.x() * 0.5f, pos.y() - size.y() * 0.5f, pos.z(),
+    pos.x() + size.x() * 0.5f, pos.y() + size.y() * 0.5f, pos.z()
   };
 
   glVertexPointer(3, GL_FLOAT, 0, &vtx[0]);

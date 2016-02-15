@@ -90,3 +90,11 @@ vec3f nearPosOnLine(const vec3f& _p,
 vec3f arrayToVec3f(const float* _v) {
   return vec3f(*_v, *(_v + 1), *(_v + 2));
 }
+
+void V2_LOG(const vec2f& src) {
+  std::cout << "[" << src.x() << "," << src.y() << "]" << std::endl;
+}
+
+void V3_LOG(const vec3f& src) {
+  std::cout << "[" << src.x() << "," << src.y() << "," << src.z() << "]" << std::endl;
+}

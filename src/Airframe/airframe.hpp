@@ -29,7 +29,8 @@ private:
   void evForward();
 
   // UI—p
-  vec3f near;
+  vec3f nearOnLine;
+  vec3f nextOnLine1;
 
   void drawUI();
 
