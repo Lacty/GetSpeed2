@@ -77,7 +77,8 @@ void Airframe::drawUI() {
 }
 
 void Airframe::accel() {
-
+  // FIXME
+  pos = CRSpline::Eq(speedRate, nearOnLine[0], nearOnLine[1], nearOnLine[2], nearOnLine[3]);
 }
 
 void Airframe::handle(const float _rate) {
