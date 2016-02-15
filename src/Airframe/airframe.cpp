@@ -12,7 +12,8 @@ Airframe::Airframe() :
 pos(0, 0, 0),
 center(0, 0, -1),
 up(0, 1, 0),
-speedRate(0.01)
+speedRate(0.01),
+controlPointNum(10)
 {
   forward = center - pos;
   side = forward.cross(up);
@@ -29,17 +30,28 @@ Airframe()
 }
 
 
-void Airframe::evCenter(const std::vector<float>& _vtx) {
+void Airframe::evControlPoint(const std::vector<float>& _vtx) {
+  // TODO: 機体に一番近いポリゴンの頂点を求める
   int index = 12;
-  nearOnLine = nearPosOnLine(pos,
-                             arrayToVec3f(&_vtx[index]),
-                             arrayToVec3f(&_vtx[index + 3]));
-  float percentAN = vec3f(arrayToVec3f(&_vtx[index + 3]) - arrayToVec3f(&_vtx[index])).norm() / vec3f(nearOnLine - arrayToVec3f(&_vtx[index])).norm();
-  std::cout << percentAN << std::endl;
 
-  vec3f distCD = arrayToVec3f(&_vtx[index + 9]) - arrayToVec3f(&_vtx[index + 6]);
-  vec3f distCN = distCD / percentAN;
-  nextOnLine1 = arrayToVec3f(&_vtx[index + 6]) + distCN;
+  // 配列のメモリ再確保(controlPoint分)
+  nearOnLine.clear();
+  nearOnLine.resize(controlPointNum);
+
+  // 機体に一番近い線へ垂線を伸ばした時の交点を求める
+  nearOnLine[0] = nearPosOnLine(pos, arrayToVec3f(&_vtx[index]), arrayToVec3f(&_vtx[index + 3]));
+  float percentAN = vec3f(arrayToVec3f(&_vtx[index + 3]) - arrayToVec3f(&_vtx[index])).norm() / vec3f(nearOnLine[0] - arrayToVec3f(&_vtx[index])).norm();
+  
+  // 制御点を求める(頂点につき3なので次の偶数の頂点は6の倍数で求める
+  for(int i = 1; i < controlPointNum; i++) {
+    nearOnLine[i] = evNextOnLine(index + 6 * i, percentAN, _vtx);
+  }
+
+  // center
+  center = nearOnLine[1];
+
+  // side
+  side = vec3f(arrayToVec3f(&_vtx[index]) - arrayToVec3f(&_vtx[index + 3])).normalized();
 }
 
 void Airframe::evForward() {
@@ -47,25 +59,33 @@ void Airframe::evForward() {
   forward.normalize();
 }
 
+vec3f Airframe::evNextOnLine(const int _index,
+                             const float _percent,
+                             const std::vector<float>& _vtx)
+{
+  vec3f distLine = arrayToVec3f(&_vtx[_index + 3]) - arrayToVec3f(&_vtx[_index]);
+  vec3f distNear = distLine / _percent;
+  return arrayToVec3f(&_vtx[_index]) + distNear;
+}
+
 
 void Airframe::drawUI() {
   // 機体とステージのLineの一番近い点を描画
-  drawRect(nearOnLine, vec2f(0.1f, 0.1f), Color::red());
-
-  // 次のLineの点（日本語にできない
-  drawRect(nextOnLine1, vec2f(0.1f, 0.1f), Color::red());
+  for(const auto& it : nearOnLine) {
+    drawRect(it, vec2f(0.1f, 0.1f), Color::red());
+  }
 }
 
 void Airframe::accel() {
-  pos += forward * speedRate;
+
 }
 
 void Airframe::handle(const float _rate) {
   pos += side * speedRate * _rate;
 }
 
-void Airframe::update(const std::vector<float>& _stage) {
-  evCenter(_stage);
+void Airframe::update(const std::vector<float>& _vtx) {
+  evControlPoint(_vtx);
   evForward();
 }
 

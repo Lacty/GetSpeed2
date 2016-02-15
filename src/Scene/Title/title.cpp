@@ -46,7 +46,8 @@ void Title::draw() {
   glPushMatrix();
     glTranslatef(0, 0, -10);
 
-    vec3f p = getPointBezier(t, start, v1, v2, end);
+    vec3f p = CRSpline::Eq(t, start, v1, v2, end);
+
     glTranslatef(p.x() * 0.4f, p.y() * 0.4f, p.z() * 0.4f);
     GLfloat vtx[] = {
       0.0f, 0.433f, 0.0f,

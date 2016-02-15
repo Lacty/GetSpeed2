@@ -38,6 +38,7 @@ file(GLOB SRCS
   MeshLoader/*.cpp
        Stage/*.cpp
      Graphic/*.cpp
+  CatmullRom/*.cpp
 
   Scene/Title/*.cpp
   Scene/Game/*.cpp
@@ -63,6 +64,7 @@ file(GLOB HEAD
   MeshLoader/*.h  MeshLoader/*.hpp
        Stage/*.h       Stage/*.hpp
      Graphic/*.h     Graphic/*.hpp
+  CatmullRom/*.h  CatmullRom/*.hpp
 
   Scene/Title/*.h  Scene/Title/*.hpp
    Scene/Game/*.h   Scene/Game/*.hpp

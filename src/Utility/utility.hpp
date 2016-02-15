@@ -4,6 +4,7 @@
 #include <string>
 #include <iostream>
 #include "../Vector/vector.hpp"
+#include "../CatmullRom/catmullRom.hpp"
 
 
 float toRadians(float deg);

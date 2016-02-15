@@ -24,15 +24,18 @@ private:
 
   float speedRate;
 
-  // evaluateF‹‚ß‚é
-  void evCenter(const std::vector<float>& _vtx);
-  void evForward();
+  // this param should upper "4"
+  int controlPointNum;
 
-  // UI—p
-  vec3f nearOnLine;
-  vec3f nextOnLine1;
-  vec3f nextOnLine2;
-  vec3f nextOnLine3;
+  // evaluateF‹‚ß‚é
+  // center nearOnLine nextOnLine‚ğ“¯‚É‹‚ß‚é
+  void evControlPoint(const std::vector<float>& _vtx);
+  void evForward();
+  vec3f evNextOnLine(const int _index,
+                     const float _percent,
+                     const std::vector<float>& _vtx);
+
+  std::vector<vec3f> nearOnLine;
 
   void drawUI();
 
@@ -43,7 +46,7 @@ public:
   void accel();
   void handle(const float _rate);
 
-  void update(const std::vector<float>& _stage);
+  void update(const std::vector<float>& _vtx);
   void draw();
 
   const vec3f& getPos() const;
