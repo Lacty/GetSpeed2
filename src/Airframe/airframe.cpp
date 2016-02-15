@@ -27,8 +27,12 @@ Airframe()
 }
 
 
-void Airframe::accel() {
+void Airframe::evaluateForward() {
   pos += forward * speedRate;
+}
+
+void Airframe::accel() {
+  evaluateForward();
 }
 
 void Airframe::handle(const float _rate) {

@@ -27,15 +27,10 @@ Game::~Game() {
 
 
 void Game::update() {
-  if(app->isPressKey(GLFW_KEY_W)) {
-    airframe.accel();
-  }
-  if(app->isPressKey(GLFW_KEY_A)) {
-    airframe.handle(Airframe::Left);
-  }
-  if(app->isPressKey(GLFW_KEY_D)) {
-    airframe.handle(Airframe::Right);
-  }
+  if(app->isPressKey(GLFW_KEY_W)) { airframe.accel(); }
+  if(app->isPressKey(GLFW_KEY_A)) { airframe.handle(Airframe::Left); }
+  if(app->isPressKey(GLFW_KEY_D)) { airframe.handle(Airframe::Right); }
+  
   airframe.update();
   stage.update();
 }

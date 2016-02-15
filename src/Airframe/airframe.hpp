@@ -24,6 +24,8 @@ private:
 
   float speedRate;
 
+  void evaluateForward();
+
 public:
   Airframe();
   Airframe(Type _type, State _state);
