@@ -3,6 +3,7 @@
 #include "../MeshLoader/meshLoader.hpp"
 #include "../LoadPath/loadPath.hpp"
 #include "../Utility/utility.hpp"
+#include "../Graphic/graphic.hpp"
 #include <array>
 #include <GLFW/glfw3.h>
 
@@ -30,15 +31,20 @@ Airframe()
 
 void Airframe::evCenter(const std::vector<float>& _vtx) {
   int index = 0;
-  vec3f near = nearPosOnLine(pos,
-                             arrayToVec3f(&_vtx[index]),
-                             arrayToVec3f(&_vtx[index + 3]));
-  std::cout << near << std::endl;
+  near = nearPosOnLine(pos,
+                       arrayToVec3f(&_vtx[index]),
+                       arrayToVec3f(&_vtx[index + 3]));
 }
 
 void Airframe::evForward() {
   forward = center - pos;
   forward.normalize();
+}
+
+
+void Airframe::drawUI() {
+  // 機体とステージのLineの一番近い点を描画
+  drawRect(near, vec2f(0.1f, 0.1f), Color::red());
 }
 
 void Airframe::accel() {
@@ -84,6 +90,8 @@ void Airframe::draw() {
   }
 
   glPopMatrix();
+
+  drawUI();
 }
 
 const vec3f& Airframe::getPos()     const { return pos; }

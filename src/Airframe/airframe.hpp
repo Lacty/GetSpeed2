@@ -28,6 +28,11 @@ private:
   void evCenter(const std::vector<float>& _vtx);
   void evForward();
 
+  // UI—p
+  vec3f near;
+
+  void drawUI();
+
 public:
   Airframe();
   Airframe(Type _type, State _state);

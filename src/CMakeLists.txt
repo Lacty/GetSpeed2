@@ -37,6 +37,7 @@ file(GLOB SRCS
         Mesh/*.cpp
   MeshLoader/*.cpp
        Stage/*.cpp
+     Graphic/*.cpp
 
   Scene/Title/*.cpp
   Scene/Game/*.cpp
@@ -61,6 +62,7 @@ file(GLOB HEAD
         Mesh/*.h        Mesh/*.hpp
   MeshLoader/*.h  MeshLoader/*.hpp
        Stage/*.h       Stage/*.hpp
+     Graphic/*.h     Graphic/*.hpp
 
   Scene/Title/*.h  Scene/Title/*.hpp
    Scene/Game/*.h   Scene/Game/*.hpp
