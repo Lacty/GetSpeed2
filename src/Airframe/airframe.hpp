@@ -24,7 +24,8 @@ private:
 
   float speedRate;
 
-  void evaluateForward();
+  // evaluateF‹‚ß‚é
+  void evForward();
 
 public:
   Airframe();
