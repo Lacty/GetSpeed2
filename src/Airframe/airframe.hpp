@@ -25,6 +25,7 @@ private:
   float speedRate;
 
   // evaluateÅFãÅÇﬂÇÈ
+  void evCenter(const std::vector<float>& _vtx);
   void evForward();
 
 public:
@@ -34,7 +35,7 @@ public:
   void accel();
   void handle(const float _rate);
 
-  void update();
+  void update(const std::vector<float>& _stage);
   void draw();
 
   const vec3f& getPos() const;

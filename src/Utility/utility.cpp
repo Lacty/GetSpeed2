@@ -66,3 +66,27 @@ vec3f getPointBezier(float t,
   pos.z() = t*t*t*end.z() + 3 * t*t*tp*v2.z() + 3 * t*tp*tp*v1.z() + tp*tp*tp*start.z();
   return pos;
 }
+
+vec3f nearPosOnLine(const vec3f& _p,
+                    const vec3f& _vA,
+                    const vec3f& _vB)
+{
+  vec3f AB, AP;
+  AB = _vB - _vA;
+  AP = _p - _vA;
+
+  AB.normalize();
+  
+  // A‚©‚çNearPos‚Ü‚Å‚Ì‹——£
+  double distAX = AB.dot(AP);
+
+  // NearPos
+  vec3f ret;
+  ret = _vA + (AB * distAX);
+
+  return ret;
+}
+
+vec3f arrayToVec3f(const float* _v) {
+  return vec3f(*_v, *(_v + 1), *(_v + 2));
+}

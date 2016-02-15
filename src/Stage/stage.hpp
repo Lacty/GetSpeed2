@@ -9,6 +9,8 @@ private:
   Mesh<std::deque<float>> mesh;
   std::vector<float> vtx;
   std::vector<float> col;
+  
+  void updateData();
 
 public:
   Stage();

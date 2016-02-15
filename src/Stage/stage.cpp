@@ -9,15 +9,20 @@ Stage::Stage() {
     mesh.pushBack(vec3f( 1, 0, -i), Color::white());
     mesh.pushBack(vec3f(-1, 0, -i), Color::white());
   }
+  updateData();
 }
 
 
-void Stage::update() {
+void Stage::updateData() {
   // gl‚É“n‚¹‚é‚æ‚¤‚Évector‚ÉˆêŽž•Û‘¶‚·‚é
   vtx.resize(mesh.vertex.size());
   vtx.assign(mesh.vertex.begin(), mesh.vertex.end());
   col.resize(mesh.color.size());
   col.assign(mesh.color.begin(), mesh.color.end());
+}
+
+void Stage::update() {
+  updateData();
 }
 
 void Stage::draw() {

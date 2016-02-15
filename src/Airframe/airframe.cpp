@@ -2,6 +2,7 @@
 #include "airframe.hpp"
 #include "../MeshLoader/meshLoader.hpp"
 #include "../LoadPath/loadPath.hpp"
+#include "../Utility/utility.hpp"
 #include <array>
 #include <GLFW/glfw3.h>
 
@@ -27,20 +28,30 @@ Airframe()
 }
 
 
+void Airframe::evCenter(const std::vector<float>& _vtx) {
+  int index = 0;
+  vec3f near = nearPosOnLine(pos,
+                             arrayToVec3f(&_vtx[index]),
+                             arrayToVec3f(&_vtx[index + 3]));
+  std::cout << near << std::endl;
+}
+
 void Airframe::evForward() {
-  pos += forward * speedRate;
+  forward = center - pos;
+  forward.normalize();
 }
 
 void Airframe::accel() {
-  evForward();
+  pos += forward * speedRate;
 }
 
 void Airframe::handle(const float _rate) {
   pos += side * speedRate * _rate;
 }
 
-void Airframe::update() {
-  forward = pos - center;
+void Airframe::update(const std::vector<float>& _stage) {
+  evCenter(_stage);
+  evForward();
 }
 
 void Airframe::draw() {

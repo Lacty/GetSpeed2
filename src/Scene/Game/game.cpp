@@ -31,7 +31,7 @@ void Game::update() {
   if(app->isPressKey(GLFW_KEY_A)) { airframe.handle(Airframe::Left); }
   if(app->isPressKey(GLFW_KEY_D)) { airframe.handle(Airframe::Right); }
   
-  airframe.update();
+  airframe.update(stage.getVtx());
   stage.update();
 }
 
