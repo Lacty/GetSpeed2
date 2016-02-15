@@ -10,9 +10,6 @@ app(app) {
 
 void SceneManager::update() {
   scene->update();
-  if (scene->shouldClose() && app->isFinishFade()) {
-    scene = scene->nextScene(app);
-  }
 }
 
 void SceneManager::draw() {
@@ -24,4 +21,9 @@ void SceneManager::run() {
   draw();
 
   TwDraw();
+
+  // ƒV[ƒ“Ø‚è‘Ö‚¦
+  if(scene->shouldClose() && app->isFinishFade()) {
+    scene = scene->nextScene(app);
+  }
 }

@@ -30,7 +30,6 @@ void Stage::draw() {
   glDisableClientState(GL_COLOR_ARRAY);
   glDisableClientState(GL_VERTEX_ARRAY);
 
-
   // Wire
   // F‚ğ•‚­‚·‚é
   for(auto& it : col) { it -= 0.7f; }
