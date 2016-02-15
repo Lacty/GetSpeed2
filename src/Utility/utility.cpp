@@ -67,6 +67,39 @@ vec3f getPointBezier(float t,
   return pos;
 }
 
+vec3f getPointCatmullRom(float t,
+                         const vec3f& p0,
+                         const vec3f& p1,
+                         const vec3f& p2,
+                         const vec3f& p3)
+{
+  vec3f pos;
+  pos.x() = 0.5f * ((2 * p1.x()) +
+             (-p0.x() + p2.x()) * t +
+             (2 * p0.x() - 5 * p1.x() + 4 * p2.x() - p3.x()) * (t*t) +
+             (-p0.x() + 3 * p1.x() - 3 * p2.x() + p3.x()) * (t*t*t));
+  pos.y() = 0.5f * ((2 * p1.y()) +
+             (-p0.y() + p2.y()) * t +
+             (2 * p0.y() - 5 * p1.y() + 4 * p2.y() - p3.y()) * (t*t) +
+             (-p0.y() + 3 * p1.y() - 3 * p2.y() + p3.y()) * (t*t*t));
+  pos.z() = 0.5f * ((2 * p1.z()) +
+             (-p0.z() + p2.z()) * t +
+             (2 * p0.z() - 5 * p1.z() + 4 * p2.z() - p3.z()) * (t*t) +
+             (-p0.z() + 3 * p1.z() - 3 * p2.z() + p3.z()) * (t*t*t));
+  return pos;
+}
+
+vec3f ReturnCatmullRom(float t, vec3f p0, vec3f p1, vec3f p2, vec3f p3) {
+  vec3f a = 0.5f * (2.f * p1);
+  vec3f b = 0.5f * (p2 - p0);
+  vec3f c = 0.5f * (2.f * p0 - 5.f * p1 + 4.f * p2 - p3);
+  vec3f d = 0.5f * (-p0 + 3.f * p1 - 3.f * p2 + p3);
+
+  vec3f pos = a + (b * t) + (c * t * t) + (d * t * t * t);
+
+  return pos;
+}
+
 vec3f nearPosOnLine(const vec3f& _p,
                     const vec3f& _vA,
                     const vec3f& _vB)

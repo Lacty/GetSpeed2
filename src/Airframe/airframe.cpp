@@ -40,12 +40,6 @@ void Airframe::evCenter(const std::vector<float>& _vtx) {
   vec3f distCD = arrayToVec3f(&_vtx[index + 9]) - arrayToVec3f(&_vtx[index + 6]);
   vec3f distCN = distCD / percentAN;
   nextOnLine1 = arrayToVec3f(&_vtx[index + 6]) + distCN;
-
-  std::cout << "index + 6 ";
-  V3_LOG(arrayToVec3f(&_vtx[index + 6]));
-
-  std::cout << "nextOnLine1 ";
-  V3_LOG(nextOnLine1);
 }
 
 void Airframe::evForward() {

@@ -20,6 +20,14 @@ vec3f getPointBezier(float t,
                      const vec3f& v2,
                      const vec3f& end);
 
+vec3f getPointCatmullRom(float t,
+                         const vec3f& p1,
+                         const vec3f& p2,
+                         const vec3f& p3,
+                         const vec3f& p4);
+
+vec3f ReturnCatmullRom(float t, vec3f p0, vec3f p1, vec3f p2, vec3f p3);
+
 vec3f nearPosOnLine(const vec3f& _p,
                     const vec3f& _vA,
                     const vec3f& _vB);

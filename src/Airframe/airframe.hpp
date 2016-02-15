@@ -31,6 +31,8 @@ private:
   // UI—p
   vec3f nearOnLine;
   vec3f nextOnLine1;
+  vec3f nextOnLine2;
+  vec3f nextOnLine3;
 
   void drawUI();
 
