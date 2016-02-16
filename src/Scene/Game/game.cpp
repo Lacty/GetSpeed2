@@ -32,7 +32,7 @@ void Game::update() {
   if(app->isPressKey(GLFW_KEY_D)) { airframe.handle(Airframe::Right); }
   
   airframe.update(stage.getVtx());
-  stage.update();
+  stage.update(airframe.getNearStageVtxIndex());
 }
 
 void Game::draw() {
@@ -42,6 +42,10 @@ void Game::draw() {
   
   stage.draw();
   airframe.draw();
+  app->setCamPos(vec3f(airframe.getPos().x(),
+                       airframe.getPos().y() + 1,
+                       airframe.getPos().z() + 2));
+  app->setCamTarget(vec3f(airframe.getForward() * 2 + airframe.getPos()));
 }
 
 std::shared_ptr<SceneBase> Game::nextScene(AppNative* app) {

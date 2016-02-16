@@ -14,6 +14,7 @@ public:
 private:
   Type type;
   State state;
+  int nearStageVtxIndex;
   
   Mesh<std::vector<float>> mesh;
 
@@ -51,6 +52,8 @@ public:
 
   void accel();
   void handle(const int _rate);
+
+  const int getNearStageVtxIndex() const;
 
   void update(const std::vector<float>& _vtx);
   void draw();

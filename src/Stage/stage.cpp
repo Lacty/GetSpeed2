@@ -5,13 +5,23 @@
 
 
 Stage::Stage() {
-  for(int i = -2; i < 20; i++) {
-    mesh.pushBack(vec3f( 1, 0, -i), Color::white());
+  for(int i = 0; i < 30; i++) {
+    mesh.pushBack(vec3f(1, 0, -i), Color::white());
     mesh.pushBack(vec3f(-1, 0, -i), Color::white());
   }
   updateData();
 }
 
+
+void Stage::killPolyPassed(const int _index) {
+  std::cout << mesh.vertex.size() << std::endl;
+  if(!(_index >= 12)) return;
+  for(int i = 0; i < _index - 6; i++) {
+    mesh.vertex.pop_front();
+  }
+}
+
+void Stage::createStage() {}
 
 void Stage::updateData() {
   // gl‚É“n‚¹‚é‚æ‚¤‚Évector‚Éˆê•Û‘¶‚·‚é
@@ -21,7 +31,9 @@ void Stage::updateData() {
   col.assign(mesh.color.begin(), mesh.color.end());
 }
 
-void Stage::update() {
+void Stage::update(const int _index) {
+  killPolyPassed(_index);
+  createStage();
   updateData();
 }
 

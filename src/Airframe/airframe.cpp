@@ -33,6 +33,7 @@ Airframe()
 void Airframe::evControlPoint(const std::vector<float>& _vtx) {
   // 機体に一番近いポリゴンの頂点indexを求める
   int index = evIndexNearestStageVtx(_vtx);
+  nearStageVtxIndex = index;
 
   // 配列のメモリ再確保(controlPoint分)
   nearOnLine.clear();
@@ -109,6 +110,10 @@ void Airframe::accel() {
 
 void Airframe::handle(const int _rate) {
   pos += side * speedRate * _rate;
+}
+
+const int Airframe::getNearStageVtxIndex() const {
+  return nearStageVtxIndex;
 }
 
 void Airframe::update(const std::vector<float>& _vtx) {
