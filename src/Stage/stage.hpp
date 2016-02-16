@@ -2,6 +2,7 @@
 #pragma once
 #include "../Vector/vector.hpp"
 #include "../Mesh/mesh.hpp"
+#include "../TwBar/twBar.hpp"
 
 
 class Stage {
@@ -46,8 +47,12 @@ private:
   void evForwardAndSide();
   void updateData();
 
+  bool upDownType;
+  TwBar* twBar;
+
 public:
   Stage();
+  ~Stage();
 
   void update(const int _index);
   void draw();

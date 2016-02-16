@@ -10,8 +10,8 @@ font(loadAssets("rounded-l-mplus-1c-regular.ttf"))
   std::cout << "start Game" << std::endl;
 
   angle = 0;
-  twBar = TwNewBar("game");
-  TwAddVarRW(twBar, "angle", TW_TYPE_FLOAT, &angle, "");
+  //twBar = TwNewBar("game");
+  //TwAddVarRW(twBar, "angle", TW_TYPE_FLOAT, &angle, "");
   airframe = Airframe(Airframe::Type::Normal,
                       Airframe::State::Ready);
 
@@ -22,6 +22,7 @@ font(loadAssets("rounded-l-mplus-1c-regular.ttf"))
 }
 
 Game::~Game() {
+  //TwDeleteBar(twBar);
   std::cout << "end Game" << std::endl;
 }
 
@@ -41,6 +42,10 @@ void Game::update() {
   if(app->isPressKey(GLFW_KEY_W)) { airframe.accel(); }
   if(app->isPressKey(GLFW_KEY_A)) { airframe.handle(Airframe::Left); }
   if(app->isPressKey(GLFW_KEY_D)) { airframe.handle(Airframe::Right); }
+  if(app->isPressKey(GLFW_KEY_R)) {
+    isFinish = true;
+    app->startFade(Fade::Type::Out);
+  }
   stage.update(airframe.getNearStageVtxIndex());
   airframe.update(stage.getVtx());
   updateCamera();

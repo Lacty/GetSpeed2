@@ -14,8 +14,8 @@ t(0.0)
 {
   std::cout << "start title" << std::endl;
 
-  twBar = TwNewBar("title");
-  TwAddVarRW(twBar, "t", TW_TYPE_FLOAT, &t, "min=0 max=1");
+  //twBar = TwNewBar("title");
+  //TwAddVarRW(twBar, "t", TW_TYPE_FLOAT, &t, "min=0 max=1");
   
   app->startFade(Fade::Type::In);
 }
@@ -40,7 +40,7 @@ void Title::update() {
 }
 
 void Title::draw() {
-  std::string str("- Title -");
+  std::string str("- GetSpeed2 -");
   font.drawCenter(str, app->windowHalff());
 
   glPushMatrix();
@@ -57,7 +57,7 @@ void Title::draw() {
     glColor3f(1.0f, 1.0f, 1.0f);
     glVertexPointer(3, GL_FLOAT, 0, vtx);
     glEnableClientState(GL_VERTEX_ARRAY);
-    glDrawArrays(GL_TRIANGLES, 0, 3);
+    //glDrawArrays(GL_TRIANGLES, 0, 3);
     glDisableClientState(GL_VERTEX_ARRAY);
   glPopMatrix();
 }

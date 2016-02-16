@@ -3,6 +3,7 @@
 #include "../Vector/vector.hpp"
 #include "../Mesh/mesh.hpp"
 #include "../CatmullRom/catmullRom.hpp"
+#include "../TwBar/twBar.hpp"
 
 
 class Airframe {
@@ -47,11 +48,16 @@ private:
 
   void move();
 
+  float speed;
+  TwBar* twBar;
+
+  bool shouldDrawUI;
   void drawUI();
 
 public:
   Airframe();
   Airframe(Type _type, State _state);
+  ~Airframe();
 
   void accel();
   void handle(const int _rate);

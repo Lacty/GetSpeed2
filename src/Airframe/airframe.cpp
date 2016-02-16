@@ -9,25 +9,35 @@
 
 
 Airframe::Airframe() :
-pos(0, 0, 0),
-center(0, 0, -1),
-up(0, 1, 0),
-moveVector(0, 0, 0),
-speedRate(0.06),
-controlPointNum(10)
+  pos(0, 0, 0),
+  center(0, 0, -1),
+  up(0, 1, 0),
+  moveVector(0, 0, 0),
+  speedRate(0.06),
+  controlPointNum(10),
+  shouldDrawUI(false),
+  speed(2)
 {
   forward = center - pos;
   side = forward.cross(up);
+
+  twBar = TwNewBar("Airframe");
+  TwAddVarRW(twBar, "ui", TW_TYPE_BOOL8, &shouldDrawUI, "");
+  TwAddVarRW(twBar, "speed", TW_TYPE_FLOAT, &speed, "");
 }
 
 Airframe::Airframe(Type _type, State _state) :
-Airframe()
+  Airframe()
 {
   type = _type;
   state = _state;
   std::array<std::string, 1> typeToText{ "Normal" };
   MeshLoader loader(loadAssets("airframe.json"), typeToText[(int)type]);
   mesh = loader.get<std::vector<float>>();
+}
+
+Airframe::~Airframe() {
+  TwDeleteBar(twBar);
 }
 
 
@@ -43,7 +53,7 @@ void Airframe::evControlPoint(const std::vector<float>& _vtx) {
   // 機体に一番近い線へ垂線を伸ばした時の交点を求める
   nearOnLine[0] = nearPosOnLine(pos, arrayToVec3f(&_vtx[index]), arrayToVec3f(&_vtx[index + 3]));
   float percentAN = vec3f(arrayToVec3f(&_vtx[index + 3]) - arrayToVec3f(&_vtx[index])).norm() / vec3f(nearOnLine[0] - arrayToVec3f(&_vtx[index])).norm();
-  
+
   // 制御点を求める(頂点につき3なので次の偶数の頂点は6の倍数で求める
   for(int i = 1; i < controlPointNum; i++) {
     nearOnLine[i] = evNextOnLine(index + 6 * i, percentAN, _vtx);
@@ -86,13 +96,13 @@ int Airframe::evIndexNearestStageVtx(const std::vector<float>& _vtx) {
     t1 = vec3f(arrayToVec3f(&_vtx[i]) - pos).norm();
     if(t1 >= t2) {
       // これステージ外に出たときの判定に使える
-      vec3f Forward = vec3f(arrayToVec3f(&_vtx[i]) - arrayToVec3f(&_vtx[i-6])).normalized();
+      vec3f Forward = vec3f(arrayToVec3f(&_vtx[i]) - arrayToVec3f(&_vtx[i - 6])).normalized();
       //V3_LOG(Forward.cross(arrayToVec3f(&_vtx[i - 6]) - pos));
 
       vec3f Side = arrayToVec3f(&_vtx[i - 6]) - arrayToVec3f(&_vtx[i - 3]);
       Side.normalize();
 
-      up = Forward.cross(Side).normalized();
+      //up = Forward.cross(Side).normalized();
 
       if(Side.cross(arrayToVec3f(&_vtx[i - 6]) - pos).y() > 0) {
         return i - 12;
@@ -104,7 +114,7 @@ int Airframe::evIndexNearestStageVtx(const std::vector<float>& _vtx) {
 }
 
 void Airframe::evUp() {
-  //up = side.cross(forward);
+  up = side.cross(forward);
 }
 
 void Airframe::drawUI() {
@@ -125,7 +135,7 @@ void Airframe::accel() {
   //pos = spline.GetInterpolatedSplinePoint(angle);
   vec3f acc = spline.GetInterpolatedSplinePoint(0.14f) - pos;
   acc.normalize();
-  moveVector += acc * 0.2f;
+  moveVector += acc * speed * 0.1f;
 }
 
 void Airframe::handle(const int _rate) {
@@ -158,6 +168,35 @@ void Airframe::draw() {
   sita = sita * 180.0 / M_PI;
   glRotatef(-sita, 1, 0, 0); // x軸回転
 
+  cos_sita = vec2f(forward.x(), forward.y()).dot(vec2f(-0.01, 0)) / (vec2f(forward.x(), forward.y()).norm() * vec2f(-0.01, 0).norm());
+  sita = acos(cos_sita);
+  sita = sita * 180.0 / M_PI;
+  //glRotatef(-sita, 0, 0, 1); // z軸回転
+
+
+  /*vec3f a = pos - center;
+  vec3f z_ = a / a.norm();
+
+  vec3f b = up.cross(z_);
+  vec3f x_ = b / b.norm();
+
+  vec3f y_ = z_.cross(x_);
+
+  mat4f R;
+  R <<  x_.x(),  x_.y(),  x_.z(), 0.0f,
+        y_.x(),  y_.y(),  y_.z(), 0.0f,
+        z_.x(),  z_.y(),  z_.z(), 0.0f,
+        0.0f,      0.0f,    0.0f, 1.0f;
+
+  mat4f T;
+  T << 1.0f, 0.0f, 0.0f, pos.x(),
+    0.0f, 1.0f, 0.0f, pos.y(),
+    0.0f, 0.0f, 1.0f, pos.z(),
+    0.0f, 0.0f, 0.0f, 1.0f;
+
+  mat4f m = R * T;
+  glMultMatrixf(R.data());*/
+
   {
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_SRC_COLOR);
@@ -185,6 +224,7 @@ void Airframe::draw() {
 
   glPopMatrix();
 
+  if(!shouldDrawUI) return;
   drawUI();
 }
 
@@ -193,7 +233,7 @@ const vec3f& Airframe::getCenter()  const { return center; }
 const vec3f& Airframe::getSide()    const { return side; }
 const vec3f& Airframe::getForward() const { return forward; }
 
-void Airframe::setPos(const vec3f& _pos)         { pos     = _pos; }
-void Airframe::setCenter(const vec3f& _center)   { center  = _center; }
-void Airframe::setSide(const vec3f& _side)       { side    = _side; }
+void Airframe::setPos(const vec3f& _pos) { pos = _pos; }
+void Airframe::setCenter(const vec3f& _center) { center = _center; }
+void Airframe::setSide(const vec3f& _side) { side = _side; }
 void Airframe::setForward(const vec3f& _forward) { forward = _forward; }
