@@ -33,8 +33,20 @@ void Stage::killPolyPassed(const int _index) {
 
 void Stage::decideType() {
   if(createCount) return;
-  type = Type::Straight;
-  createCount = 100;
+  switch(randZeroLast(3)) {
+    case (int)Type::Straight:
+      type = Type::Straight;
+      createCount = 20; break;
+    case (int)Type::Right:
+      type = Type::Right;
+      createCount = 10; break;
+    case (int)Type::Left:
+      type = Type::Left;
+      createCount = 10; break;
+    case (int)Type::Down:
+      type = Type::Down;
+      createCount = 10; break;
+  }
 }
 
 void Stage::createStage() {
@@ -48,6 +60,10 @@ void Stage::createStage() {
     createStraight(); break;
     case Type::Right:
     createRight(); break;
+    case Type::Left:
+    createLeft(); break;
+    case Type::Down:
+    createDown(); break;
   }
 }
 
@@ -71,6 +87,44 @@ void Stage::createRight() {
   quat = Eigen::AngleAxisf(M_PI * -0.02f, up);
   forward = quat * forward;
   side    = quat * side;
+  mesh.pushBack(vec3f(mesh.vertex[mesh.vertex.size() - 6],
+                mesh.vertex[mesh.vertex.size() - 5],
+                mesh.vertex[mesh.vertex.size() - 4])
+                + forward,
+                Color::white());
+  mesh.pushBack(vec3f(mesh.vertex[mesh.vertex.size() - 3],
+                mesh.vertex[mesh.vertex.size() - 2],
+                mesh.vertex[mesh.vertex.size() - 1])
+                + side,
+                Color::white());
+  shouldCreateCount -= 2;
+  createCount -= 2;
+}
+
+void Stage::createLeft() {
+  Eigen::Quaternionf quat;
+  quat = Eigen::AngleAxisf(M_PI * 0.02f, up);
+  forward = quat * forward;
+  side = quat * side;
+  mesh.pushBack(vec3f(mesh.vertex[mesh.vertex.size() - 6],
+                mesh.vertex[mesh.vertex.size() - 5],
+                mesh.vertex[mesh.vertex.size() - 4])
+                + forward,
+                Color::white());
+  mesh.pushBack(vec3f(mesh.vertex[mesh.vertex.size() - 3],
+                mesh.vertex[mesh.vertex.size() - 2],
+                mesh.vertex[mesh.vertex.size() - 1])
+                + side,
+                Color::white());
+  shouldCreateCount -= 2;
+  createCount -= 2;
+}
+
+void Stage::createDown() {
+  Eigen::Quaternionf quat;
+  quat = Eigen::AngleAxisf(M_PI * 0.01f, side);
+  forward = quat * forward;
+  side = quat * side;
   mesh.pushBack(vec3f(mesh.vertex[mesh.vertex.size() - 6],
                 mesh.vertex[mesh.vertex.size() - 5],
                 mesh.vertex[mesh.vertex.size() - 4])

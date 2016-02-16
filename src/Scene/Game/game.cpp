@@ -34,6 +34,7 @@ void Game::updateCamera() {
   offset *= 3;
   app->setCamPos(airframe.getPos() - offset);
   app->setCamTarget(vec3f(airframe.getForward().normalized() * 3 + airframe.getPos()));
+  app->setCamUp(airframe.getSide().cross(airframe.getForward()).normalized());
 }
 
 void Game::update() {
