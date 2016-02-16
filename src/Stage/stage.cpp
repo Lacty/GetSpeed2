@@ -4,7 +4,8 @@
 #include <iostream>
 
 
-Stage::Stage() {
+Stage::Stage() :
+crCount(0) {
   for(int i = 0; i < 30; i++) {
     mesh.pushBack(vec3f(1, 0, -i), Color::white());
     mesh.pushBack(vec3f(-1, 0, -i), Color::white());
@@ -14,14 +15,17 @@ Stage::Stage() {
 
 
 void Stage::killPolyPassed(const int _index) {
-  std::cout << mesh.vertex.size() << std::endl;
   if(!(_index >= 12)) return;
+  crCount += int((_index - 6)  / 3); // Á‚µ‚½’¸“_‚Ì”‚ğ•Û‘¶
+  std::cout << crCount << std::endl;
   for(int i = 0; i < _index - 6; i++) {
     mesh.vertex.pop_front();
   }
 }
 
-void Stage::createStage() {}
+void Stage::createStage() {
+  
+}
 
 void Stage::updateData() {
   // gl‚É“n‚¹‚é‚æ‚¤‚Évector‚Éˆê•Û‘¶‚·‚é
