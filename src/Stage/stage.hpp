@@ -20,9 +20,13 @@ private:
 
   // ’Ê‚è‰ß‚¬‚½•”•ª‚ğÁ‚·
   void killPolyPassed(const int _index);
+
+  void decideType();
   void createStage();
 
-  int crCount;
+  // TIPS: ‚±‚Ìƒpƒ‰ƒ[ƒ^‚Í‹ô”‚Å‚È‚¯‚ê‚Î‚È‚ç‚È‚¢
+  int shouldCreateCount;
+  int createCount;
 
   vec3f pos;
   vec3f forward;

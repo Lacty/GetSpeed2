@@ -5,7 +5,7 @@
 
 
 Stage::Stage() :
-crCount(0) {
+createCount(0) {
   for(int i = 0; i < 30; i++) {
     mesh.pushBack(vec3f(1, 0, -i), Color::white());
     mesh.pushBack(vec3f(-1, 0, -i), Color::white());
@@ -16,11 +16,17 @@ crCount(0) {
 
 void Stage::killPolyPassed(const int _index) {
   if(!(_index >= 12)) return;
-  crCount += int((_index - 6)  / 3); // Á‚µ‚½’¸“_‚Ì”‚ğ•Û‘¶
-  std::cout << crCount << std::endl;
+  createCount += int((_index - 6)  / 3); // Á‚µ‚½’¸“_‚Ì”‚ğ•Û‘¶
+  std::cout << createCount << std::endl;
   for(int i = 0; i < _index - 6; i++) {
     mesh.vertex.pop_front();
   }
+}
+
+void Stage::decideType() {
+  if(shouldCreateCount) return;
+  type = Type::Straight;
+  shouldCreateCount = 10;
 }
 
 void Stage::createStage() {
