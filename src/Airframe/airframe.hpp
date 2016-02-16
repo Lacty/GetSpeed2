@@ -33,10 +33,13 @@ private:
   // evaluateF‹‚ß‚é
   // center nearOnLine nextOnLine‚ğ“¯‚É‹‚ß‚é
   void evControlPoint(const std::vector<float>& _vtx);
+  void setControlPoint();
   void evForward();
+  void evUp();
   vec3f evNextOnLine(const int _index,
                      const float _percent,
                      const std::vector<float>& _vtx);
+  int evIndexNearestStageVtx(const std::vector<float>& _vtx);
 
   std::vector<vec3f> nearOnLine;
 
@@ -47,7 +50,7 @@ public:
   Airframe(Type _type, State _state);
 
   void accel();
-  void handle(const float _rate);
+  void handle(const int _rate);
 
   void update(const std::vector<float>& _vtx);
   void draw();

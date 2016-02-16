@@ -32,17 +32,7 @@ Airframe()
 
 void Airframe::evControlPoint(const std::vector<float>& _vtx) {
   // 機体に一番近いポリゴンの頂点indexを求める
-  int index = 0;
-  float t1;
-  float t2 = 256; // 初めの判定用にでかい数値を入れておく
-  for(int i = 0; i < _vtx.size(); i += 6) {
-    t1 = vec3f(arrayToVec3f(&_vtx[i]) - pos).norm();
-    if(t1 >= t2) {
-      index = i - 6;
-      break;
-    }
-    t2 = t1;
-  }
+  int index = evIndexNearestStageVtx(_vtx);
 
   // 配列のメモリ再確保(controlPoint分)
   nearOnLine.clear();
@@ -64,6 +54,15 @@ void Airframe::evControlPoint(const std::vector<float>& _vtx) {
   side = vec3f(arrayToVec3f(&_vtx[index]) - arrayToVec3f(&_vtx[index + 3])).normalized();
 }
 
+void Airframe::setControlPoint() {
+  spline.Clear();
+  spline.AddSplinePoint(nearOnLine[0]);
+  spline.AddSplinePoint(pos);
+  for(int i = 1; i < nearOnLine.size(); i++) {
+    spline.AddSplinePoint(nearOnLine[i]);
+  }
+}
+
 void Airframe::evForward() {
   forward = center - pos;
   forward.normalize();
@@ -78,6 +77,21 @@ vec3f Airframe::evNextOnLine(const int _index,
   return arrayToVec3f(&_vtx[_index]) + distNear;
 }
 
+int Airframe::evIndexNearestStageVtx(const std::vector<float>& _vtx) {
+  float t1;
+  float t2 = 256; // 初めの判定用にでかい数値を入れておく
+  for(int i = 0; i < _vtx.size(); i += 6) {
+    t1 = vec3f(arrayToVec3f(&_vtx[i]) - pos).norm();
+    if(t1 >= t2) {
+      return i - 6;
+    }
+    t2 = t1;
+  }
+}
+
+void Airframe::evUp() {
+  up = side.cross(forward);
+}
 
 void Airframe::drawUI() {
   // 機体とステージのLineの一番近い点を描画
@@ -87,17 +101,19 @@ void Airframe::drawUI() {
 }
 
 void Airframe::accel() {
-  // FIXME
-  pos = CRSpline::Eq(speedRate, nearOnLine[0], nearOnLine[1], nearOnLine[2], nearOnLine[3]);
+  // FIXME: 定速になってるのでどうにかする
+  pos = spline.GetInterpolatedSplinePoint(0.2f);
 }
 
-void Airframe::handle(const float _rate) {
+void Airframe::handle(const int _rate) {
   pos += side * speedRate * _rate;
 }
 
 void Airframe::update(const std::vector<float>& _vtx) {
   evControlPoint(_vtx);
   evForward();
+  setControlPoint();
+  evUp();
 }
 
 void Airframe::draw() {

@@ -6,10 +6,10 @@
 Title::Title(AppNative* app) :
 SceneBase(app),
 font(loadAssets("rounded-l-mplus-1c-regular.ttf")),
-start(-5, 0, 0),
-v1(-2, 3, 0),
-v2(1, -4, 0),
-end(5, 0, 0),
+start(-10, 0, 0),
+v1(-5, 0, 0),
+v2(5, 0, 0),
+end(10, 10, 0),
 t(0.0)
 {
   std::cout << "start title" << std::endl;
