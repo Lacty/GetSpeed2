@@ -27,6 +27,12 @@ private:
   void decideType();
   void createStage();
 
+  void createStraight();
+  void createRight();
+  void createLeft();
+  void createDown();
+  void createUp();
+
   // TIPS: ‚±‚Ìƒpƒ‰ƒ[ƒ^‚Í‹ô”‚Å‚È‚¯‚ê‚Î‚È‚ç‚È‚¢
   int shouldCreateCount;
   int createCount;
@@ -36,6 +42,7 @@ private:
   vec3f side;
   vec3f rotate;
 
+  void evForwardAndSide();
   void updateData();
 
 public:

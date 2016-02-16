@@ -37,39 +37,53 @@ void Stage::decideType() {
 
 void Stage::createStage() {
   if(!shouldCreateCount) return;
+
+  // Forward SideÇãÅÇﬂÇÈ
+  evForwardAndSide();
+
   switch(type) {
     case Type::Straight: {
-      forward = vec3f(mesh.vertex[mesh.vertex.size() - 6],
-                      mesh.vertex[mesh.vertex.size() - 5],
-                      mesh.vertex[mesh.vertex.size() - 4])
-              - vec3f(mesh.vertex[mesh.vertex.size() - 12],
-                      mesh.vertex[mesh.vertex.size() - 11],
-                      mesh.vertex[mesh.vertex.size() - 10]);
-      side = vec3f(mesh.vertex[mesh.vertex.size() - 3],
-                   mesh.vertex[mesh.vertex.size() - 2],
-                   mesh.vertex[mesh.vertex.size() - 1])
-           - vec3f(mesh.vertex[mesh.vertex.size() - 6],
-                   mesh.vertex[mesh.vertex.size() - 5],
-                   mesh.vertex[mesh.vertex.size() - 4]);
-      forward.normalize();
-      forward *= depth;
-      side.normalize();
-      side *= width;
-
-      mesh.pushBack(vec3f(mesh.vertex[mesh.vertex.size() - 6],
-                          mesh.vertex[mesh.vertex.size() - 5],
-                          mesh.vertex[mesh.vertex.size() - 4])
-                    + forward,
-                    Color::white());
-      mesh.pushBack(vec3f(mesh.vertex[mesh.vertex.size() - 3],
-                          mesh.vertex[mesh.vertex.size() - 2],
-                          mesh.vertex[mesh.vertex.size() - 1])
-                    + side,
-                    Color::white());
-      shouldCreateCount -= 2;
-      createCount -= 2;
+      createStraight();
     }
   }
+}
+
+void Stage::createStraight() {
+  mesh.pushBack(vec3f(mesh.vertex[mesh.vertex.size() - 6],
+                      mesh.vertex[mesh.vertex.size() - 5],
+                      mesh.vertex[mesh.vertex.size() - 4])
+                + forward,
+                Color::white());
+   mesh.pushBack(vec3f(mesh.vertex[mesh.vertex.size() - 3],
+                       mesh.vertex[mesh.vertex.size() - 2],
+                       mesh.vertex[mesh.vertex.size() - 1])
+                 + side,
+                 Color::white());
+   shouldCreateCount -= 2;
+   createCount -= 2;
+}
+
+void Stage::createRight() {
+  
+}
+
+void Stage::evForwardAndSide() {
+  forward = vec3f(mesh.vertex[mesh.vertex.size() - 6],
+                  mesh.vertex[mesh.vertex.size() - 5],
+                  mesh.vertex[mesh.vertex.size() - 4])
+    - vec3f(mesh.vertex[mesh.vertex.size() - 12],
+            mesh.vertex[mesh.vertex.size() - 11],
+            mesh.vertex[mesh.vertex.size() - 10]);
+  side = vec3f(mesh.vertex[mesh.vertex.size() - 3],
+               mesh.vertex[mesh.vertex.size() - 2],
+               mesh.vertex[mesh.vertex.size() - 1])
+    - vec3f(mesh.vertex[mesh.vertex.size() - 6],
+            mesh.vertex[mesh.vertex.size() - 5],
+            mesh.vertex[mesh.vertex.size() - 4]);
+  forward.normalize();
+  forward *= depth;
+  side.normalize();
+  side *= width;
 }
 
 void Stage::updateData() {
