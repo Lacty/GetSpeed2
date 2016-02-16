@@ -10,9 +10,11 @@ int main() {
   SceneManager scene(&app);
 
   while(app.isOpen() && !app.isPressKey(GLFW_KEY_ESCAPE)) {
+    scene.update();
+    
     app.clearWindowBuff();
 
-    scene.run();
+    scene.draw();
 
     app.updateEvent();
   }

@@ -24,6 +24,7 @@ private:
   vec3f side;
   vec3f forward;
 
+  vec3f moveVector;
   float speedRate;
 
   // this param should upper "4"
@@ -43,6 +44,8 @@ private:
   int evIndexNearestStageVtx(const std::vector<float>& _vtx);
 
   std::vector<vec3f> nearOnLine;
+
+  void move();
 
   void drawUI();
 

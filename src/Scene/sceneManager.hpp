@@ -10,12 +10,10 @@ class SceneManager {
 private:
   AppNative* app;
   std::shared_ptr<SceneBase> scene;
-  
-  void update();
-  void draw();
 
 public:
   SceneManager(AppNative* app);
   
-  void run();
+  void update();
+  void draw();
 };

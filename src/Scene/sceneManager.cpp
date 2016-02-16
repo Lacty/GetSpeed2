@@ -14,11 +14,6 @@ void SceneManager::update() {
 
 void SceneManager::draw() {
   scene->draw();
-}
-
-void SceneManager::run() {
-  update();
-  draw();
 
   TwDraw();
 

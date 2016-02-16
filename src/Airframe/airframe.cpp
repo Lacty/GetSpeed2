@@ -12,6 +12,7 @@ Airframe::Airframe() :
 pos(0, 0, 0),
 center(0, 0, -1),
 up(0, 1, 0),
+moveVector(0, 0, 0),
 speedRate(0.06),
 controlPointNum(10)
 {
@@ -59,7 +60,7 @@ void Airframe::setControlPoint() {
   spline.Clear();
   spline.AddSplinePoint(nearOnLine[0]);
   spline.AddSplinePoint(pos);
-  for(int i = 1; i < nearOnLine.size(); i++) {
+  for(int i = 2; i < nearOnLine.size(); i++) {
     spline.AddSplinePoint(nearOnLine[i]);
   }
 }
@@ -95,21 +96,25 @@ void Airframe::evUp() {
 }
 
 void Airframe::drawUI() {
-  // 機体とステージのLineの一番近い点を描画
   for(const auto& it : nearOnLine) {
     drawRect(it, vec2f(0.1f, 0.1f), Color::red());
   }
+}
+
+void Airframe::move() {
+  pos += moveVector;
+  moveVector = vec3f::Zero();
 }
 
 void Airframe::accel() {
   // FIXME: 定速になってるのでどうにかする
   vec3f acc = spline.GetInterpolatedSplinePoint(0.4f) - pos;
   acc.normalize();
-  pos += acc * 0.6f;
+  moveVector += acc * 0.2f;
 }
 
 void Airframe::handle(const int _rate) {
-  pos += side * speedRate * _rate;
+  moveVector += side * speedRate * _rate;
 }
 
 const int Airframe::getNearStageVtxIndex() const {
@@ -121,6 +126,7 @@ void Airframe::update(const std::vector<float>& _vtx) {
   evForward();
   setControlPoint();
   evUp();
+  move();
 }
 
 void Airframe::draw() {

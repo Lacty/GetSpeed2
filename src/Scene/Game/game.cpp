@@ -26,26 +26,32 @@ Game::~Game() {
 }
 
 
+void Game::updateCamera() {
+  Eigen::Quaternionf quat;
+  quat = Eigen::AngleAxisf(M_PI * -0.14f, airframe.getSide().normalized());
+  vec3f offset = quat * airframe.getForward().normalized();
+  offset.normalize();
+  offset *= 3;
+  app->setCamPos(airframe.getPos() - offset);
+  app->setCamTarget(vec3f(airframe.getForward().normalized() * 3 + airframe.getPos()));
+}
+
 void Game::update() {
   if(app->isPressKey(GLFW_KEY_W)) { airframe.accel(); }
   if(app->isPressKey(GLFW_KEY_A)) { airframe.handle(Airframe::Left); }
   if(app->isPressKey(GLFW_KEY_D)) { airframe.handle(Airframe::Right); }
-  
-  airframe.update(stage.getVtx());
   stage.update(airframe.getNearStageVtxIndex());
+  airframe.update(stage.getVtx());
+  updateCamera();
 }
 
 void Game::draw() {
   std::string str("- Game -");
   font.setSize(50.0f * app->getWindowScale());
   font.drawCenter(str, app->windowHalff());
-  
+
   stage.draw();
   airframe.draw();
-  app->setCamPos(vec3f(airframe.getPos().x(),
-                       airframe.getPos().y() + 1,
-                       airframe.getPos().z() + 2));
-  app->setCamTarget(vec3f(airframe.getForward() * 2 + airframe.getPos()));
 }
 
 std::shared_ptr<SceneBase> Game::nextScene(AppNative* app) {

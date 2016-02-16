@@ -14,6 +14,8 @@ private:
   float angle;
   TwBar* twBar;
 
+  void updateCamera();
+
 public:
   Game(AppNative* app);
   ~Game();

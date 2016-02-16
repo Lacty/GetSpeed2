@@ -11,7 +11,7 @@ depth(2),
 createCount(0),
 shouldCreateCount(0)
 {
-  for(int i = 0; i < 15; i++) {
+  for(int i = 0; i < 20; i++) {
     mesh.pushBack(vec3f( width * 0.5, 0, -i * depth), Color::white());
     mesh.pushBack(vec3f(-width * 0.5, 0, -i * depth), Color::white());
   }
@@ -21,8 +21,7 @@ shouldCreateCount(0)
 
 void Stage::killPolyPassed(const int _index) {
   if(!(_index >= 12)) return;
-  shouldCreateCount += int((_index - 6)  / 3); // Á‚µ‚½’¸“_‚Ì”‚ğ•Û‘¶
-  std::cout << shouldCreateCount << std::endl;
+  shouldCreateCount += int((_index - 6) / 3); // Á‚µ‚½’¸“_‚Ì”‚ğ•Û‘¶
   for(int i = 0; i < _index - 6; i++) {
     mesh.vertex.pop_front();
     mesh.color.pop_front();
