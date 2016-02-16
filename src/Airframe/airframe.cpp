@@ -31,8 +31,18 @@ Airframe()
 
 
 void Airframe::evControlPoint(const std::vector<float>& _vtx) {
-  // TODO: 機体に一番近いポリゴンの頂点を求める
-  int index = 12;
+  // 機体に一番近いポリゴンの頂点indexを求める
+  int index = 0;
+  float t1;
+  float t2 = 256; // 初めの判定用にでかい数値を入れておく
+  for(int i = 0; i < _vtx.size(); i += 6) {
+    t1 = vec3f(arrayToVec3f(&_vtx[i]) - pos).norm();
+    if(t1 >= t2) {
+      index = i - 6;
+      break;
+    }
+    t2 = t1;
+  }
 
   // 配列のメモリ再確保(controlPoint分)
   nearOnLine.clear();
