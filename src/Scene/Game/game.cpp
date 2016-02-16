@@ -43,6 +43,8 @@ void Game::update() {
   stage.update(airframe.getNearStageVtxIndex());
   airframe.update(stage.getVtx());
   updateCamera();
+  
+  std::cout << randFirstLast(0, 10) << std::endl;
 }
 
 void Game::draw() {

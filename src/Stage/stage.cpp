@@ -32,6 +32,7 @@ void Stage::decideType() {
   if(createCount) return;
   type = Type::Straight;
   createCount = 10;
+  std::cout << "set Straight" << std::endl;
 }
 
 void Stage::createStage() {

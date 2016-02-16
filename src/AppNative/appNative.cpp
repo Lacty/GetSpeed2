@@ -44,6 +44,9 @@ fade(Fade::Type::In)
   camera = Camera(vec3f(0, 0, 0), vec3f(0, 0, -1));
   camera.setWindowSize(window_size);
   camera.registerTw();
+
+  // enable Ramdom
+  enableRandom();
 }
 
 AppNative::~AppNative() {

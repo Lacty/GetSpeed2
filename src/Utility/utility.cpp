@@ -131,3 +131,18 @@ void V2_LOG(const vec2f& src) {
 void V3_LOG(const vec3f& src) {
   std::cout << "[" << src.x() << "," << src.y() << "," << src.z() << "]" << std::endl;
 }
+
+void enableRandom() {
+  std::random_device rand;
+  Hidden::mt = std::mt19937_64(rand());
+}
+
+int randFirstLast(const int _first, const int _last) {
+  std::uniform_int_distribution<> rand(_first, _last);
+  return rand(Hidden::mt);
+}
+
+int randZeroLast(const int _last) {
+  std::uniform_int_distribution<> rand(0, _last);
+  return rand(Hidden::mt);
+}

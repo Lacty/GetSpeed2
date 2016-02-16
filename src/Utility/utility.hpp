@@ -3,6 +3,7 @@
 #include <cmath>
 #include <string>
 #include <iostream>
+#include <random>
 #include "../Vector/vector.hpp"
 #include "../CatmullRom/catmullRom.hpp"
 
@@ -42,3 +43,12 @@ inline void D_LOG(const T& src) {
 
 void V2_LOG(const vec2f& src);
 void V3_LOG(const vec3f& src);
+
+namespace Hidden {
+static std::mt19937_64 mt;
+}
+
+void enableRandom();
+
+int randFirstLast(const int _first, const int _last);
+int randZeroLast(const int _last);
