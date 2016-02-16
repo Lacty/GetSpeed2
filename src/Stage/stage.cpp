@@ -11,11 +11,14 @@ depth(2),
 createCount(0),
 shouldCreateCount(0)
 {
-  for(int i = 0; i < 20; i++) {
+  for(int i = -4; i < 20; i++) {
     mesh.pushBack(vec3f( width * 0.5, 0, -i * depth), Color::white());
     mesh.pushBack(vec3f(-width * 0.5, 0, -i * depth), Color::white());
   }
   updateData();
+
+  type = Type::Right;
+  createCount = 20;
 }
 
 
@@ -30,9 +33,8 @@ void Stage::killPolyPassed(const int _index) {
 
 void Stage::decideType() {
   if(createCount) return;
-  type = Type::Right;
-  createCount = 10;
-  std::cout << "set Straight" << std::endl;
+  type = Type::Straight;
+  createCount = 100;
 }
 
 void Stage::createStage() {

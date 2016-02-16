@@ -50,7 +50,7 @@ void Airframe::evControlPoint(const std::vector<float>& _vtx) {
   }
 
   // center
-  center = nearOnLine[1];
+  center = nearOnLine[2];
 
   // side
   side = vec3f(arrayToVec3f(&_vtx[index]) - arrayToVec3f(&_vtx[index + 3])).normalized();
@@ -68,6 +68,7 @@ void Airframe::setControlPoint() {
 void Airframe::evForward() {
   forward = center - pos;
   forward.normalize();
+  V3_LOG(forward);
 }
 
 vec3f Airframe::evNextOnLine(const int _index,
@@ -88,11 +89,11 @@ int Airframe::evIndexNearestStageVtx(const std::vector<float>& _vtx) {
       // これステージ外に出たときの判定に使える
       /*vec3f Forward = vec3f(arrayToVec3f(&_vtx[i]) - arrayToVec3f(&_vtx[i-6])).normalized();
       V3_LOG(Forward.cross(arrayToVec3f(&_vtx[i - 6]) - pos));*/
-      //vec3f Side = arrayToVec3f(&_vtx[i - 6]) - arrayToVec3f(&_vtx[i - 3]);
-      //Side.normalize();
-      //if(Side.cross(arrayToVec3f(&_vtx[i - 6]) - pos).y() > 0) {
-      //  return i - 12;
-      //}
+      vec3f Side = arrayToVec3f(&_vtx[i - 6]) - arrayToVec3f(&_vtx[i - 3]);
+      Side.normalize();
+      if(Side.cross(arrayToVec3f(&_vtx[i - 6]) - pos).y() > 0) {
+        return i - 12;
+      }
       return i - 6;
     }
     t2 = t1;
