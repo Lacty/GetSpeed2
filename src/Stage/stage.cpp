@@ -20,7 +20,7 @@ shouldCreateCount(0)
 
 
 void Stage::killPolyPassed(const int _index) {
-  if(!(_index >= 12)) return;
+  if(!(_index >= 15)) return;
   shouldCreateCount += int((_index - 6) / 3); // Á‚µ‚½’¸“_‚Ì”‚ğ•Û‘¶
   for(int i = 0; i < _index - 6; i++) {
     mesh.vertex.pop_front();
@@ -30,7 +30,7 @@ void Stage::killPolyPassed(const int _index) {
 
 void Stage::decideType() {
   if(createCount) return;
-  type = Type::Straight;
+  type = Type::Right;
   createCount = 10;
   std::cout << "set Straight" << std::endl;
 }
@@ -42,9 +42,10 @@ void Stage::createStage() {
   evForwardAndSide();
 
   switch(type) {
-    case Type::Straight: {
-      createStraight();
-    }
+    case Type::Straight:
+    createStraight(); break;
+    case Type::Right:
+    createRight(); break;
   }
 }
 
@@ -54,17 +55,32 @@ void Stage::createStraight() {
                       mesh.vertex[mesh.vertex.size() - 4])
                 + forward,
                 Color::white());
-   mesh.pushBack(vec3f(mesh.vertex[mesh.vertex.size() - 3],
-                       mesh.vertex[mesh.vertex.size() - 2],
-                       mesh.vertex[mesh.vertex.size() - 1])
-                 + side,
-                 Color::white());
-   shouldCreateCount -= 2;
-   createCount -= 2;
+  mesh.pushBack(vec3f(mesh.vertex[mesh.vertex.size() - 3],
+                      mesh.vertex[mesh.vertex.size() - 2],
+                      mesh.vertex[mesh.vertex.size() - 1])
+                + side,
+                Color::white());
+  shouldCreateCount -= 2;
+  createCount -= 2;
 }
 
 void Stage::createRight() {
-  
+  Eigen::Quaternionf quat;
+  quat = Eigen::AngleAxisf(M_PI * -0.02f, up);
+  forward = quat * forward;
+  side    = quat * side;
+  mesh.pushBack(vec3f(mesh.vertex[mesh.vertex.size() - 6],
+                mesh.vertex[mesh.vertex.size() - 5],
+                mesh.vertex[mesh.vertex.size() - 4])
+                + forward,
+                Color::white());
+  mesh.pushBack(vec3f(mesh.vertex[mesh.vertex.size() - 3],
+                mesh.vertex[mesh.vertex.size() - 2],
+                mesh.vertex[mesh.vertex.size() - 1])
+                + side,
+                Color::white());
+  shouldCreateCount -= 2;
+  createCount -= 2;
 }
 
 void Stage::evForwardAndSide() {
@@ -84,6 +100,7 @@ void Stage::evForwardAndSide() {
   forward *= depth;
   side.normalize();
   side *= width;
+  up = forward.cross(side).normalized();
 }
 
 void Stage::updateData() {

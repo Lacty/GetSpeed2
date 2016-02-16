@@ -40,6 +40,7 @@ private:
   vec3f pos;
   vec3f forward;
   vec3f side;
+  vec3f up;
   vec3f rotate;
 
   void evForwardAndSide();

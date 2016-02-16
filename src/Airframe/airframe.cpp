@@ -85,6 +85,14 @@ int Airframe::evIndexNearestStageVtx(const std::vector<float>& _vtx) {
   for(int i = 0; i < _vtx.size(); i += 6) {
     t1 = vec3f(arrayToVec3f(&_vtx[i]) - pos).norm();
     if(t1 >= t2) {
+      // これステージ外に出たときの判定に使える
+      /*vec3f Forward = vec3f(arrayToVec3f(&_vtx[i]) - arrayToVec3f(&_vtx[i-6])).normalized();
+      V3_LOG(Forward.cross(arrayToVec3f(&_vtx[i - 6]) - pos));*/
+      //vec3f Side = arrayToVec3f(&_vtx[i - 6]) - arrayToVec3f(&_vtx[i - 3]);
+      //Side.normalize();
+      //if(Side.cross(arrayToVec3f(&_vtx[i - 6]) - pos).y() > 0) {
+      //  return i - 12;
+      //}
       return i - 6;
     }
     t2 = t1;
@@ -108,7 +116,10 @@ void Airframe::move() {
 
 void Airframe::accel() {
   // FIXME: 定速になってるのでどうにかする
-  vec3f acc = spline.GetInterpolatedSplinePoint(0.4f) - pos;
+  //static float angle = 0;
+  //angle += 0.01;
+  //pos = spline.GetInterpolatedSplinePoint(angle);
+  vec3f acc = spline.GetInterpolatedSplinePoint(0.14f) - pos;
   acc.normalize();
   moveVector += acc * 0.2f;
 }
