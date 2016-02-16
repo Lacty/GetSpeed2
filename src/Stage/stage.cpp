@@ -1,14 +1,19 @@
 
 #include "stage.hpp"
+#include "../Utility/utility.hpp"
 #include <GLFW/glfw3.h>
 #include <iostream>
 
 
 Stage::Stage() :
-createCount(0) {
-  for(int i = 0; i < 30; i++) {
-    mesh.pushBack(vec3f(1, 0, -i), Color::white());
-    mesh.pushBack(vec3f(-1, 0, -i), Color::white());
+width(3),
+depth(2),
+createCount(0),
+shouldCreateCount(0)
+{
+  for(int i = 0; i < 15; i++) {
+    mesh.pushBack(vec3f( width * 0.5, 0, -i * depth), Color::white());
+    mesh.pushBack(vec3f(-width * 0.5, 0, -i * depth), Color::white());
   }
   updateData();
 }
@@ -16,21 +21,55 @@ createCount(0) {
 
 void Stage::killPolyPassed(const int _index) {
   if(!(_index >= 12)) return;
-  createCount += int((_index - 6)  / 3); // Á‚µ‚½’¸“_‚Ì”‚ğ•Û‘¶
-  std::cout << createCount << std::endl;
+  shouldCreateCount += int((_index - 6)  / 3); // Á‚µ‚½’¸“_‚Ì”‚ğ•Û‘¶
+  std::cout << shouldCreateCount << std::endl;
   for(int i = 0; i < _index - 6; i++) {
     mesh.vertex.pop_front();
+    mesh.color.pop_front();
   }
 }
 
 void Stage::decideType() {
-  if(shouldCreateCount) return;
+  if(createCount) return;
   type = Type::Straight;
-  shouldCreateCount = 10;
+  createCount = 10;
 }
 
 void Stage::createStage() {
-  
+  if(!shouldCreateCount) return;
+  switch(type) {
+    case Type::Straight: {
+      forward = vec3f(mesh.vertex[mesh.vertex.size() - 6],
+                      mesh.vertex[mesh.vertex.size() - 5],
+                      mesh.vertex[mesh.vertex.size() - 4])
+              - vec3f(mesh.vertex[mesh.vertex.size() - 12],
+                      mesh.vertex[mesh.vertex.size() - 11],
+                      mesh.vertex[mesh.vertex.size() - 10]);
+      side = vec3f(mesh.vertex[mesh.vertex.size() - 3],
+                   mesh.vertex[mesh.vertex.size() - 2],
+                   mesh.vertex[mesh.vertex.size() - 1])
+           - vec3f(mesh.vertex[mesh.vertex.size() - 6],
+                   mesh.vertex[mesh.vertex.size() - 5],
+                   mesh.vertex[mesh.vertex.size() - 4]);
+      forward.normalize();
+      forward *= depth;
+      side.normalize();
+      side *= width;
+
+      mesh.pushBack(vec3f(mesh.vertex[mesh.vertex.size() - 6],
+                          mesh.vertex[mesh.vertex.size() - 5],
+                          mesh.vertex[mesh.vertex.size() - 4])
+                    + forward,
+                    Color::white());
+      mesh.pushBack(vec3f(mesh.vertex[mesh.vertex.size() - 3],
+                          mesh.vertex[mesh.vertex.size() - 2],
+                          mesh.vertex[mesh.vertex.size() - 1])
+                    + side,
+                    Color::white());
+      shouldCreateCount -= 2;
+      createCount -= 2;
+    }
+  }
 }
 
 void Stage::updateData() {
@@ -43,6 +82,7 @@ void Stage::updateData() {
 
 void Stage::update(const int _index) {
   killPolyPassed(_index);
+  decideType();
   createStage();
   updateData();
 }

@@ -12,7 +12,7 @@ Airframe::Airframe() :
 pos(0, 0, 0),
 center(0, 0, -1),
 up(0, 1, 0),
-speedRate(0.01),
+speedRate(0.06),
 controlPointNum(10)
 {
   forward = center - pos;
@@ -103,9 +103,9 @@ void Airframe::drawUI() {
 
 void Airframe::accel() {
   // FIXME: ’è‘¬‚É‚È‚Á‚Ä‚é‚Ì‚Å‚Ç‚¤‚É‚©‚·‚é
-  vec3f acc = spline.GetInterpolatedSplinePoint(0.2f) - pos;
+  vec3f acc = spline.GetInterpolatedSplinePoint(0.4f) - pos;
   acc.normalize();
-  pos += acc * 0.1f;
+  pos += acc * 0.6f;
 }
 
 void Airframe::handle(const int _rate) {

@@ -10,6 +10,9 @@ private:
   std::vector<float> vtx;
   std::vector<float> col;
   
+  float width;
+  float depth;
+
   enum class Type {
     Straight,
     Right,
