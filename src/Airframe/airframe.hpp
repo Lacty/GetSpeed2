@@ -2,6 +2,7 @@
 #pragma once
 #include "../Vector/vector.hpp"
 #include "../Mesh/mesh.hpp"
+#include "../CatmullRom/catmullRom.hpp"
 
 
 class Airframe {
@@ -27,6 +28,8 @@ private:
   // this param should upper "4"
   int controlPointNum;
 
+  CRSpline spline;
+  
   // evaluateF‹‚ß‚é
   // center nearOnLine nextOnLine‚ğ“¯‚É‹‚ß‚é
   void evControlPoint(const std::vector<float>& _vtx);
