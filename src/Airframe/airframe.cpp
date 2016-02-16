@@ -102,7 +102,9 @@ void Airframe::drawUI() {
 
 void Airframe::accel() {
   // FIXME: ’è‘¬‚É‚È‚Á‚Ä‚é‚Ì‚Å‚Ç‚¤‚É‚©‚·‚é
-  pos = spline.GetInterpolatedSplinePoint(0.2f);
+  vec3f acc = spline.GetInterpolatedSplinePoint(0.2f) - pos;
+  acc.normalize();
+  pos += acc * 0.1f;
 }
 
 void Airframe::handle(const int _rate) {
