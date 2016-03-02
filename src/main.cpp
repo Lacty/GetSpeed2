@@ -1,21 +1,7 @@
 
-#include "AppNative/appNative.hpp"
-#include "Scene/sceneManager.hpp"
+#include <iostream>
 
 
 int main() {
-  AppNative app(800, 480, "GetSpeed2");
-  app.setClearColor(Color::gray());
-
-  SceneManager scene(&app);
-
-  while(app.isOpen() && !app.isPressKey(GLFW_KEY_ESCAPE)) {
-    scene.update();
-    
-    app.clearWindowBuff();
-
-    scene.draw();
-
-    app.updateEvent();
-  }
+  std::cout << "Test";
 }
