@@ -3,5 +3,5 @@
 
 
 int main() {
-  AppNative app(100, 100, "test");
+  AppNative app(Vec2i(100, 100), "test");
 }

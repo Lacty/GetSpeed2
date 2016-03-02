@@ -4,6 +4,7 @@
 #include <GLFW/glfw3.h>
 
 #include "../Noncopyable/noncopyable.hpp"
+#include "../Vector/vector.hpp"
 
 
 class AppNative : public Noncopyable {
@@ -11,7 +12,6 @@ private:
   GLFWwindow* _window;
 
 public:
-  AppNative(const int width,
-            const int height,
+  AppNative(const Vec2i& size,
             const std::string& title);
 };

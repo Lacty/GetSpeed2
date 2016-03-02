@@ -52,9 +52,11 @@ endif()
 #
 add_subdirectory(AppNative)
 add_subdirectory(Noncopyable)
+add_subdirectory(Vector)
 set(MY_LIBS
   AppNative
   Noncopyable
+  Vector
 )
 
 
