@@ -15,20 +15,9 @@ if(APPLE)
   add_definitions("-std=c++14")
 endif()
 
-
-# --- Load Source Files
-#
-file(GLOB SRCS
-  *.cpp
-)
-file(GLOB HEAD
-  *.h  *.hpp
-)
-
-
 # --- Set Source Files to Project
 #
-add_executable(GetSpeed2 ${SRCS} ${HEAD})
+add_executable(GetSpeed2 main.cpp)
 
 
 # --- Find Libraries
@@ -59,14 +48,23 @@ elseif(MSVC)
 endif()
 
 
+# --- Add My Libraries
+#
+add_subdirectory(AppNative)
+add_subdirectory(Noncopyable)
+set(MY_LIBS
+  AppNative
+  Noncopyable
+)
+
+
 # --- Set Library to project
 #
-target_link_libraries(GetSpeed2 ${EXTRA_LIBS})
+target_link_libraries(GetSpeed2 ${MY_LIBS} ${EXTRA_LIBS})
 
 
-# --- copy AntTweakBar.dll to dir[vs2015/src/Debug]
+# --- copy Libraries to dir[vs2015/src/Debug]
 #
-# file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/vs2015/src)
 file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/vs2015/src/Debug)
 execute_process(COMMAND
   cp ${CMAKE_SOURCE_DIR}/lib/Windows/lib/AntTweakBar64.dll

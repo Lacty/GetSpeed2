@@ -1,7 +1,7 @@
 
-#include <iostream>
+#include "AppNative/appNative.hpp"
 
 
 int main() {
-  std::cout << "Test";
+  AppNative app(100, 100, "test");
 }
