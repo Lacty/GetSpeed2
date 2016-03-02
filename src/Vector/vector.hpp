@@ -49,9 +49,15 @@ public:
     y /= rhs;
     return *this;
   }
+  Vec2<T> operator*(const T& rhs) const {
+    return Vec2<T>(x * rhs, y * rhs);
+  }
+  Vec2<T> operator/(const T& rhs) const {
+    return Vec2<T>(x / rhs, y / rhs);
+  }
 
   friend std::ostream& operator<<(std::ostream& os, const Vec2<T>& rhs) {
-    os << "[" << rhs.x << "," << rhs.y << "]" << std::endl;
+    os << "[" << rhs.x << "," << rhs.y << "]";
     return os;
   }
 };
@@ -112,9 +118,15 @@ public:
     z /= rhs;
     return *this;
   }
+  Vec3<T> operator*(const T& rhs) const {
+    return Vec3<T>(x * rhs, y * rhs);
+  }
+  Vec3<T> operator/(const T& rhs) const {
+    return Vec3<T>(x / rhs, y / rhs);
+  }
 
   friend std::ostream& operator<<(std::ostream& os, const Vec3<T>& rhs) {
-    os << "[" << rhs.x << "," << rhs.y << "," << rhs.z << "]" << std::endl;
+    os << "[" << rhs.x << "," << rhs.y << "," << rhs.z << "]";
     return os;
   }
 };

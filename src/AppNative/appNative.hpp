@@ -5,6 +5,7 @@
 
 #include "../Noncopyable/noncopyable.hpp"
 #include "../Vector/vector.hpp"
+#include "../Rect/rect.hpp"
 
 
 class AppNative : public Noncopyable {

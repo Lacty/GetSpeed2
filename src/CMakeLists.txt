@@ -53,10 +53,12 @@ endif()
 add_subdirectory(AppNative)
 add_subdirectory(Noncopyable)
 add_subdirectory(Vector)
+add_subdirectory(Rect)
 set(MY_LIBS
   AppNative
   Noncopyable
   Vector
+  Rect
 )
 
 
