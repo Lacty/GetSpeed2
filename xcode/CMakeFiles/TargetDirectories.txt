@@ -1,0 +1,7 @@
+/Users/yanai/Desktop/GetSpeed2/xcode/CMakeFiles/ALL_BUILD.dir
+/Users/yanai/Desktop/GetSpeed2/xcode/CMakeFiles/ZERO_CHECK.dir
+/Users/yanai/Desktop/GetSpeed2/xcode/src/CMakeFiles/GetSpeed2.dir
+/Users/yanai/Desktop/GetSpeed2/xcode/src/AppNative/CMakeFiles/AppNative.dir
+/Users/yanai/Desktop/GetSpeed2/xcode/src/Noncopyable/CMakeFiles/Noncopyable.dir
+/Users/yanai/Desktop/GetSpeed2/xcode/src/Vector/CMakeFiles/Vector.dir
+/Users/yanai/Desktop/GetSpeed2/xcode/src/Rect/CMakeFiles/Rect.dir
