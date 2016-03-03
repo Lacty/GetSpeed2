@@ -14,10 +14,18 @@ class AppNative : public Noncopyable {
 private:
   GLFWwindow* _gl_win;
   Recti       _window;
-  
-  Key _key;
+  Key         _key;
 
   GLFWwindow* createWindow(const Vec2i& size, const std::string& title);
+
+  static void mouseButtomCallback(GLFWwindow* window, int button, int action, int mods);
+  static void mousePosCallBack(GLFWwindow* window, double xpos, double ypos);
+  static void mouseWheelCallBack(GLFWwindow* window, double xoffset, double yoffset);
+  static void keyCallBack(GLFWwindow* window, int key, int scancode, int action, int mods);
+  static void charCallBack(GLFWwindow* window, uint32_t codepoint);
+  static void windowSizeCallBack(GLFWwindow* window, int width, int height);
+
+  void setCallBackFunc();
 
 public:
   AppNative() = delete;
@@ -26,8 +34,13 @@ public:
 
   bool isOpen();
 
-  AppNative* begin();
-  AppNative* end();
+  void begin();
+  void end();
 
   AppNative* setClearColor(const ColorA& color);
+
+  // Key Events
+  bool isPushKey(int key);
+  bool isPullKey(int key);
+  bool isPressKey(int key);
 };
