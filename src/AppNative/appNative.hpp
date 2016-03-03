@@ -5,6 +5,7 @@
 
 #include "../Noncopyable/noncopyable.hpp"
 #include "../Vector/vector.hpp"
+#include "../Color/color.hpp"
 #include "../Rect/rect.hpp"
 
 
@@ -24,4 +25,6 @@ public:
 
   AppNative* begin();
   AppNative* end();
+
+  AppNative* setClearColor(const ColorA& color);
 };

@@ -38,3 +38,8 @@ AppNative* AppNative::end() {
   glfwPollEvents();
   return this;
 }
+
+AppNative* AppNative::setClearColor(const ColorA& color) {
+  glClearColor(color.r, color.g, color.b, color.a);
+  return this;
+}

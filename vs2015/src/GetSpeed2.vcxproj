@@ -114,7 +114,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\Debug\AppNative.lib;Noncopyable\Debug\Noncopyable.lib;Vector\Debug\Vector.lib;Rect\Debug\Rect.lib;Color\Debug\Color.lib;..\..\lib\Windows\lib\OpenGL32.lib;..\..\lib\Windows\lib\freetyped.lib;..\..\lib\Windows\lib\ftgld.lib;..\..\lib\Windows\lib\glfw3d.lib;..\..\lib\Windows\lib\AntTweakBar64.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\Debug\AppNative.lib;Noncopyable\Debug\Noncopyable.lib;Vector\Debug\Vector.lib;Color\Debug\Color.lib;Rect\Debug\Rect.lib;..\..\lib\Windows\lib\OpenGL32.lib;..\..\lib\Windows\lib\freetyped.lib;..\..\lib\Windows\lib\ftgld.lib;..\..\lib\Windows\lib\glfw3d.lib;..\..\lib\Windows\lib\AntTweakBar64.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -157,7 +157,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\Release\AppNative.lib;Noncopyable\Release\Noncopyable.lib;Vector\Release\Vector.lib;Rect\Release\Rect.lib;Color\Release\Color.lib;..\..\lib\Windows\lib\OpenGL32.lib;..\..\lib\Windows\lib\freetyped.lib;..\..\lib\Windows\lib\ftgld.lib;..\..\lib\Windows\lib\glfw3d.lib;..\..\lib\Windows\lib\AntTweakBar64.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\Release\AppNative.lib;Noncopyable\Release\Noncopyable.lib;Vector\Release\Vector.lib;Color\Release\Color.lib;Rect\Release\Rect.lib;..\..\lib\Windows\lib\OpenGL32.lib;..\..\lib\Windows\lib\freetyped.lib;..\..\lib\Windows\lib\ftgld.lib;..\..\lib\Windows\lib\glfw3d.lib;..\..\lib\Windows\lib\AntTweakBar64.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -200,7 +200,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\MinSizeRel\AppNative.lib;Noncopyable\MinSizeRel\Noncopyable.lib;Vector\MinSizeRel\Vector.lib;Rect\MinSizeRel\Rect.lib;Color\MinSizeRel\Color.lib;..\..\lib\Windows\lib\OpenGL32.lib;..\..\lib\Windows\lib\freetyped.lib;..\..\lib\Windows\lib\ftgld.lib;..\..\lib\Windows\lib\glfw3d.lib;..\..\lib\Windows\lib\AntTweakBar64.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\MinSizeRel\AppNative.lib;Noncopyable\MinSizeRel\Noncopyable.lib;Vector\MinSizeRel\Vector.lib;Color\MinSizeRel\Color.lib;Rect\MinSizeRel\Rect.lib;..\..\lib\Windows\lib\OpenGL32.lib;..\..\lib\Windows\lib\freetyped.lib;..\..\lib\Windows\lib\ftgld.lib;..\..\lib\Windows\lib\glfw3d.lib;..\..\lib\Windows\lib\AntTweakBar64.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -243,7 +243,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\RelWithDebInfo\AppNative.lib;Noncopyable\RelWithDebInfo\Noncopyable.lib;Vector\RelWithDebInfo\Vector.lib;Rect\RelWithDebInfo\Rect.lib;Color\RelWithDebInfo\Color.lib;..\..\lib\Windows\lib\OpenGL32.lib;..\..\lib\Windows\lib\freetyped.lib;..\..\lib\Windows\lib\ftgld.lib;..\..\lib\Windows\lib\glfw3d.lib;..\..\lib\Windows\lib\AntTweakBar64.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\RelWithDebInfo\AppNative.lib;Noncopyable\RelWithDebInfo\Noncopyable.lib;Vector\RelWithDebInfo\Vector.lib;Color\RelWithDebInfo\Color.lib;Rect\RelWithDebInfo\Rect.lib;..\..\lib\Windows\lib\OpenGL32.lib;..\..\lib\Windows\lib\freetyped.lib;..\..\lib\Windows\lib\ftgld.lib;..\..\lib\Windows\lib\glfw3d.lib;..\..\lib\Windows\lib\AntTweakBar64.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>

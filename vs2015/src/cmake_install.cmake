@@ -32,8 +32,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/AppNative/cmake_install.cmake")
   include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Noncopyable/cmake_install.cmake")
   include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Vector/cmake_install.cmake")
-  include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Rect/cmake_install.cmake")
   include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Color/cmake_install.cmake")
+  include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Rect/cmake_install.cmake")
 
 endif()
 

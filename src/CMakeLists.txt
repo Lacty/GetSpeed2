@@ -54,8 +54,8 @@ set(MY_LIBS
   AppNative
   Noncopyable
   Vector
-  Rect
   Color
+  Rect
 )
 foreach(loop_var IN LISTS MY_LIBS)
   add_subdirectory(${loop_var})
