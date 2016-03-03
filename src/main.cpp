@@ -3,7 +3,11 @@
 
 
 int main() {
-  AppNative app(Vec2i(100, 100), "test");
-  Rectf rect(50, 10);
-  std::cout << rect << std::endl;
+  AppNative app(Vec2i(640, 480), "GetSpeed2");
+
+  while (app.isOpen()) {
+    app.begin();
+
+    app.end();
+  }
 }

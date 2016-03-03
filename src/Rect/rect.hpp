@@ -11,13 +11,16 @@ public:
 
   Rect2d() = default;
   Rect2d(const T& width, const T& height) : pos(width * 0.5f, height * 0.5f), size(width, height) {}
-  Rect2d(const Vec2<T>& size) : pos(size.x * 0.5f, size.y * 0.5f), size(size) {}
+  Rect2d(const Vec2<T>& size) : pos(int(size.x * 0.5f), int(size.y * 0.5f)), size(size) {}
   Rect2d(const Vec2<T>& pos, const Vec2<T>& size) : pos(pos), size(size) {}
 
   T left()   const { return pos.x - size.x * 0.5f; }
   T right()  const { return pos.x + size.x * 0.5f; }
   T top()    const { return pos.y + size.y * 0.5f; }
   T bottom() const { return pos.y - size.y * 0.5f; }
+
+  T width()  const { return size.x; }
+  T height() const { return size.y; }
 
   Vec2<T> leftTop()     const { return Vec2<T>(left(), top()); }
   Vec2<T> leftBottom()  const { return Vec2<T>(left(), bottom()); }
