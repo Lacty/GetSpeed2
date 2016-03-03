@@ -17,7 +17,7 @@ public:
   static ColorT<T> green() { return ColorT<T>(0, 1, 0); }
   static ColorT<T> blue() { return ColorT<T>(0, 0, 1); }
   static ColorT<T> orange() { return ColorT<T>(1.0f, 0.6f, 0.0f); }
-  static ColorT<T> gray() { return ColorT<T>(0.4f, 0.4f, 0.4f); }
+  static ColorT<T> gray() { return ColorT<T>(0.3f, 0.3f, 0.3f); }
 
   friend std::ostream& operator<<(std::ostream& os, const ColorT<T>& rhs) {
     os << "[" << rhs.r << "," << rhs.g << "," << rhs.b << "]";
@@ -40,7 +40,7 @@ public:
   static ColorAT<T> green() { return ColorAT<T>(0, 1, 0, 1); }
   static ColorAT<T> blue() { return ColorAT<T>(0, 0, 1, 1); }
   static ColorAT<T> orange() { return ColorAT<T>(1.0f, 0.6f, 0.0f, 1.0f); }
-  static ColorAT<T> gray() { return ColorAT<T>(0.4f, 0.4f, 0.4f, 1.0f); }
+  static ColorAT<T> gray() { return ColorAT<T>(0.3f, 0.3f, 0.3f, 1.0f); }
 
   friend std::ostream& operator<<(std::ostream& os, const ColorAT<T>& rhs) {
     os << "[" << rhs.r << "," << rhs.g << "," << rhs.b << "," << rhs.a << "]";
