@@ -33,10 +33,21 @@ GLFWwindow* AppNative::createWindow(const Vec2i& size, const std::string& title)
 
 void AppNative::mouseButtomCallback(GLFWwindow* window, int button, int action, int mods) {
   auto app = static_cast<AppNative*>(glfwGetWindowUserPointer(window));
+
+  if (action == GLFW_PRESS) {
+    app->_mouse.setButtonPush(button);
+    app->_mouse.setButtonPress(button);
+  }
+  if (action == GLFW_RELEASE) {
+    app->_mouse.setButtonPull(button);
+    app->_mouse.popButtonPress(button);
+  }
 }
 
 void AppNative::mousePosCallBack(GLFWwindow* window, double xpos, double ypos) {
   auto app = static_cast<AppNative*>(glfwGetWindowUserPointer(window));
+
+  app->_mouse.setPos(xpos, ypos);
 }
 
 void AppNative::mouseWheelCallBack(GLFWwindow* window, double xoffset, double yoffset) {
@@ -95,3 +106,16 @@ AppNative* AppNative::setClearColor(const ColorA& color) {
 bool AppNative::isPushKey(int key)  { return _key.isPush(key); }
 bool AppNative::isPullKey(int key)  { return _key.isPull(key); }
 bool AppNative::isPressKey(int key) { return _key.isPress(key); }
+
+bool AppNative::isPushMouse(int buttom) { return _mouse.isPush(buttom); }
+bool AppNative::isPullMouse(int buttom) { return _mouse.isPull(buttom); }
+bool AppNative::isPressMouse(int buttom) { return _mouse.isPress(buttom); }
+
+Vec2d AppNative::mousePos() const {
+  return _mouse.pos();
+}
+
+void AppNative::setMousePos(const Vec2d& pos) {
+  glfwSetCursorPos(_gl_win, pos.x, pos.y);
+  _mouse.setPos(pos.x, pos.y);
+}

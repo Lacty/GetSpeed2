@@ -8,6 +8,7 @@
 #include "../Color/color.hpp"
 #include "../Rect/rect.hpp"
 #include "../Key/key.hpp"
+#include "../Mouse/mouse.hpp"
 
 
 class AppNative : public Noncopyable {
@@ -15,6 +16,7 @@ private:
   GLFWwindow* _gl_win;
   Recti       _window;
   Key         _key;
+  Mouse       _mouse;
 
   GLFWwindow* createWindow(const Vec2i& size, const std::string& title);
 
@@ -43,4 +45,12 @@ public:
   bool isPushKey(int key);
   bool isPullKey(int key);
   bool isPressKey(int key);
+
+  // Key Events
+  bool isPushMouse(int buttom);
+  bool isPullMouse(int buttom);
+  bool isPressMouse(int buttom);
+
+  Vec2d mousePos() const;
+  void setMousePos(const Vec2d& pos);
 };

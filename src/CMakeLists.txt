@@ -57,6 +57,7 @@ set(MY_LIBS
   Color
   Rect
   Key
+  Mouse
 )
 foreach(loop_var IN LISTS MY_LIBS)
   add_subdirectory(${loop_var})

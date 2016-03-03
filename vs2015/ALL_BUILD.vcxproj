@@ -177,6 +177,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Key/Key.vcxproj">
       <Project>5A288850-1B5E-3CCE-9AC4-3C417C804DF4</Project>
     </ProjectReference>
+    <ProjectReference Include="C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Mouse/Mouse.vcxproj">
+      <Project>479CB171-3BE6-3D1A-8816-7A01CDA4F33B</Project>
+    </ProjectReference>
     <ProjectReference Include="C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Noncopyable/Noncopyable.vcxproj">
       <Project>260B2B53-8A38-321F-9E70-83703C6FE8FB</Project>
     </ProjectReference>
