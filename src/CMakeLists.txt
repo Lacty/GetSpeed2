@@ -50,16 +50,16 @@ endif()
 
 # --- Add My Libraries
 #
-add_subdirectory(AppNative)
-add_subdirectory(Noncopyable)
-add_subdirectory(Vector)
-add_subdirectory(Rect)
 set(MY_LIBS
   AppNative
   Noncopyable
   Vector
   Rect
+  Color
 )
+foreach(loop_var IN LISTS MY_LIBS)
+  add_subdirectory(${loop_var})
+endforeach()
 
 
 # --- Set Library to project

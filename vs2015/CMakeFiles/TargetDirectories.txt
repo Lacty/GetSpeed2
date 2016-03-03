@@ -5,3 +5,4 @@ C:/Users/USER/Desktop/GetSpeed2/vs2015/src/AppNative/CMakeFiles/AppNative.dir
 C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Noncopyable/CMakeFiles/Noncopyable.dir
 C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Vector/CMakeFiles/Vector.dir
 C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Rect/CMakeFiles/Rect.dir
+C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Color/CMakeFiles/Color.dir

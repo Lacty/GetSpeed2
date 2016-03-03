@@ -168,6 +168,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:/Users/USER/Desktop/GetSpeed2/vs2015/src/AppNative/AppNative.vcxproj">
       <Project>C98DD594-2A85-30EA-969B-C2E6900FDBC3</Project>
     </ProjectReference>
+    <ProjectReference Include="C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Color/Color.vcxproj">
+      <Project>87997EE9-19DA-3B0B-826B-CCAABA667B82</Project>
+    </ProjectReference>
     <ProjectReference Include="C:/Users/USER/Desktop/GetSpeed2/vs2015/src/GetSpeed2.vcxproj">
       <Project>E7D39C76-D74C-3E4D-BBF9-6E77A752555D</Project>
     </ProjectReference>
