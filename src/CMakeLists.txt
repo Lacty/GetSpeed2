@@ -56,6 +56,7 @@ set(MY_LIBS
   Vector
   Color
   Rect
+  Key
 )
 foreach(loop_var IN LISTS MY_LIBS)
   add_subdirectory(${loop_var})

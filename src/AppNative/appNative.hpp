@@ -7,12 +7,15 @@
 #include "../Vector/vector.hpp"
 #include "../Color/color.hpp"
 #include "../Rect/rect.hpp"
+#include "../Key/key.hpp"
 
 
 class AppNative : public Noncopyable {
 private:
   GLFWwindow* _gl_win;
   Recti       _window;
+  
+  Key _key;
 
   GLFWwindow* createWindow(const Vec2i& size, const std::string& title);
 

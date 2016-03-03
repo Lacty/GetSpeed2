@@ -11,6 +11,9 @@ AppNative::AppNative(const Vec2i& size,
                      const std::string& title) :
 _window(size) {
   _gl_win = createWindow(size, title);
+
+  std::cout << "WindowSize = " << size << std::endl;
+  std::cout << "Title = " << title << std::endl;
 }
 
 
