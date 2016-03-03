@@ -1,4 +1,9 @@
 
+#if !_DEBUG
+  // デバッグ時のみコンソールを表示させる
+  #pragma comment(linker, "/subsystem:\"windows\" /entry:\"mainCRTStartup\"")
+#endif
+
 #include "appNative.hpp"
 
 
@@ -10,13 +15,13 @@ _window(size) {
 
 
 GLFWwindow* AppNative::createWindow(const Vec2i& size, const std::string& title) {
-  if (!glfwInit()) throw;
+  if (!glfwInit()) assert(!"");
 
   auto window = glfwCreateWindow(size.x, size.y,
                                  title.c_str(), nullptr, nullptr);
   if (!window) {
     glfwTerminate();
-    throw "create window";
+    assert(!"create window");
   }
 
   glfwMakeContextCurrent(window);
