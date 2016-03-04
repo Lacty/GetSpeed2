@@ -97,6 +97,14 @@ void AppNative::end() {
   glfwPollEvents();
 }
 
+Vec2i AppNative::windowSize() const {
+  return _window.size;
+}
+
+Vec2i AppNative::windowCenter() const {
+  return _window.pos;
+}
+
 AppNative* AppNative::setClearColor(const ColorA& color) {
   glClearColor(color.r, color.g, color.b, color.a);
   return this;

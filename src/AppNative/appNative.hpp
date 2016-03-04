@@ -42,6 +42,9 @@ public:
 
   AppNative* setClearColor(const ColorA& color);
 
+  Vec2i windowSize() const;
+  Vec2i windowCenter() const;
+
   // Key Events
   bool isPushKey(int key);
   bool isPullKey(int key);

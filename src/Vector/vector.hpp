@@ -13,7 +13,9 @@ public:
 
   Vec2() : x(0), y(0) {}
   Vec2(T x, T y) : x(x), y(y) {}
-  Vec2(const Vec2<T>& src) : x(src.x), y(src.y) {}
+  Vec2(const Vec2<int>& src) : x(src.x), y(src.y) {}
+  Vec2(const Vec2<float>& src) : x(src.x), y(src.y) {}
+  Vec2(const Vec2<double>& src) : x(src.x), y(src.y) {}
 
   static Vec2<T> zero() { return Vec2<T>(0, 0); }
   static Vec2<T> xAxis() { return Vec2<T>(1, 0); }
@@ -70,8 +72,12 @@ public:
 
   Vec3() : x(0), y(0), z(0) {}
   Vec3(T x, T y, T z) : x(x), y(y), z(z) {}
-  Vec3(const Vec3<T>& src) : x(src.x), y(src.y), z(src.z) {}
-  Vec3(const Vec2<T>& src) : x(src.x), y(src.y), z(0) {}
+  Vec3(const Vec3<int>& src) : x(src.x), y(src.y), z(src.z) {}
+  Vec3(const Vec3<float>& src) : x(src.x), y(src.y), z(src.z) {}
+  Vec3(const Vec3<double>& src) : x(src.x), y(src.y), z(src.z) {}
+  Vec3(const Vec2<int>& src) : x(src.x), y(src.y) {}
+  Vec3(const Vec2<float>& src) : x(src.x), y(src.y) {}
+  Vec3(const Vec2<double>& src) : x(src.x), y(src.y) {}
 
   Vec2<T> xy() const { return Vec2<T>(x, y); }
 

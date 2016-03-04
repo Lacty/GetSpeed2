@@ -12,7 +12,7 @@ int main() {
   while (app.isOpen()) {
     app.begin();
 
-    font.drawCenter("hoge", Vec2f(200, 200));
+    font.drawCenter("hoge", app.windowCenter());
 
     app.end();
   }
