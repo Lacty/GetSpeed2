@@ -9,6 +9,7 @@
 #include "../Rect/rect.hpp"
 #include "../Key/key.hpp"
 #include "../Mouse/mouse.hpp"
+#include "../Font/font.hpp"
 
 
 class AppNative : public Noncopyable {

@@ -8,3 +8,4 @@ C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Color/CMakeFiles/Color.dir
 C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Rect/CMakeFiles/Rect.dir
 C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Key/CMakeFiles/Key.dir
 C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Mouse/CMakeFiles/Mouse.dir
+C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Font/CMakeFiles/Font.dir

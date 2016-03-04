@@ -58,6 +58,7 @@ set(MY_LIBS
   Rect
   Key
   Mouse
+  Font
 )
 foreach(loop_var IN LISTS MY_LIBS)
   add_subdirectory(${loop_var})
