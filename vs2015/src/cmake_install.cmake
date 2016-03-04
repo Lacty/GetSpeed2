@@ -38,6 +38,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Mouse/cmake_install.cmake")
   include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Font/cmake_install.cmake")
   include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/LoadPath/cmake_install.cmake")
+  include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Graphic/cmake_install.cmake")
 
 endif()
 

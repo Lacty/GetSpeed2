@@ -60,6 +60,7 @@ set(MY_LIBS
   Mouse
   Font
   LoadPath
+  Graphic
 )
 foreach(loop_var IN LISTS MY_LIBS)
   add_subdirectory(${loop_var})

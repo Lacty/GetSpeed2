@@ -75,9 +75,9 @@ public:
   Vec3(const Vec3<int>& src) : x(src.x), y(src.y), z(src.z) {}
   Vec3(const Vec3<float>& src) : x(src.x), y(src.y), z(src.z) {}
   Vec3(const Vec3<double>& src) : x(src.x), y(src.y), z(src.z) {}
-  Vec3(const Vec2<int>& src) : x(src.x), y(src.y) {}
-  Vec3(const Vec2<float>& src) : x(src.x), y(src.y) {}
-  Vec3(const Vec2<double>& src) : x(src.x), y(src.y) {}
+  Vec3(const Vec2<int>& src) : x(src.x), y(src.y), z(0) {}
+  Vec3(const Vec2<float>& src) : x(src.x), y(src.y), z(0) {}
+  Vec3(const Vec2<double>& src) : x(src.x), y(src.y), z(0) {}
 
   Vec2<T> xy() const { return Vec2<T>(x, y); }
 

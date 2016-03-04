@@ -11,6 +11,7 @@
 #include "../Mouse/mouse.hpp"
 #include "../Font/font.hpp"
 #include "../LoadPath/loadPath.hpp"
+#include "../Graphic/graphic.hpp"
 
 
 class AppNative : public Noncopyable {
