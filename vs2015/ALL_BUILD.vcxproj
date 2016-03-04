@@ -180,6 +180,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Key/Key.vcxproj">
       <Project>5A288850-1B5E-3CCE-9AC4-3C417C804DF4</Project>
     </ProjectReference>
+    <ProjectReference Include="C:/Users/USER/Desktop/GetSpeed2/vs2015/src/LoadPath/LoadPath.vcxproj">
+      <Project>A1D3DD17-9640-327B-B723-272B31C9CFCA</Project>
+    </ProjectReference>
     <ProjectReference Include="C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Mouse/Mouse.vcxproj">
       <Project>479CB171-3BE6-3D1A-8816-7A01CDA4F33B</Project>
     </ProjectReference>

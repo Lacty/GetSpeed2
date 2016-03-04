@@ -10,6 +10,7 @@
 #include "../Key/key.hpp"
 #include "../Mouse/mouse.hpp"
 #include "../Font/font.hpp"
+#include "../LoadPath/loadPath.hpp"
 
 
 class AppNative : public Noncopyable {
