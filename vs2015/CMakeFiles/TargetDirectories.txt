@@ -14,3 +14,4 @@ C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Graphic/CMakeFiles/Graphic.dir
 C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Audio/CMakeFiles/Audio.dir
 C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Random/CMakeFiles/Random.dir
 C:/Users/USER/Desktop/GetSpeed2/vs2015/src/CatmullRom/CMakeFiles/CatmullRom.dir
+C:/Users/USER/Desktop/GetSpeed2/vs2015/src/TweakBar/CMakeFiles/TweakBar.dir

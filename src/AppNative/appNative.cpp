@@ -9,7 +9,8 @@
 
 AppNative::AppNative(const Vec2i& size,
                      const std::string& title) :
-window_(size) {
+window_(size),
+tweakBar_(size) {
   gl_win_ = createWindow(size, title);
   glfwSetWindowUserPointer(gl_win_, this);
   setCallBackFunc();
@@ -42,16 +43,22 @@ void AppNative::mouseButtomCallback(GLFWwindow* window, int button, int action, 
     app->mouse_.setButtonPull(button);
     app->mouse_.popButtonPress(button);
   }
+
+  TweakBar::mouseButtonCallBack(window, button, action, mods);
 }
 
 void AppNative::mousePosCallBack(GLFWwindow* window, double xpos, double ypos) {
   auto app = static_cast<AppNative*>(glfwGetWindowUserPointer(window));
 
   app->mouse_.setPos(xpos, ypos);
+
+  TweakBar::mousePosCallBack(window, xpos, ypos);
 }
 
 void AppNative::mouseWheelCallBack(GLFWwindow* window, double xoffset, double yoffset) {
   auto app = static_cast<AppNative*>(glfwGetWindowUserPointer(window));
+
+  TweakBar::mouseWheelCallBack(window, xoffset, yoffset);
 }
 
 void AppNative::keyCallBack(GLFWwindow* window, int key, int scancode, int action, int mods) {
@@ -65,13 +72,19 @@ void AppNative::keyCallBack(GLFWwindow* window, int key, int scancode, int actio
     app->key_.setKeyPull(key);
     app->key_.popKeyPress(key);
   }
+
+  TweakBar::keyCallBack(window, key, scancode, action, mods);
 }
 void AppNative::charCallBack(GLFWwindow* window, uint32_t codepoint) {
   auto app = static_cast<AppNative*>(glfwGetWindowUserPointer(window));
+
+  TweakBar::charCallBack(window, codepoint);
 }
 
 void AppNative::windowSizeCallBack(GLFWwindow* window, int width, int height) {
   auto app = static_cast<AppNative*>(glfwGetWindowUserPointer(window));
+
+  TweakBar::windowSizeCallBack(window, width, height);
 }
 
 void AppNative::setCallBackFunc() {
@@ -93,6 +106,7 @@ void AppNative::begin() {
 }
 
 void AppNative::end() {
+  tweakBar_.draw();
   glfwSwapBuffers(gl_win_);
   glfwPollEvents();
 }

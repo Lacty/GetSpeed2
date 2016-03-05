@@ -14,6 +14,8 @@
 #include "../Graphic/graphic.hpp"
 #include "../Audio/audio.hpp"
 #include "../Random/random.hpp"
+#include "../CatmullRom/catmullRom.hpp"
+#include "../TweakBar/tweakBar.hpp"
 
 
 class AppNative : public Noncopyable {
@@ -24,6 +26,7 @@ private:
   Mouse       mouse_;
   Audio       audio_;
   Random      random_;
+  TweakBar    tweakBar_;
 
   GLFWwindow* createWindow(const Vec2i& size, const std::string& title);
 
