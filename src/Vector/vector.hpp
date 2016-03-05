@@ -52,6 +52,12 @@ public:
     y /= rhs;
     return *this;
   }
+  Vec2<T> operator+(const Vec2<T>& rhs) const {
+    return Vec2<T>(x + rhs.x, y + rhs.y);
+  }
+  Vec2<T> operator-(const Vec2<T>& rhs) const {
+    return Vec2<T>(x - rhs.x, y - rhs.y);
+  }
   Vec2<T> operator*(const T& rhs) const {
     return Vec2<T>(x * rhs, y * rhs);
   }
@@ -131,11 +137,17 @@ public:
     z /= rhs;
     return *this;
   }
+  Vec3<T> operator+(const Vec3<T>& rhs) const {
+    return Vec3<T>(x + rhs.x, y + rhs.y, z + rhs.z);
+  }
+  Vec3<T> operator-(const Vec3<T>& rhs) const {
+    return Vec3<T>(x - rhs.x, y - rhs.y, z - rhs.z);
+  }
   Vec3<T> operator*(const T& rhs) const {
-    return Vec3<T>(x * rhs, y * rhs);
+    return Vec3<T>(x * rhs, y * rhs, z * rhs);
   }
   Vec3<T> operator/(const T& rhs) const {
-    return Vec3<T>(x / rhs, y / rhs);
+    return Vec3<T>(x / rhs, y / rhs, z / rhs);
   }
 
   friend std::ostream& operator<<(std::ostream& os, const Vec3<T>& rhs) {

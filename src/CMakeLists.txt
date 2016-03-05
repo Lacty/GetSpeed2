@@ -64,6 +64,7 @@ set(MY_LIBS
   Graphic
   Audio
   Random
+  CatmullRom
 )
 foreach(loop_var IN LISTS MY_LIBS)
   add_subdirectory(${loop_var})

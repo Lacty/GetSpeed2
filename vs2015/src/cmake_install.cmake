@@ -41,6 +41,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Graphic/cmake_install.cmake")
   include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Audio/cmake_install.cmake")
   include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Random/cmake_install.cmake")
+  include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/CatmullRom/cmake_install.cmake")
 
 endif()
 

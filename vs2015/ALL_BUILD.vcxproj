@@ -171,6 +171,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Audio/Audio.vcxproj">
       <Project>5308D30C-BBB5-327A-8992-F39DE3ED85DF</Project>
     </ProjectReference>
+    <ProjectReference Include="C:/Users/USER/Desktop/GetSpeed2/vs2015/src/CatmullRom/CatmullRom.vcxproj">
+      <Project>8676B356-82E7-3402-BCD4-18299C39433E</Project>
+    </ProjectReference>
     <ProjectReference Include="C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Color/Color.vcxproj">
       <Project>87997EE9-19DA-3B0B-826B-CCAABA667B82</Project>
     </ProjectReference>
