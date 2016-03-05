@@ -65,18 +65,8 @@ public:
   void setMousePos(const Vec2d& pos);
 
   // Rnadom
-  template<typename T>
-  T rand(T range) {
-    return std::is_same<T, int>::value
-      ?
-      [&] {
-        std::uniform_int_distribution<> r(0, static_cast<int>(range));
-        return r(random_.mt);
-      }()
-      :
-      [&] {
-        std::uniform_real_distribution<> r(0.0, static_cast<double>(range));
-        return r(random_.mt);
-      }();
+  template<typename RandType>
+  RandType rand(RandType range) {
+    return Random::distribusion_t<RandType>(0, range)(random_.mt_);
   }
 };
