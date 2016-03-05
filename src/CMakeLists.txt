@@ -92,3 +92,20 @@ execute_process(COMMAND
   cp ${CMAKE_SOURCE_DIR}/lib/Windows/lib/wrap_oal.dll
      ${CMAKE_SOURCE_DIR}/vs2015/src/Debug
 )
+
+
+# --- copy Libraries to dir[vs2015/src/Release]
+#
+file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/vs2015/src/Release)
+execute_process(COMMAND
+  cp ${CMAKE_SOURCE_DIR}/lib/Windows/lib/AntTweakBar64.dll
+     ${CMAKE_SOURCE_DIR}/vs2015/src/Release
+)
+execute_process(COMMAND
+  cp ${CMAKE_SOURCE_DIR}/lib/Windows/lib/OpenAL32.dll
+     ${CMAKE_SOURCE_DIR}/vs2015/src/Release
+)
+execute_process(COMMAND
+  cp ${CMAKE_SOURCE_DIR}/lib/Windows/lib/wrap_oal.dll
+     ${CMAKE_SOURCE_DIR}/vs2015/src/Release
+)
