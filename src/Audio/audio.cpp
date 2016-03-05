@@ -4,81 +4,77 @@
 
 
 Audio::Audio() {
-  device  = alcOpenDevice(nullptr);
-  context = alcCreateContext(device, nullptr);
-  alcMakeContextCurrent(context);
+  device_  = alcOpenDevice(nullptr);
+  context_ = alcCreateContext(device_, nullptr);
+  alcMakeContextCurrent(context_);
 }
 
 Audio::~Audio() {
   alcMakeContextCurrent(nullptr);
-  alcDestroyContext(context);
-  alcCloseDevice(device);
+  alcDestroyContext(context_);
+  alcCloseDevice(device_);
 }
 
 
 Media::Media(const std::string& _path) :
-source(_path.c_str())
+source_(_path.c_str())
 {
-  alGenBuffers(1, &buf_id);
-  alGenSources(1, &src_id);
+  alGenBuffers(1, &buf_id_);
+  alGenSources(1, &src_id_);
 
   // buf_idÇ…ÉfÅ[É^ÇåãÇ—Ç¬ÇØÇÈ
-  alBufferData(buf_id,
-               source.isStereo()
+  alBufferData(buf_id_,
+               source_.isStereo()
                ? AL_FORMAT_STEREO16
                : AL_FORMAT_MONO16,
-               source.data(),
-               source.size(),
-               source.sampleRate());
+               source_.data(),
+               source_.size(),
+               source_.sampleRate());
 
   // src_idÇ…buf_idÇåãÇ—Ç¬ÇØÇÈ
-  alSourcei(src_id, AL_BUFFER, buf_id);
+  alSourcei(src_id_, AL_BUFFER, buf_id_);
 }
 
 Media::~Media() {
-  alDeleteSources(1, &src_id);
-  alDeleteBuffers(1, &buf_id);
+  alDeleteSources(1, &src_id_);
+  alDeleteBuffers(1, &buf_id_);
 }
 
 Media* Media::play() {
-  alSourcePlay(src_id);
+  alSourcePlay(src_id_);
   return this;
 }
 
 Media* Media::stop() {
-  alSourceStop(src_id);
+  alSourceStop(src_id_);
   return this;
 }
 
 Media* Media::pause() {
-  alSourcePause(src_id);
+  alSourcePause(src_id_);
   return this;
 }
 
-Media* Media::setVolume(const float _volume) {
-  alSourcef(src_id, AL_GAIN, _volume);
+Media* Media::setVolume(const float volume) {
+  alSourcef(src_id_, AL_GAIN, volume);
   return this;
 }
 
-Media* Media::setPitch(const float _pitch) {
-  alSourcef(src_id, AL_PITCH, _pitch);
+Media* Media::setPitch(const float pitch) {
+  alSourcef(src_id_, AL_PITCH, pitch);
   return this;
 }
 
 Media* Media::enableLoop() {
-  alSourcei(src_id, AL_LOOPING, true);
+  alSourcei(src_id_, AL_LOOPING, true);
   return this;
 }
 
 Media* Media::disableLoop() {
-  alSourcei(src_id, AL_LOOPING, false);
+  alSourcei(src_id_, AL_LOOPING, false);
   return this;
 }
 
-Wav* Media::get() { return &source; }
+Wav* Media::get() { return &source_; }
 
-void Media::show() {
-  ALint a;
-  alGetIntegerv(AL_BYTE_OFFSET, &a);
-  std::cout << a << std::endl;
-}
+void Media::show() {}

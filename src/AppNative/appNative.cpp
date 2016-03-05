@@ -9,9 +9,9 @@
 
 AppNative::AppNative(const Vec2i& size,
                      const std::string& title) :
-_window(size) {
-  _gl_win = createWindow(size, title);
-  glfwSetWindowUserPointer(_gl_win, this);
+window_(size) {
+  gl_win_ = createWindow(size, title);
+  glfwSetWindowUserPointer(gl_win_, this);
   setCallBackFunc();
 }
 
@@ -35,19 +35,19 @@ void AppNative::mouseButtomCallback(GLFWwindow* window, int button, int action, 
   auto app = static_cast<AppNative*>(glfwGetWindowUserPointer(window));
 
   if (action == GLFW_PRESS) {
-    app->_mouse.setButtonPush(button);
-    app->_mouse.setButtonPress(button);
+    app->mouse_.setButtonPush(button);
+    app->mouse_.setButtonPress(button);
   }
   if (action == GLFW_RELEASE) {
-    app->_mouse.setButtonPull(button);
-    app->_mouse.popButtonPress(button);
+    app->mouse_.setButtonPull(button);
+    app->mouse_.popButtonPress(button);
   }
 }
 
 void AppNative::mousePosCallBack(GLFWwindow* window, double xpos, double ypos) {
   auto app = static_cast<AppNative*>(glfwGetWindowUserPointer(window));
 
-  app->_mouse.setPos(xpos, ypos);
+  app->mouse_.setPos(xpos, ypos);
 }
 
 void AppNative::mouseWheelCallBack(GLFWwindow* window, double xoffset, double yoffset) {
@@ -58,12 +58,12 @@ void AppNative::keyCallBack(GLFWwindow* window, int key, int scancode, int actio
   auto app = static_cast<AppNative*>(glfwGetWindowUserPointer(window));
   
   if (action == GLFW_PRESS) {
-    app->_key.setKeyPush(key);
-    app->_key.setKeyPress(key);
+    app->key_.setKeyPush(key);
+    app->key_.setKeyPress(key);
   }
   if (action == GLFW_RELEASE) {
-    app->_key.setKeyPull(key);
-    app->_key.popKeyPress(key);
+    app->key_.setKeyPull(key);
+    app->key_.popKeyPress(key);
   }
 }
 void AppNative::charCallBack(GLFWwindow* window, uint32_t codepoint) {
@@ -75,17 +75,17 @@ void AppNative::windowSizeCallBack(GLFWwindow* window, int width, int height) {
 }
 
 void AppNative::setCallBackFunc() {
-  glfwSetMouseButtonCallback(_gl_win, mouseButtomCallback);
-  glfwSetCursorPosCallback(_gl_win, mousePosCallBack);
-  glfwSetScrollCallback(_gl_win, mouseWheelCallBack);
-  glfwSetKeyCallback(_gl_win, keyCallBack);
-  glfwSetCharCallback(_gl_win, charCallBack);
-  glfwSetWindowSizeCallback(_gl_win, windowSizeCallBack);
+  glfwSetMouseButtonCallback(gl_win_, mouseButtomCallback);
+  glfwSetCursorPosCallback(gl_win_, mousePosCallBack);
+  glfwSetScrollCallback(gl_win_, mouseWheelCallBack);
+  glfwSetKeyCallback(gl_win_, keyCallBack);
+  glfwSetCharCallback(gl_win_, charCallBack);
+  glfwSetWindowSizeCallback(gl_win_, windowSizeCallBack);
 }
 
 
 bool AppNative::isOpen() {
-  return !glfwWindowShouldClose(_gl_win);
+  return !glfwWindowShouldClose(gl_win_);
 }
 
 void AppNative::begin() {
@@ -93,16 +93,16 @@ void AppNative::begin() {
 }
 
 void AppNative::end() {
-  glfwSwapBuffers(_gl_win);
+  glfwSwapBuffers(gl_win_);
   glfwPollEvents();
 }
 
 Vec2i AppNative::windowSize() const {
-  return _window.size;
+  return window_.size_;
 }
 
 Vec2i AppNative::windowCenter() const {
-  return _window.pos;
+  return window_.pos_;
 }
 
 AppNative* AppNative::setClearColor(const ColorA& color) {
@@ -111,19 +111,19 @@ AppNative* AppNative::setClearColor(const ColorA& color) {
 }
 
 
-bool AppNative::isPushKey(int key)  { return _key.isPush(key); }
-bool AppNative::isPullKey(int key)  { return _key.isPull(key); }
-bool AppNative::isPressKey(int key) { return _key.isPress(key); }
+bool AppNative::isPushKey(int key)  { return key_.isPush(key); }
+bool AppNative::isPullKey(int key)  { return key_.isPull(key); }
+bool AppNative::isPressKey(int key) { return key_.isPress(key); }
 
-bool AppNative::isPushMouse(int buttom) { return _mouse.isPush(buttom); }
-bool AppNative::isPullMouse(int buttom) { return _mouse.isPull(buttom); }
-bool AppNative::isPressMouse(int buttom) { return _mouse.isPress(buttom); }
+bool AppNative::isPushMouse(int buttom) { return mouse_.isPush(buttom); }
+bool AppNative::isPullMouse(int buttom) { return mouse_.isPull(buttom); }
+bool AppNative::isPressMouse(int buttom) { return mouse_.isPress(buttom); }
 
 Vec2d AppNative::mousePos() const {
-  return _mouse.pos();
+  return mouse_.pos();
 }
 
 void AppNative::setMousePos(const Vec2d& pos) {
-  glfwSetCursorPos(_gl_win, pos.x, pos.y);
-  _mouse.setPos(pos.x, pos.y);
+  glfwSetCursorPos(gl_win_, pos.x, pos.y);
+  mouse_.setPos(pos.x, pos.y);
 }

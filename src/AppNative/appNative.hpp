@@ -13,15 +13,17 @@
 #include "../LoadPath/loadPath.hpp"
 #include "../Graphic/graphic.hpp"
 #include "../Audio/audio.hpp"
+#include "../Random/random.hpp"
 
 
 class AppNative : public Noncopyable {
 private:
-  GLFWwindow* _gl_win;
-  Recti       _window;
-  Key         _key;
-  Mouse       _mouse;
-  Audio       _audio;
+  GLFWwindow* gl_win_;
+  Recti       window_;
+  Key         key_;
+  Mouse       mouse_;
+  Audio       audio_;
+  Random      random_;
 
   GLFWwindow* createWindow(const Vec2i& size, const std::string& title);
 
@@ -61,4 +63,20 @@ public:
 
   Vec2d mousePos() const;
   void setMousePos(const Vec2d& pos);
+
+  // Rnadom
+  template<typename T>
+  T rand(T range) {
+    return std::is_same<T, int>::value
+      ?
+      [&] {
+        std::uniform_int_distribution<> r(0, static_cast<int>(range));
+        return r(random_.mt);
+      }()
+      :
+      [&] {
+        std::uniform_real_distribution<> r(0.0, static_cast<double>(range));
+        return r(random_.mt);
+      }();
+  }
 };

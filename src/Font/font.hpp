@@ -7,13 +7,13 @@
 
 class Font {
 private:
-  FTPixmapFont font;
+  FTPixmapFont font_;
 
 public:
   Font() = delete;
   Font(const std::string& path);
 
-  void setSize(int _size);
+  void setSize(int size);
   void draw(const std::string& str, const Vec2f& pos);
   void drawCenter(const std::string& str, const Vec2f& pos);
 };

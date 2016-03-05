@@ -10,8 +10,8 @@
 
 class Audio {
 private:
-  ALCdevice*  device;
-  ALCcontext* context;
+  ALCdevice*  device_;
+  ALCcontext* context_;
 
 public:
   Audio();
@@ -23,13 +23,13 @@ public:
 
 class Media {
 private:
-  Wav source;
+  Wav source_;
 
-  ALuint buf_id;
-  ALuint src_id;
+  ALuint buf_id_;
+  ALuint src_id_;
 
 public:
-  explicit Media(const std::string& _path);
+  explicit Media(const std::string& path);
   ~Media();
 
   Media(const Media& src) = delete;
@@ -38,8 +38,8 @@ public:
   Media* play();
   Media* stop();
   Media* pause();
-  Media* setVolume(const float _volume);
-  Media* setPitch(const float _pitch);
+  Media* setVolume(const float volume);
+  Media* setPitch(const float pitch);
   Media* enableLoop();
   Media* disableLoop();
 

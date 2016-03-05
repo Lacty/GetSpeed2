@@ -6,31 +6,31 @@
 
 class Key : public Noncopyable {
 private:
-  std::set<int> _push;
-  std::set<int> _pull;
-  std::set<int> _press;
+  std::set<int> push_;
+  std::set<int> pull_;
+  std::set<int> press_;
 
 public:
-  void setKeyPush(int key) { _push.emplace(key); }
-  void setKeyPull(int key) { _pull.emplace(key); }
-  void setKeyPress(int key) { _press.emplace(key); }
+  void setKeyPush(int key) { push_.emplace(key); }
+  void setKeyPull(int key) { pull_.emplace(key); }
+  void setKeyPress(int key) { press_.emplace(key); }
 
-  void popKeyPress(int key) { _press.erase(_press.find(key)); }
+  void popKeyPress(int key) { press_.erase(press_.find(key)); }
 
   bool isPush(int key) {
-    if (_push.find(key) == _push.end()) return false;
-    _push.erase(_push.find(key));
+    if (push_.find(key) == push_.end()) return false;
+    push_.erase(push_.find(key));
     return true;
   }
 
   bool isPull(int key) {
-    if (_pull.find(key) == _pull.end()) return false;
-    _pull.erase(_pull.find(key));
+    if (pull_.find(key) == pull_.end()) return false;
+    pull_.erase(pull_.find(key));
     return true;
   }
 
   bool isPress(int key) {
-    if (_press.find(key) == _press.end()) return false;
+    if (press_.find(key) == press_.end()) return false;
     return true;
   }
 };

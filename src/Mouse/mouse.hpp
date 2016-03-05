@@ -7,44 +7,44 @@
 
 class Mouse : public Noncopyable {
 private:
-  Vec2d _pos;
+  Vec2d pos_;
 
-  std::set<int> _push;
-  std::set<int> _pull;
-  std::set<int> _press;
+  std::set<int> push_;
+  std::set<int> pull_;
+  std::set<int> press_;
 
 public:
-  Mouse() :_pos(0, 0) {};
+  Mouse() :pos_(0, 0) {};
 
-  void setButtonPush(int button) { _push.emplace(button); }
-  void setButtonPull(int button) { _pull.emplace(button); }
-  void setButtonPress(int button) { _press.emplace(button); }
+  void setButtonPush(int button) { push_.emplace(button); }
+  void setButtonPull(int button) { pull_.emplace(button); }
+  void setButtonPress(int button) { press_.emplace(button); }
 
-  void popButtonPress(int button) { _press.erase(_press.find(button)); }
+  void popButtonPress(int button) { press_.erase(press_.find(button)); }
 
   bool isPush(int button) {
-    if (_push.find(button) == _push.end()) return false;
-    _push.erase(_push.find(button));
+    if (push_.find(button) == push_.end()) return false;
+    push_.erase(push_.find(button));
     return true;
   }
 
   bool isPull(int button) {
-    if (_pull.find(button) == _pull.end()) return false;
-    _pull.erase(_pull.find(button));
+    if (pull_.find(button) == pull_.end()) return false;
+    pull_.erase(pull_.find(button));
     return true;
   }
 
   bool isPress(int button) {
-    if (_press.find(button) == _press.end()) return false;
+    if (press_.find(button) == press_.end()) return false;
     return true;
   }
 
   Vec2d pos() const {
-    return _pos;
+    return pos_;
   }
 
   void setPos(const double x, const double y) {
-    _pos.x = x;
-    _pos.y = y;
+    pos_.x = x;
+    pos_.y = y;
   } 
 };
