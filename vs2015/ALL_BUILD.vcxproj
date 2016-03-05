@@ -207,6 +207,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:/Users/USER/Desktop/GetSpeed2/vs2015/src/TweakBar/TweakBar.vcxproj">
       <Project>67F4FC1D-2262-39D3-9837-BD51F8A9C191</Project>
     </ProjectReference>
+    <ProjectReference Include="C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Utility/Utility.vcxproj">
+      <Project>E449DC48-C498-3E15-9ABA-482820DC7A93</Project>
+    </ProjectReference>
     <ProjectReference Include="C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Vector/Vector.vcxproj">
       <Project>2AC2E018-69D6-3DE4-9EAB-D397FF880214</Project>
     </ProjectReference>

@@ -66,6 +66,7 @@ set(MY_LIBS
   Random
   CatmullRom
   TweakBar
+  Utility
 )
 foreach(loop_var IN LISTS MY_LIBS)
   add_subdirectory(${loop_var})
