@@ -14,7 +14,7 @@ public:
   Vec2() : x(0), y(0) {}
   Vec2(T x, T y) : x(x), y(y) {}
   template<typename U>
-    Vec2(const Vec2<U>& src) : x(static_cast<T>(src.x)), y(static_cast<T>(src.y)) {}
+    explicit Vec2(const Vec2<U>& src) : x(static_cast<T>(src.x)), y(static_cast<T>(src.y)) {}
 
   static Vec2<T> zero()  { return Vec2<T>(0, 0); }
   static Vec2<T> xAxis() { return Vec2<T>(1, 0); }
@@ -74,13 +74,13 @@ public:
   Vec3() : x(0), y(0), z(0) {}
   Vec3(T x, T y, T z) : x(x), y(y), z(z) {}
   template<typename U>
-    Vec3(const Vec3<U>& src) :
+    explicit Vec3(const Vec3<U>& src) :
       x(static_cast<T>(src.x)),
       y(static_cast<T>(src.y)),
       z(static_cast<T>(src.z)) {}
 
   template<typename U>
-    Vec3(const Vec2<U>& src) :
+    explicit Vec3(const Vec2<U>& src) :
       x(static_cast<T>(src.x)),
       y(static_cast<T>(src.y)),
       z(0) {}
