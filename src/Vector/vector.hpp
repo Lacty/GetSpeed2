@@ -13,13 +13,14 @@ public:
 
   Vec2() : x(0), y(0) {}
   Vec2(T x, T y) : x(x), y(y) {}
-  Vec2(const Vec2<int>& src) : x(src.x), y(src.y) {}
-  Vec2(const Vec2<float>& src) : x(src.x), y(src.y) {}
-  Vec2(const Vec2<double>& src) : x(src.x), y(src.y) {}
+  template<typename U>
+    Vec2(const Vec2<U>& src) : x(static_cast<T>(src.x)), y(static_cast<T>(src.y)) {}
 
-  static Vec2<T> zero() { return Vec2<T>(0, 0); }
+  static Vec2<T> zero()  { return Vec2<T>(0, 0); }
   static Vec2<T> xAxis() { return Vec2<T>(1, 0); }
   static Vec2<T> yAxis() { return Vec2<T>(0, 1); }
+
+  T sum() const { return x + y; }
 
   Vec2<T>& operator+=(const Vec2<T>& rhs) {
     x += rhs.x;
@@ -72,16 +73,22 @@ public:
 
   Vec3() : x(0), y(0), z(0) {}
   Vec3(T x, T y, T z) : x(x), y(y), z(z) {}
-  Vec3(const Vec3<int>& src) : x(src.x), y(src.y), z(src.z) {}
-  Vec3(const Vec3<float>& src) : x(src.x), y(src.y), z(src.z) {}
-  Vec3(const Vec3<double>& src) : x(src.x), y(src.y), z(src.z) {}
-  Vec3(const Vec2<int>& src) : x(src.x), y(src.y), z(0) {}
-  Vec3(const Vec2<float>& src) : x(src.x), y(src.y), z(0) {}
-  Vec3(const Vec2<double>& src) : x(src.x), y(src.y), z(0) {}
+  template<typename U>
+    Vec3(const Vec3<U>& src) :
+      x(static_cast<T>(src.x)),
+      y(static_cast<T>(src.y)),
+      z(static_cast<T>(src.z)) {}
+
+  template<typename U>
+    Vec3(const Vec2<U>& src) :
+      x(static_cast<T>(src.x)),
+      y(static_cast<T>(src.y)),
+      z(0) {}
+
 
   Vec2<T> xy() const { return Vec2<T>(x, y); }
 
-  static Vec3<T> zero() { return Vec3<T>(0, 0, 0); }
+  static Vec3<T> zero()  { return Vec3<T>(0, 0, 0); }
   static Vec3<T> xAxis() { return Vec3<T>(1, 0, 0); }
   static Vec3<T> yAxis() { return Vec3<T>(0, 1, 0); }
   static Vec3<T> zAxis() { return Vec3<T>(0, 0, 1); }
