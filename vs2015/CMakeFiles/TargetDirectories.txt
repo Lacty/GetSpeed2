@@ -11,3 +11,4 @@ C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Mouse/CMakeFiles/Mouse.dir
 C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Font/CMakeFiles/Font.dir
 C:/Users/USER/Desktop/GetSpeed2/vs2015/src/LoadPath/CMakeFiles/LoadPath.dir
 C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Graphic/CMakeFiles/Graphic.dir
+C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Audio/CMakeFiles/Audio.dir

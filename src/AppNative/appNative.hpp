@@ -12,6 +12,7 @@
 #include "../Font/font.hpp"
 #include "../LoadPath/loadPath.hpp"
 #include "../Graphic/graphic.hpp"
+#include "../Audio/audio.hpp"
 
 
 class AppNative : public Noncopyable {
@@ -20,6 +21,7 @@ private:
   Recti       _window;
   Key         _key;
   Mouse       _mouse;
+  Audio       _audio;
 
   GLFWwindow* createWindow(const Vec2i& size, const std::string& title);
 

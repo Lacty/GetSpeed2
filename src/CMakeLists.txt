@@ -44,6 +44,7 @@ elseif(MSVC)
     ${CMAKE_SOURCE_DIR}/lib/Windows/lib/ftgld.lib
     ${CMAKE_SOURCE_DIR}/lib/Windows/lib/glfw3d.lib
     ${CMAKE_SOURCE_DIR}/lib/Windows/lib/AntTweakBar64.lib
+    ${CMAKE_SOURCE_DIR}/lib/Windows/lib/OpenAL32.lib
   )
 endif()
 
@@ -61,6 +62,7 @@ set(MY_LIBS
   Font
   LoadPath
   Graphic
+  Audio
 )
 foreach(loop_var IN LISTS MY_LIBS)
   add_subdirectory(${loop_var})

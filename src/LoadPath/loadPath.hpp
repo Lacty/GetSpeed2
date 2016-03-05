@@ -3,4 +3,4 @@
 #include <string>
 
 
-std::string loadAssets(const std::string& src);
+std::string loadAsset(const std::string& src);

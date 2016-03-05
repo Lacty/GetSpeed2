@@ -2,7 +2,7 @@
 #include "loadPath.hpp"
 
 
-std::string loadAssets(const std::string& src) {
+std::string loadAsset(const std::string& src) {
 #if _WINDOWS
   std::string path("../../assets/");
 #elif __APPLE__
