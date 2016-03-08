@@ -42,9 +42,4 @@ public:
   Media* setPitch(const float pitch);
   Media* enableLoop();
   Media* disableLoop();
-
-  // ‚Æ‚è‚ ‚¦‚¸Wavæ“¾‚Å‚«‚éŠÖ”—pˆÓ
-  Wav* get();
-
-  void show();
 };

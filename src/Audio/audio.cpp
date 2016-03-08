@@ -74,7 +74,3 @@ Media* Media::disableLoop() {
   alSourcei(src_id_, AL_LOOPING, false);
   return this;
 }
-
-Wav* Media::get() { return &source_; }
-
-void Media::show() {}
