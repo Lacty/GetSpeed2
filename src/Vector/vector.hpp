@@ -65,6 +65,11 @@ public:
     return Vec2<T>(x / rhs, y / rhs);
   }
 
+  T& operator[](const int n) {
+    assert(n >= 0 && n <= 1);
+    return (&x)[n];
+  }
+
   friend std::ostream& operator<<(std::ostream& os, const Vec2<T>& rhs) {
     os << "[" << rhs.x << "," << rhs.y << "]";
     return os;
@@ -148,6 +153,11 @@ public:
   }
   Vec3<T> operator/(const T& rhs) const {
     return Vec3<T>(x / rhs, y / rhs, z / rhs);
+  }
+
+  T& operator[](const int n) {
+    assert(n >= 0 && n <= 2);
+    return (&x)[n];
   }
 
   friend std::ostream& operator<<(std::ostream& os, const Vec3<T>& rhs) {
