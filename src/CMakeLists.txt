@@ -3,8 +3,6 @@
 #
 include_directories(
   ${CMAKE_SOURCE_DIR}/include
-  ${CMAKE_SOURCE_DIR}/include/freetype
-  ${CMAKE_SOURCE_DIR}/lib/Windows/include
 )
 
 
@@ -39,12 +37,12 @@ if (APPLE)
   )
 elseif(MSVC)
   set(EXTRA_LIBS
-    ${CMAKE_SOURCE_DIR}/lib/Windows/lib/OpenGL32.lib
-    ${CMAKE_SOURCE_DIR}/lib/Windows/lib/freetyped.lib
-    ${CMAKE_SOURCE_DIR}/lib/Windows/lib/ftgld.lib
-    ${CMAKE_SOURCE_DIR}/lib/Windows/lib/glfw3d.lib
-    ${CMAKE_SOURCE_DIR}/lib/Windows/lib/AntTweakBar64.lib
-    ${CMAKE_SOURCE_DIR}/lib/Windows/lib/OpenAL32.lib
+    ${CMAKE_SOURCE_DIR}/lib/Windows/OpenGL32.lib
+    ${CMAKE_SOURCE_DIR}/lib/Windows/freetyped.lib
+    ${CMAKE_SOURCE_DIR}/lib/Windows/ftgld.lib
+    ${CMAKE_SOURCE_DIR}/lib/Windows/glfw3d.lib
+    ${CMAKE_SOURCE_DIR}/lib/Windows/AntTweakBar64.lib
+    ${CMAKE_SOURCE_DIR}/lib/Windows/OpenAL32.lib
   )
 endif()
 
@@ -82,15 +80,15 @@ target_link_libraries(GetSpeed2 ${MY_LIBS} ${EXTRA_LIBS})
 #
 file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/vs2015/src/Debug)
 execute_process(COMMAND
-  cp ${CMAKE_SOURCE_DIR}/lib/Windows/lib/AntTweakBar64.dll
+  cp ${CMAKE_SOURCE_DIR}/lib/Windows/AntTweakBar64.dll
      ${CMAKE_SOURCE_DIR}/vs2015/src/Debug
 )
 execute_process(COMMAND
-  cp ${CMAKE_SOURCE_DIR}/lib/Windows/lib/OpenAL32.dll
+  cp ${CMAKE_SOURCE_DIR}/lib/Windows/OpenAL32.dll
      ${CMAKE_SOURCE_DIR}/vs2015/src/Debug
 )
 execute_process(COMMAND
-  cp ${CMAKE_SOURCE_DIR}/lib/Windows/lib/wrap_oal.dll
+  cp ${CMAKE_SOURCE_DIR}/lib/Windows/wrap_oal.dll
      ${CMAKE_SOURCE_DIR}/vs2015/src/Debug
 )
 
@@ -99,14 +97,14 @@ execute_process(COMMAND
 #
 file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/vs2015/src/Release)
 execute_process(COMMAND
-  cp ${CMAKE_SOURCE_DIR}/lib/Windows/lib/AntTweakBar64.dll
+  cp ${CMAKE_SOURCE_DIR}/lib/Windows/AntTweakBar64.dll
      ${CMAKE_SOURCE_DIR}/vs2015/src/Release
 )
 execute_process(COMMAND
-  cp ${CMAKE_SOURCE_DIR}/lib/Windows/lib/OpenAL32.dll
+  cp ${CMAKE_SOURCE_DIR}/lib/Windows/OpenAL32.dll
      ${CMAKE_SOURCE_DIR}/vs2015/src/Release
 )
 execute_process(COMMAND
-  cp ${CMAKE_SOURCE_DIR}/lib/Windows/lib/wrap_oal.dll
+  cp ${CMAKE_SOURCE_DIR}/lib/Windows/wrap_oal.dll
      ${CMAKE_SOURCE_DIR}/vs2015/src/Release
 )

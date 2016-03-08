@@ -85,7 +85,7 @@
     </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;C:\Users\USER\Desktop\GetSpeed2\include\freetype;C:\Users\USER\Desktop\GetSpeed2\lib\Windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -102,10 +102,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;C:\Users\USER\Desktop\GetSpeed2\include\freetype;C:\Users\USER\Desktop\GetSpeed2\lib\Windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;C:\Users\USER\Desktop\GetSpeed2\include\freetype;C:\Users\USER\Desktop\GetSpeed2\lib\Windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -114,7 +114,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\Debug\AppNative.lib;Noncopyable\Debug\Noncopyable.lib;Vector\Debug\Vector.lib;Color\Debug\Color.lib;Rect\Debug\Rect.lib;Key\Debug\Key.lib;Mouse\Debug\Mouse.lib;Font\Debug\Font.lib;LoadPath\Debug\LoadPath.lib;Graphic\Debug\Graphic.lib;Audio\Debug\Audio.lib;Random\Debug\Random.lib;CatmullRom\Debug\CatmullRom.lib;TweakBar\Debug\TweakBar.lib;Utility\Debug\Utility.lib;..\..\lib\Windows\lib\OpenGL32.lib;..\..\lib\Windows\lib\freetyped.lib;..\..\lib\Windows\lib\ftgld.lib;..\..\lib\Windows\lib\glfw3d.lib;..\..\lib\Windows\lib\AntTweakBar64.lib;..\..\lib\Windows\lib\OpenAL32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\Debug\AppNative.lib;Noncopyable\Debug\Noncopyable.lib;Vector\Debug\Vector.lib;Color\Debug\Color.lib;Rect\Debug\Rect.lib;Key\Debug\Key.lib;Mouse\Debug\Mouse.lib;Font\Debug\Font.lib;LoadPath\Debug\LoadPath.lib;Graphic\Debug\Graphic.lib;Audio\Debug\Audio.lib;Random\Debug\Random.lib;CatmullRom\Debug\CatmullRom.lib;TweakBar\Debug\TweakBar.lib;Utility\Debug\Utility.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetyped.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -129,7 +129,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;C:\Users\USER\Desktop\GetSpeed2\include\freetype;C:\Users\USER\Desktop\GetSpeed2\lib\Windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -145,10 +145,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;C:\Users\USER\Desktop\GetSpeed2\include\freetype;C:\Users\USER\Desktop\GetSpeed2\lib\Windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;C:\Users\USER\Desktop\GetSpeed2\include\freetype;C:\Users\USER\Desktop\GetSpeed2\lib\Windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -157,7 +157,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\Release\AppNative.lib;Noncopyable\Release\Noncopyable.lib;Vector\Release\Vector.lib;Color\Release\Color.lib;Rect\Release\Rect.lib;Key\Release\Key.lib;Mouse\Release\Mouse.lib;Font\Release\Font.lib;LoadPath\Release\LoadPath.lib;Graphic\Release\Graphic.lib;Audio\Release\Audio.lib;Random\Release\Random.lib;CatmullRom\Release\CatmullRom.lib;TweakBar\Release\TweakBar.lib;Utility\Release\Utility.lib;..\..\lib\Windows\lib\OpenGL32.lib;..\..\lib\Windows\lib\freetyped.lib;..\..\lib\Windows\lib\ftgld.lib;..\..\lib\Windows\lib\glfw3d.lib;..\..\lib\Windows\lib\AntTweakBar64.lib;..\..\lib\Windows\lib\OpenAL32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\Release\AppNative.lib;Noncopyable\Release\Noncopyable.lib;Vector\Release\Vector.lib;Color\Release\Color.lib;Rect\Release\Rect.lib;Key\Release\Key.lib;Mouse\Release\Mouse.lib;Font\Release\Font.lib;LoadPath\Release\LoadPath.lib;Graphic\Release\Graphic.lib;Audio\Release\Audio.lib;Random\Release\Random.lib;CatmullRom\Release\CatmullRom.lib;TweakBar\Release\TweakBar.lib;Utility\Release\Utility.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetyped.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -172,7 +172,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;C:\Users\USER\Desktop\GetSpeed2\include\freetype;C:\Users\USER\Desktop\GetSpeed2\lib\Windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -188,10 +188,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;C:\Users\USER\Desktop\GetSpeed2\include\freetype;C:\Users\USER\Desktop\GetSpeed2\lib\Windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;C:\Users\USER\Desktop\GetSpeed2\include\freetype;C:\Users\USER\Desktop\GetSpeed2\lib\Windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -200,7 +200,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\MinSizeRel\AppNative.lib;Noncopyable\MinSizeRel\Noncopyable.lib;Vector\MinSizeRel\Vector.lib;Color\MinSizeRel\Color.lib;Rect\MinSizeRel\Rect.lib;Key\MinSizeRel\Key.lib;Mouse\MinSizeRel\Mouse.lib;Font\MinSizeRel\Font.lib;LoadPath\MinSizeRel\LoadPath.lib;Graphic\MinSizeRel\Graphic.lib;Audio\MinSizeRel\Audio.lib;Random\MinSizeRel\Random.lib;CatmullRom\MinSizeRel\CatmullRom.lib;TweakBar\MinSizeRel\TweakBar.lib;Utility\MinSizeRel\Utility.lib;..\..\lib\Windows\lib\OpenGL32.lib;..\..\lib\Windows\lib\freetyped.lib;..\..\lib\Windows\lib\ftgld.lib;..\..\lib\Windows\lib\glfw3d.lib;..\..\lib\Windows\lib\AntTweakBar64.lib;..\..\lib\Windows\lib\OpenAL32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\MinSizeRel\AppNative.lib;Noncopyable\MinSizeRel\Noncopyable.lib;Vector\MinSizeRel\Vector.lib;Color\MinSizeRel\Color.lib;Rect\MinSizeRel\Rect.lib;Key\MinSizeRel\Key.lib;Mouse\MinSizeRel\Mouse.lib;Font\MinSizeRel\Font.lib;LoadPath\MinSizeRel\LoadPath.lib;Graphic\MinSizeRel\Graphic.lib;Audio\MinSizeRel\Audio.lib;Random\MinSizeRel\Random.lib;CatmullRom\MinSizeRel\CatmullRom.lib;TweakBar\MinSizeRel\TweakBar.lib;Utility\MinSizeRel\Utility.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetyped.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -215,7 +215,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;C:\Users\USER\Desktop\GetSpeed2\include\freetype;C:\Users\USER\Desktop\GetSpeed2\lib\Windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -231,10 +231,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;C:\Users\USER\Desktop\GetSpeed2\include\freetype;C:\Users\USER\Desktop\GetSpeed2\lib\Windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;C:\Users\USER\Desktop\GetSpeed2\include\freetype;C:\Users\USER\Desktop\GetSpeed2\lib\Windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\USER\Desktop\GetSpeed2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -243,7 +243,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\RelWithDebInfo\AppNative.lib;Noncopyable\RelWithDebInfo\Noncopyable.lib;Vector\RelWithDebInfo\Vector.lib;Color\RelWithDebInfo\Color.lib;Rect\RelWithDebInfo\Rect.lib;Key\RelWithDebInfo\Key.lib;Mouse\RelWithDebInfo\Mouse.lib;Font\RelWithDebInfo\Font.lib;LoadPath\RelWithDebInfo\LoadPath.lib;Graphic\RelWithDebInfo\Graphic.lib;Audio\RelWithDebInfo\Audio.lib;Random\RelWithDebInfo\Random.lib;CatmullRom\RelWithDebInfo\CatmullRom.lib;TweakBar\RelWithDebInfo\TweakBar.lib;Utility\RelWithDebInfo\Utility.lib;..\..\lib\Windows\lib\OpenGL32.lib;..\..\lib\Windows\lib\freetyped.lib;..\..\lib\Windows\lib\ftgld.lib;..\..\lib\Windows\lib\glfw3d.lib;..\..\lib\Windows\lib\AntTweakBar64.lib;..\..\lib\Windows\lib\OpenAL32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\RelWithDebInfo\AppNative.lib;Noncopyable\RelWithDebInfo\Noncopyable.lib;Vector\RelWithDebInfo\Vector.lib;Color\RelWithDebInfo\Color.lib;Rect\RelWithDebInfo\Rect.lib;Key\RelWithDebInfo\Key.lib;Mouse\RelWithDebInfo\Mouse.lib;Font\RelWithDebInfo\Font.lib;LoadPath\RelWithDebInfo\LoadPath.lib;Graphic\RelWithDebInfo\Graphic.lib;Audio\RelWithDebInfo\Audio.lib;Random\RelWithDebInfo\Random.lib;CatmullRom\RelWithDebInfo\CatmullRom.lib;TweakBar\RelWithDebInfo\TweakBar.lib;Utility\RelWithDebInfo\Utility.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetyped.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>

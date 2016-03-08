@@ -196,9 +196,6 @@ Utility_LIB_DEPENDS:STATIC=
 //Dependencies for target
 Vector_LIB_DEPENDS:STATIC=
 
-//Dependencies for target
-Window_LIB_DEPENDS:STATIC=
-
 
 ########################
 # INTERNAL cache entries
