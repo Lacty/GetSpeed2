@@ -13,6 +13,7 @@ window_(size),
 tweakBar_(size) {
   gl_win_ = createWindow(size, title);
   glfwSetWindowUserPointer(gl_win_, this);
+  glfwSwapInterval(1); // 60 fps
   setCallBackFunc();
 }
 
