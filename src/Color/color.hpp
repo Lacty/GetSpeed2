@@ -21,6 +21,34 @@ public:
   static ColorT<T> orange() { return ColorT<T>(1.0f, 0.6f, 0.0f); }
   static ColorT<T> gray() { return ColorT<T>(0.3f, 0.3f, 0.3f); }
 
+  ColorT<T>& operator+=(const ColorT<T>& rhs) {
+    r += rhs.r;
+    g += rhs.g;
+    b += rhs.b;
+    return *this;
+  }
+  ColorT<T>& operator-=(const ColorT<T>& rhs) {
+    r -= rhs.r;
+    g -= rhs.g;
+    b -= rhs.b;
+    return *this;
+  }
+  ColorT<T>& operator*=(const T& rhs) {
+    r *= rhs;
+    g *= rhs;
+    b *= rhs;
+    return *this;
+  }
+  ColorT<T> operator+(const ColorT<T>& rhs) const {
+    return ColorT<T>(r + rhs.r, g + rhs.g, b + rhs.b);
+  }
+  ColorT<T> operator-(const ColorT<T>& rhs) const {
+    return ColorT<T>(r - rhs.r, g - rhs.g, b - rhs.b);
+  }
+  ColorT<T> operator*(const T& rhs) const {
+    return ColorT<T>(r * rhs, g * rhs, b * rhs);
+  }
+
   friend std::ostream& operator<<(std::ostream& os, const ColorT<T>& rhs) {
     os << "[" << rhs.r << "," << rhs.g << "," << rhs.b << "]";
     return os;
@@ -47,6 +75,37 @@ public:
   static ColorAT<T> blue() { return ColorAT<T>(0, 0, 1, 1); }
   static ColorAT<T> orange() { return ColorAT<T>(1.0f, 0.6f, 0.0f, 1.0f); }
   static ColorAT<T> gray() { return ColorAT<T>(0.3f, 0.3f, 0.3f, 1.0f); }
+
+  ColorAT<T>& operator+=(const ColorAT<T>& rhs) {
+    r += rhs.r;
+    g += rhs.g;
+    b += rhs.b;
+    a += rhs.a;
+    return *this;
+  }
+  ColorAT<T>& operator-=(const ColorAT<T>& rhs) {
+    r -= rhs.r;
+    g -= rhs.g;
+    b -= rhs.b;
+    a -= rhs.a;
+    return *this;
+  }
+  ColorAT<T>& operator*=(const T& rhs) {
+    r *= rhs;
+    g *= rhs;
+    b *= rhs;
+    a *= rhs;
+    return *this;
+  }
+  ColorAT<T> operator+(const ColorAT<T>& rhs) const {
+    return ColorAT<T>(r + rhs.r, g + rhs.g, b + rhs.b, a + rhs.a;);
+  }
+  ColorAT<T> operator-(const ColorAT<T>& rhs) const {
+    return ColorAT<T>(r - rhs.r, g - rhs.g, b - rhs.b, a - rhs.a;);
+  }
+  ColorAT<T> operator*(const T& rhs) const {
+    return ColorAT<T>(r * rhs, g * rhs, b * rhs, a * rhs);
+  }
 
   friend std::ostream& operator<<(std::ostream& os, const ColorAT<T>& rhs) {
     os << "[" << rhs.r << "," << rhs.g << "," << rhs.b << "," << rhs.a << "]";
