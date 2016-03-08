@@ -12,11 +12,14 @@ public:
   T x, y;
 
   Vec2() : x(0), y(0) {}
-  Vec2(T x, T y) : x(x), y(y) {}
-  template<typename U>
-    explicit Vec2(const Vec2<U>& src) : x(static_cast<T>(src.x)), y(static_cast<T>(src.y)) {}
 
-  static Vec2<T> zero()  { return Vec2<T>(0, 0); }
+  template<typename U>
+  Vec2(U x, U y) : x(static_cast<T>(x)), y(static_cast<T>(y)) {}
+  
+  template<typename U>
+  explicit Vec2(const Vec2<U>& src) : x(static_cast<T>(src.x)), y(static_cast<T>(src.y)) {}
+
+  static Vec2<T> zero() { return Vec2<T>(0, 0); }
   static Vec2<T> xAxis() { return Vec2<T>(1, 0); }
   static Vec2<T> yAxis() { return Vec2<T>(0, 1); }
 
@@ -70,6 +73,34 @@ public:
     return (&x)[n];
   }
 
+  T dot(const Vec2<T>& rhs) const {
+    return x * rhs.x + y * rhs.y;
+  }
+
+  T cross(const Vec2<T>& rhs) const {
+    return x * rhs.y - y * rhs.x;
+  }
+
+  T dist(const Vec2<T>& rhs) const {
+    return (*this - rhs).length();
+  }
+
+  T length() const {
+    return sqrt(x * x + y * y);
+  }
+
+  Vec2<T> normalize() {
+    T invS = 1 / length();
+    x *= invS;
+    y *= invS;
+    return *this;
+  }
+
+  Vec2<T> normalized() const {
+    T invS = 1 / length();
+    return Vec2<T>(x * invS, y * invS);
+  }
+
   friend std::ostream& operator<<(std::ostream& os, const Vec2<T>& rhs) {
     os << "[" << rhs.x << "," << rhs.y << "]";
     return os;
@@ -83,23 +114,35 @@ public:
   T x, y, z;
 
   Vec3() : x(0), y(0), z(0) {}
-  Vec3(T x, T y, T z) : x(x), y(y), z(z) {}
-  template<typename U>
-    explicit Vec3(const Vec3<U>& src) :
-      x(static_cast<T>(src.x)),
-      y(static_cast<T>(src.y)),
-      z(static_cast<T>(src.z)) {}
 
   template<typename U>
-    explicit Vec3(const Vec2<U>& src) :
-      x(static_cast<T>(src.x)),
-      y(static_cast<T>(src.y)),
-      z(0) {}
+  Vec3(U x, U y) :
+    x(static_cast<T>(x)),
+    y(static_cast<T>(y)),
+    z(0) {}
+
+  template<typename U>
+  Vec3(U x, U y, U z) :
+    x(static_cast<T>(x)),
+    y(static_cast<T>(y)),
+    z(static_cast<T>(z)) {}
+  
+  template<typename U>
+  explicit Vec3(const Vec3<U>& src) :
+    x(static_cast<T>(src.x)),
+    y(static_cast<T>(src.y)),
+    z(static_cast<T>(src.z)) {}
+
+  template<typename U>
+  explicit Vec3(const Vec2<U>& src) :
+    x(static_cast<T>(src.x)),
+    y(static_cast<T>(src.y)),
+    z(0) {}
 
 
   Vec2<T> xy() const { return Vec2<T>(x, y); }
 
-  static Vec3<T> zero()  { return Vec3<T>(0, 0, 0); }
+  static Vec3<T> zero() { return Vec3<T>(0, 0, 0); }
   static Vec3<T> xAxis() { return Vec3<T>(1, 0, 0); }
   static Vec3<T> yAxis() { return Vec3<T>(0, 1, 0); }
   static Vec3<T> zAxis() { return Vec3<T>(0, 0, 1); }
@@ -158,6 +201,35 @@ public:
   T& operator[](const int n) {
     assert(n >= 0 && n <= 2);
     return (&x)[n];
+  }
+
+  T dot(const Vec3<T>& rhs) const {
+    return x * rhs.x + y * rhs.y + z * rhs.z;
+  }
+
+  Vec3<T> cross(const Vec3<T>& rhs) const {
+    return Vec3<T>(y * rhs.z - rhs.y * z, z * rhs.x - rhs.z * x, x * rhs.y - rhs.x * y);
+  }
+
+  T dist(const Vec3<T>& rhs) const {
+    return (*this - rhs).length();
+  }
+
+  T length() const {
+    return sqrt(x * x + y * y + z * z);
+  }
+
+  Vec3<T> normalize() {
+    T invS = 1 / length();
+    x *= invS;
+    y *= invS;
+    z *= invS;
+    return *this;
+  }
+
+  Vec3<T> normalized() const {
+    T invS = 1. / length();
+    return Vec3<T>(x * invS, y * invS, z * invS);
   }
 
   friend std::ostream& operator<<(std::ostream& os, const Vec3<T>& rhs) {

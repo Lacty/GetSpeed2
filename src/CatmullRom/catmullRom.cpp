@@ -23,10 +23,10 @@ Vec3f CRSpline::Eq(float t, const Vec3f& p1, const Vec3f& p2, const Vec3f& p3, c
   float t2 = t * t;
   float t3 = t2 * t;
 
-  float b1 = .5 * (-t3 + 2 * t2 - t);
-  float b2 = .5 * (3 * t3 - 5 * t2 + 2);
-  float b3 = .5 * (-3 * t3 + 4 * t2 + t);
-  float b4 = .5 * (t3 - t2);
+  float b1 = .5f * (-t3 + 2 * t2 - t);
+  float b2 = .5f * (3 * t3 - 5 * t2 + 2);
+  float b3 = .5f * (-3 * t3 + 4 * t2 + t);
+  float b4 = .5f * (t3 - t2);
 
   return (p1*b1 + p2*b2 + p3*b3 + p4*b4);
 }
@@ -42,7 +42,7 @@ Vec3f CRSpline::GetInterpolatedSplinePoint(float t)
   // Find out in which interval we are on the spline
   int p = (int)(t / delta_t);
   // Compute local control point indices
-#define BOUNDS(pp) { if (pp < 0) pp = 0; else if (pp >= (int)vp.size()-1) pp = vp.size() - 1; }
+#define BOUNDS(pp) { if (pp < 0) pp = 0; else if (pp >= (int)vp.size()-1) pp = (int)vp.size() - 1; }
   int p0 = p - 1;     BOUNDS(p0);
   int p1 = p;         BOUNDS(p1);
   int p2 = p + 1;     BOUNDS(p2);
@@ -55,7 +55,7 @@ Vec3f CRSpline::GetInterpolatedSplinePoint(float t)
 
 int CRSpline::GetNumPoints()
 {
-  return vp.size();
+  return (int)vp.size();
 }
 
 Vec3f& CRSpline::GetNthPoint(int n)
