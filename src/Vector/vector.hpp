@@ -1,6 +1,9 @@
 
 #pragma once
 #include <iostream>
+#include <cmath>
+#define _USE_MATH_DEFINES
+#include <math.h>
 #include <GLFW/glfw3.h>
 #include <Eigen/Core>
 #include <Eigen/Geometry>
