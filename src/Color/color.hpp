@@ -11,6 +11,8 @@ public:
   ColorT() : r(0), g(0), b(0) {}
   ColorT(T r, T g, T b) : r(r), g(g), b(b) {}
   ColorT(const ColorT<T>& src) : r(src.r), g(src.g), b(src.b) {}
+  template<typename U>
+    explicit ColorT(const ColorT<U>& src) : r(static_cast<U>(src.r)), g(static_cast<U>(src.g)), b(static_cast<U>(src.b)) {}
 
   static ColorT<T> white() { return ColorT<T>(1, 1, 1); }
   static ColorT<T> red() { return ColorT<T>(1, 0, 0); }
@@ -34,6 +36,10 @@ public:
   ColorAT(T r, T g, T b, T a) : r(r), g(g), b(b), a(a) {}
   ColorAT(const ColorAT<T>& src) : r(src.r), g(src.g), b(src.b), a(src.a) {}
   ColorAT(const ColorT<T>& src) : r(src.r), g(src.g), b(src.b), a(1) {}
+  template<typename U>
+    explicit ColorAT(const ColorAT<U>& src) : r(static_cast<U>(src.r)), g(static_cast<U>(src.g)), b(static_cast<U>(src.b)), a(static_cast<U>(src.a)) {}
+  template<typename U>
+    explicit ColorAT(const ColorT<U>& src) : r(static_cast<U>(src.r)), g(static_cast<U>(src.g)), b(static_cast<U>(src.b)), a(1) {}
 
   static ColorAT<T> white() { return ColorAT<T>(1, 1, 1, 1); }
   static ColorAT<T> red() { return ColorAT<T>(1, 0, 0, 1); }
