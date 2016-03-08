@@ -6,7 +6,7 @@ float toRadians(float deg) {
   return float(deg * M_PI) / 180.0f;
 }
 
-/*Vec3f nearPosOnLine(const Vec3f& p,
+Vec3f nearPosOnLine(const Vec3f& p,
                     const Vec3f& vA,
                     const Vec3f& vB)
 {
@@ -24,4 +24,4 @@ float toRadians(float deg) {
   ret = vA + (AB * distAX);
 
   return ret;
-}*/
+}
