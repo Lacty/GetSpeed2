@@ -244,7 +244,7 @@ public:
   }
 
   Vec3<T> normalized() const {
-    T invS = 1. / length();
+    T invS = 1.f / length();
     return Vec3<T>(x * invS, y * invS, z * invS);
   }
 

@@ -10,11 +10,13 @@
 AppNative::AppNative(const Vec2i& size,
                      const std::string& title) :
 window_(size),
-tweakBar_(size) {
+tweakBar_(size),
+camera_(Vec3f::zero(), Vec3f(0, 0, -1), 0.0f, 5.0f, 35.0f, size) {
   gl_win_ = createWindow(size, title);
   glfwSetWindowUserPointer(gl_win_, this);
   glfwSwapInterval(1); // 60 fps
   setCallBackFunc();
+  glViewport(0, 0, size.x, size.y);
 }
 
 
@@ -102,43 +104,62 @@ bool AppNative::isOpen() {
   return !glfwWindowShouldClose(gl_win_);
 }
 
-void AppNative::begin() {
+AppNative& AppNative::begin() {
   glClear(GL_COLOR_BUFFER_BIT);
+  return *this;
 }
 
-void AppNative::end() {
+AppNative& AppNative::end() {
   tweakBar_.draw();
   glfwSwapBuffers(gl_win_);
   glfwPollEvents();
+  return *this;
 }
 
-Vec2i AppNative::windowSize() const {
-  return window_.size_;
-}
-
-Vec2i AppNative::windowCenter() const {
-  return window_.pos_;
-}
-
-AppNative* AppNative::setClearColor(const ColorA& color) {
+AppNative& AppNative::setClearColor(const ColorA& color) {
   glClearColor(color.r, color.g, color.b, color.a);
-  return this;
+  return *this;
 }
 
+Vec2i AppNative::windowSize()   const { return window_.size_; }
+Vec2i AppNative::windowCenter() const { return window_.pos_; }
 
+
+// Key Events
 bool AppNative::isPushKey(int key)  { return key_.isPush(key); }
 bool AppNative::isPullKey(int key)  { return key_.isPull(key); }
 bool AppNative::isPressKey(int key) { return key_.isPress(key); }
 
-bool AppNative::isPushMouse(int buttom) { return mouse_.isPush(buttom); }
-bool AppNative::isPullMouse(int buttom) { return mouse_.isPull(buttom); }
+
+// Mouse Events
+bool AppNative::isPushMouse(int buttom)  { return mouse_.isPush(buttom); }
+bool AppNative::isPullMouse(int buttom)  { return mouse_.isPull(buttom); }
 bool AppNative::isPressMouse(int buttom) { return mouse_.isPress(buttom); }
 
-Vec2d AppNative::mousePos() const {
-  return mouse_.pos();
-}
+Vec2d AppNative::mousePos() const { return mouse_.pos(); }
 
-void AppNative::setMousePos(const Vec2d& pos) {
+AppNative& AppNative::setMousePos(const Vec2d& pos) {
   glfwSetCursorPos(gl_win_, pos.x, pos.y);
   mouse_.setPos(pos.x, pos.y);
+  return *this;
 }
+
+
+// Camera Events
+AppNative& AppNative::updateCam() { camera_.update(); return *this; }
+
+AppNative& AppNative::setCamPos(const Vec3f& pos)       { camera_.setPos(pos); return *this; }
+AppNative& AppNative::setCamTarget(const Vec3f& target) { camera_.setTarget(target); return *this; }
+AppNative& AppNative::setCamUp(const Vec3f& up)         { camera_.setUp(up); return *this; }
+
+AppNative& AppNative::setCamNear(const float near) { camera_.setNear(near); return *this; }
+AppNative& AppNative::setCamFar(const float far) { camera_.setFar(far); return *this; }
+AppNative& AppNative::setCamFovy(const float fovy) { camera_.setFovy(fovy); return *this; }
+
+const Vec3f AppNative::camPos() const    { return camera_.getPos(); }
+const Vec3f AppNative::camTarget() const { return camera_.getTarget(); }
+const Vec3f AppNative::camUp() const     { return camera_.getUp(); }
+
+const float AppNative::camNear() const { return camera_.getNear(); }
+const float AppNative::camFar() const  { return camera_.getFar(); }
+const float AppNative::camFovy() const { return camera_.getFovy(); }

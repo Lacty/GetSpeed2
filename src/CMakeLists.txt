@@ -65,6 +65,7 @@ set(MY_LIBS
   CatmullRom
   TweakBar
   Utility
+  MainCamera
 )
 foreach(loop_var IN LISTS MY_LIBS)
   add_subdirectory(${loop_var})
