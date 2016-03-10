@@ -64,6 +64,12 @@ public:
   Vec2<T> operator-(const Vec2<T>& rhs) const {
     return Vec2<T>(x - rhs.x, y - rhs.y);
   }
+  Vec2<T> operator*(const Vec2<T>& rhs) const {
+    return Vec2<T>(x * rhs.x, y * rhs.y);
+  }
+  Vec2<T> operator/(const Vec2<T>& rhs) const {
+    return Vec2<T>(x / rhs.x, y / rhs.y);
+  }
   Vec2<T> operator*(const T& rhs) const {
     return Vec2<T>(x * rhs, y * rhs);
   }
@@ -194,6 +200,13 @@ public:
   Vec3<T> operator-(const Vec3<T>& rhs) const {
     return Vec3<T>(x - rhs.x, y - rhs.y, z - rhs.z);
   }
+  Vec3<T> operator*(const Vec3<T>& rhs) const {
+    return Vec3<T>(x * rhs.x, y * rhs.y, z * rhs.z);
+  }
+  Vec3<T> operator/(const Vec3<T>& rhs) const {
+    return Vec3<T>(x / rhs.x, y / rhs.y, z / rhs.z);
+  }
+
   Vec3<T> operator*(const T& rhs) const {
     return Vec3<T>(x * rhs, y * rhs, z * rhs);
   }
