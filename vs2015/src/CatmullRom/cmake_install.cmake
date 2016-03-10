@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/USER/Desktop/GetSpeed2/src/CatmullRom
+# Install script for directory: C:/Users/Yanai/Desktop/GetSpeed2/src/CatmullRom
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -16,6 +16,7 @@
 #include "../Random/random.hpp"
 #include "../CatmullRom/catmullRom.hpp"
 #include "../TweakBar/tweakBar.hpp"
+#include "../Utility/utility.hpp"
 
 
 class AppNative : public Noncopyable {

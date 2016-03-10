@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\USER\Desktop\GetSpeed2\vs2015\CMakeFiles\3129009db563f7b3ac65fb2327fb1883\generate.stamp.rule">
+    <CustomBuild Include="C:\Users\Yanai\Desktop\GetSpeed2\vs2015\CMakeFiles\1159dcd7776c7271e17c8520bbfcabad\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{CDAF2043-59D9-3B48-BF55-D4894D0ACA41}</UniqueIdentifier>
+      <UniqueIdentifier>{E26CDA6C-9BAD-3811-A926-63DF8D2E080D}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

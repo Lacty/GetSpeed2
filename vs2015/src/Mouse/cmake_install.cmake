@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/USER/Desktop/GetSpeed2/src/Mouse
+# Install script for directory: C:/Users/Yanai/Desktop/GetSpeed2/src/Mouse
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

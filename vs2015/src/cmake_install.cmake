@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/USER/Desktop/GetSpeed2/src
+# Install script for directory: C:/Users/Yanai/Desktop/GetSpeed2/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,21 +29,21 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/AppNative/cmake_install.cmake")
-  include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Noncopyable/cmake_install.cmake")
-  include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Vector/cmake_install.cmake")
-  include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Color/cmake_install.cmake")
-  include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Rect/cmake_install.cmake")
-  include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Key/cmake_install.cmake")
-  include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Mouse/cmake_install.cmake")
-  include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Font/cmake_install.cmake")
-  include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/LoadPath/cmake_install.cmake")
-  include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Graphic/cmake_install.cmake")
-  include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Audio/cmake_install.cmake")
-  include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Random/cmake_install.cmake")
-  include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/CatmullRom/cmake_install.cmake")
-  include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/TweakBar/cmake_install.cmake")
-  include("C:/Users/USER/Desktop/GetSpeed2/vs2015/src/Utility/cmake_install.cmake")
+  include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/AppNative/cmake_install.cmake")
+  include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Noncopyable/cmake_install.cmake")
+  include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Vector/cmake_install.cmake")
+  include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Color/cmake_install.cmake")
+  include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Rect/cmake_install.cmake")
+  include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Key/cmake_install.cmake")
+  include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Mouse/cmake_install.cmake")
+  include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Font/cmake_install.cmake")
+  include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/LoadPath/cmake_install.cmake")
+  include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Graphic/cmake_install.cmake")
+  include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Audio/cmake_install.cmake")
+  include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Random/cmake_install.cmake")
+  include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/CatmullRom/cmake_install.cmake")
+  include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/TweakBar/cmake_install.cmake")
+  include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Utility/cmake_install.cmake")
 
 endif()
 
