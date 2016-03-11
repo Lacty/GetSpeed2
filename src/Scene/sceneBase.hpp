@@ -6,17 +6,17 @@
 
 class SceneBase {
 protected:
-  AppNative* app;
-  bool       isFinish;
+  AppNative* app_;
+  bool       is_finish_;
 
 public:
   SceneBase(AppNative* app) :
-    app(app),
-    isFinish(false) {}
+    app_(app),
+    is_finish_(false) {}
 
   virtual void update() = 0;
   virtual void draw() = 0;
   virtual std::shared_ptr<SceneBase> nextScene(AppNative* app) = 0;
 
-  bool shouldClose() { return isFinish; }
+  bool shouldClose() { return is_finish_; }
 };
