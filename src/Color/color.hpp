@@ -98,10 +98,10 @@ public:
     return *this;
   }
   ColorAT<T> operator+(const ColorAT<T>& rhs) const {
-    return ColorAT<T>(r + rhs.r, g + rhs.g, b + rhs.b, a + rhs.a;);
+    return ColorAT<T>(r + rhs.r, g + rhs.g, b + rhs.b, a + rhs.a);
   }
   ColorAT<T> operator-(const ColorAT<T>& rhs) const {
-    return ColorAT<T>(r - rhs.r, g - rhs.g, b - rhs.b, a - rhs.a;);
+    return ColorAT<T>(r - rhs.r, g - rhs.g, b - rhs.b, a - rhs.a);
   }
   ColorAT<T> operator*(const T& rhs) const {
     return ColorAT<T>(r * rhs, g * rhs, b * rhs, a * rhs);

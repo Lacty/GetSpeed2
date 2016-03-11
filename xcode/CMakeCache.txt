@@ -17,6 +17,9 @@
 //Dependencies for target
 AppNative_LIB_DEPENDS:STATIC=
 
+//Dependencies for target
+Audio_LIB_DEPENDS:STATIC=
+
 //Path to a program.
 CMAKE_AR:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar
 
@@ -178,23 +181,59 @@ COCOA_LIBRARY:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacO
 //Path to a library.
 COREVIDEO_LIBRARY:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/CoreVideo.framework
 
+//Dependencies for target
+CatmullRom_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+Color_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+Font_LIB_DEPENDS:STATIC=
+
 //Value Computed by CMake
 GetSpeed2_BINARY_DIR:STATIC=/Users/yanai/Desktop/GetSpeed2/xcode
 
 //Value Computed by CMake
 GetSpeed2_SOURCE_DIR:STATIC=/Users/yanai/Desktop/GetSpeed2
 
+//Dependencies for target
+Graphic_LIB_DEPENDS:STATIC=
+
 //Path to a library.
 IOKIT_LIBRARY:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/IOKit.framework
+
+//Dependencies for target
+Key_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+LoadPath_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+MainCamera_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+Mouse_LIB_DEPENDS:STATIC=
 
 //Dependencies for target
 Noncopyable_LIB_DEPENDS:STATIC=
 
 //Path to a library.
+OpenAL_LIBRARY:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/OpenAL.framework
+
+//Path to a library.
 OpenGL_LIBRARY:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/OpenGL.framework
 
 //Dependencies for target
+Random_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
 Rect_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+TweakBar_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+Utility_LIB_DEPENDS:STATIC=
 
 //Dependencies for target
 Vector_LIB_DEPENDS:STATIC=
@@ -208,6 +247,8 @@ Vector_LIB_DEPENDS:STATIC=
 ALL_BUILD_GUID_CMAKE:INTERNAL=7F376EF0516C48D7AFDB86BF
 //Stored Xcode object GUID
 AppNative_GUID_CMAKE:INTERNAL=50426610826649358E37C7F7
+//Stored Xcode object GUID
+Audio_GUID_CMAKE:INTERNAL=86B445919D744D53B3C03C1C
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
@@ -284,7 +325,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=18
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -324,13 +365,35 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Stored Xcode object GUID
+CatmullRom_GUID_CMAKE:INTERNAL=E2EAFEEB6C2C4B869342A78C
+//Stored Xcode object GUID
+Color_GUID_CMAKE:INTERNAL=43B999D5AD7E495E86D4AB8E
+//Stored Xcode object GUID
+Font_GUID_CMAKE:INTERNAL=63A323A47A93427283C19B64
+//Stored Xcode object GUID
 GetSpeed2_GUID_CMAKE:INTERNAL=304F1837C4614889AAEF1027
+//Stored Xcode object GUID
+Graphic_GUID_CMAKE:INTERNAL=34AD8D523BA446298DC909BF
+//Stored Xcode object GUID
+Key_GUID_CMAKE:INTERNAL=08AF0A6C0769498C8D93886C
+//Stored Xcode object GUID
+LoadPath_GUID_CMAKE:INTERNAL=E99E6B39477C47B5BCED1C41
+//Stored Xcode object GUID
+MainCamera_GUID_CMAKE:INTERNAL=23103BAD1DCE4DD3AD7D1869
+//Stored Xcode object GUID
+Mouse_GUID_CMAKE:INTERNAL=32B78C37CEE4444F983D4B46
 //Stored Xcode object GUID
 Noncopyable_GUID_CMAKE:INTERNAL=F02CA48F70CA4EEFBBD15757
 //Stored Xcode object GUID
 PROJECT_GetSpeed2_GUID_CMAKE:INTERNAL=23273385483741C79AE8643E
 //Stored Xcode object GUID
+Random_GUID_CMAKE:INTERNAL=0A6C8E5A1B5F4D8CA2BCADF9
+//Stored Xcode object GUID
 Rect_GUID_CMAKE:INTERNAL=23E2F7FB0D95455595E37ECF
+//Stored Xcode object GUID
+TweakBar_GUID_CMAKE:INTERNAL=33352D898FB941AC88155FC0
+//Stored Xcode object GUID
+Utility_GUID_CMAKE:INTERNAL=FBA020743B0F46EA9E6BAE42
 //Stored Xcode object GUID
 Vector_GUID_CMAKE:INTERNAL=A11127A90280487AB6992654
 //Stored Xcode object GUID

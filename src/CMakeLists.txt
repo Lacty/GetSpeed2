@@ -1,4 +1,4 @@
-﻿
+
 # --- Set include directories
 #
 include_directories(
@@ -23,11 +23,13 @@ add_executable(GetSpeed2 main.cpp)
 if (APPLE)
   find_library(COCOA_LIBRARY     Cocoa)
   find_library(OpenGL_LIBRARY    OpenGL)
+  find_library(OpenAL_LIBRARY    OPENAL_FOUND)
   find_library(IOKIT_LIBRARY     IOKit)
   find_library(COREVIDEO_LIBRARY CoreVideo)
   set(EXTRA_LIBS
     ${COCOA_LIBRARY}
     ${OpenGL_LIBRARY}
+    ${OpenAL_LIBRARY}
     ${IOKIT_LIBRARY}
     ${COREVIDEO_LIBRARY}
     ${CMAKE_SOURCE_DIR}/lib/OSX/libglfw3.a

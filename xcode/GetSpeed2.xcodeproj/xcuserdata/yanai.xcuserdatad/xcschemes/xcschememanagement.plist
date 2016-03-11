@@ -14,20 +14,80 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>Audio.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+		<key>CatmullRom.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>Color.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Font.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>GetSpeed2.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+		<key>Graphic.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>Key.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>LoadPath.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+		<key>MainCamera.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
+		<key>Mouse.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
 		</dict>
 		<key>Noncopyable.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>Random.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
 		<key>Rect.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>6</integer>
+		</dict>
+		<key>TweakBar.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
+		<key>Utility.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
 		</dict>
 		<key>Vector.xcscheme</key>
 		<dict>
@@ -42,6 +102,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>08AF0A6C0769498C8D93886C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0A6C8E5A1B5F4D8CA2BCADF9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>23103BAD1DCE4DD3AD7D1869</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>23E2F7FB0D95455595E37ECF</key>
 		<dict>
 			<key>primary</key>
@@ -52,7 +127,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>32B78C37CEE4444F983D4B46</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>33352D898FB941AC88155FC0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>34AD8D523BA446298DC909BF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>43B999D5AD7E495E86D4AB8E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>50426610826649358E37C7F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>63A323A47A93427283C19B64</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +162,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>86B445919D744D53B3C03C1C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A11127A90280487AB6992654</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2EAFEEB6C2C4B869342A78C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +182,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>E99E6B39477C47B5BCED1C41</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>F02CA48F70CA4EEFBBD15757</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FBA020743B0F46EA9E6BAE42</key>
 		<dict>
 			<key>primary</key>
 			<true/>
