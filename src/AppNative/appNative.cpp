@@ -1,5 +1,6 @@
 
-#if !_DEBUG
+// これはWindowsだけの設定
+#if _WINDOWS && !_DEBUG
   // デバッグ時のみコンソールを表示させる
   #pragma comment(linker, "/subsystem:\"windows\" /entry:\"mainCRTStartup\"")
 #endif
@@ -16,7 +17,6 @@ camera_(Vec3f::zero(), Vec3f(0, 0, -1), 0.0f, 5.0f, 35.0f, size) {
   glfwSetWindowUserPointer(gl_win_, this);
   glfwSwapInterval(1); // 60 fps
   setCallBackFunc();
-  glViewport(0, 0, size.x, size.y);
 }
 
 
