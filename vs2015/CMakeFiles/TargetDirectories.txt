@@ -16,3 +16,4 @@ C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Random/CMakeFiles/Random.dir
 C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/CatmullRom/CMakeFiles/CatmullRom.dir
 C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/TweakBar/CMakeFiles/TweakBar.dir
 C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Utility/CMakeFiles/Utility.dir
+C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/MainCamera/CMakeFiles/MainCamera.dir

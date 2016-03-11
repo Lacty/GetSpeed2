@@ -114,7 +114,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\Debug\AppNative.lib;Noncopyable\Debug\Noncopyable.lib;Vector\Debug\Vector.lib;Color\Debug\Color.lib;Rect\Debug\Rect.lib;Key\Debug\Key.lib;Mouse\Debug\Mouse.lib;Font\Debug\Font.lib;LoadPath\Debug\LoadPath.lib;Graphic\Debug\Graphic.lib;Audio\Debug\Audio.lib;Random\Debug\Random.lib;CatmullRom\Debug\CatmullRom.lib;TweakBar\Debug\TweakBar.lib;Utility\Debug\Utility.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetyped.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\Debug\AppNative.lib;Noncopyable\Debug\Noncopyable.lib;Vector\Debug\Vector.lib;Color\Debug\Color.lib;Rect\Debug\Rect.lib;Key\Debug\Key.lib;Mouse\Debug\Mouse.lib;Font\Debug\Font.lib;LoadPath\Debug\LoadPath.lib;Graphic\Debug\Graphic.lib;Audio\Debug\Audio.lib;Random\Debug\Random.lib;CatmullRom\Debug\CatmullRom.lib;TweakBar\Debug\TweakBar.lib;Utility\Debug\Utility.lib;MainCamera\Debug\MainCamera.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetyped.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -157,7 +157,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\Release\AppNative.lib;Noncopyable\Release\Noncopyable.lib;Vector\Release\Vector.lib;Color\Release\Color.lib;Rect\Release\Rect.lib;Key\Release\Key.lib;Mouse\Release\Mouse.lib;Font\Release\Font.lib;LoadPath\Release\LoadPath.lib;Graphic\Release\Graphic.lib;Audio\Release\Audio.lib;Random\Release\Random.lib;CatmullRom\Release\CatmullRom.lib;TweakBar\Release\TweakBar.lib;Utility\Release\Utility.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetyped.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\Release\AppNative.lib;Noncopyable\Release\Noncopyable.lib;Vector\Release\Vector.lib;Color\Release\Color.lib;Rect\Release\Rect.lib;Key\Release\Key.lib;Mouse\Release\Mouse.lib;Font\Release\Font.lib;LoadPath\Release\LoadPath.lib;Graphic\Release\Graphic.lib;Audio\Release\Audio.lib;Random\Release\Random.lib;CatmullRom\Release\CatmullRom.lib;TweakBar\Release\TweakBar.lib;Utility\Release\Utility.lib;MainCamera\Release\MainCamera.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetyped.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -200,7 +200,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\MinSizeRel\AppNative.lib;Noncopyable\MinSizeRel\Noncopyable.lib;Vector\MinSizeRel\Vector.lib;Color\MinSizeRel\Color.lib;Rect\MinSizeRel\Rect.lib;Key\MinSizeRel\Key.lib;Mouse\MinSizeRel\Mouse.lib;Font\MinSizeRel\Font.lib;LoadPath\MinSizeRel\LoadPath.lib;Graphic\MinSizeRel\Graphic.lib;Audio\MinSizeRel\Audio.lib;Random\MinSizeRel\Random.lib;CatmullRom\MinSizeRel\CatmullRom.lib;TweakBar\MinSizeRel\TweakBar.lib;Utility\MinSizeRel\Utility.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetyped.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\MinSizeRel\AppNative.lib;Noncopyable\MinSizeRel\Noncopyable.lib;Vector\MinSizeRel\Vector.lib;Color\MinSizeRel\Color.lib;Rect\MinSizeRel\Rect.lib;Key\MinSizeRel\Key.lib;Mouse\MinSizeRel\Mouse.lib;Font\MinSizeRel\Font.lib;LoadPath\MinSizeRel\LoadPath.lib;Graphic\MinSizeRel\Graphic.lib;Audio\MinSizeRel\Audio.lib;Random\MinSizeRel\Random.lib;CatmullRom\MinSizeRel\CatmullRom.lib;TweakBar\MinSizeRel\TweakBar.lib;Utility\MinSizeRel\Utility.lib;MainCamera\MinSizeRel\MainCamera.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetyped.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -243,7 +243,7 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\RelWithDebInfo\AppNative.lib;Noncopyable\RelWithDebInfo\Noncopyable.lib;Vector\RelWithDebInfo\Vector.lib;Color\RelWithDebInfo\Color.lib;Rect\RelWithDebInfo\Rect.lib;Key\RelWithDebInfo\Key.lib;Mouse\RelWithDebInfo\Mouse.lib;Font\RelWithDebInfo\Font.lib;LoadPath\RelWithDebInfo\LoadPath.lib;Graphic\RelWithDebInfo\Graphic.lib;Audio\RelWithDebInfo\Audio.lib;Random\RelWithDebInfo\Random.lib;CatmullRom\RelWithDebInfo\CatmullRom.lib;TweakBar\RelWithDebInfo\TweakBar.lib;Utility\RelWithDebInfo\Utility.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetyped.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;AppNative\RelWithDebInfo\AppNative.lib;Noncopyable\RelWithDebInfo\Noncopyable.lib;Vector\RelWithDebInfo\Vector.lib;Color\RelWithDebInfo\Color.lib;Rect\RelWithDebInfo\Rect.lib;Key\RelWithDebInfo\Key.lib;Mouse\RelWithDebInfo\Mouse.lib;Font\RelWithDebInfo\Font.lib;LoadPath\RelWithDebInfo\LoadPath.lib;Graphic\RelWithDebInfo\Graphic.lib;Audio\RelWithDebInfo\Audio.lib;Random\RelWithDebInfo\Random.lib;CatmullRom\RelWithDebInfo\CatmullRom.lib;TweakBar\RelWithDebInfo\TweakBar.lib;Utility\RelWithDebInfo\Utility.lib;MainCamera\RelWithDebInfo\MainCamera.lib;..\..\lib\Windows\OpenGL32.lib;..\..\lib\Windows\freetyped.lib;..\..\lib\Windows\ftgld.lib;..\..\lib\Windows\glfw3d.lib;..\..\lib\Windows\AntTweakBar64.lib;..\..\lib\Windows\OpenAL32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -342,6 +342,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ProjectReference>
     <ProjectReference Include="C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/LoadPath/LoadPath.vcxproj">
       <Project>FD5FA3ED-7620-3595-A42B-90403E31B758</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/MainCamera/MainCamera.vcxproj">
+      <Project>519F5E37-268E-3171-8E70-16FB5813BA97</Project>
     </ProjectReference>
     <ProjectReference Include="C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Mouse/Mouse.vcxproj">
       <Project>F9758302-F838-3D01-8237-89359666D86B</Project>
