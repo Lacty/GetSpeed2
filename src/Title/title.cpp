@@ -5,7 +5,8 @@
 
 
 Title::Title(AppNative* app) :
-SceneBase(app) {
+SceneBase(app),
+font(loadAsset("ho")) {
   std::cout << "start title" << std::endl;
 }
 

@@ -5,6 +5,8 @@
 
 class Title : public SceneBase {
 private:
+  Font font;
+
 public:
   Title(AppNative* app);
   ~Title();

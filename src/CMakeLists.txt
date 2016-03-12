@@ -26,21 +26,25 @@ if (APPLE)
   find_library(OpenAL_LIBRARY    OPENAL_FOUND)
   find_library(IOKIT_LIBRARY     IOKit)
   find_library(COREVIDEO_LIBRARY CoreVideo)
+  find_library(BZ                bz2)
+  find_library(Z                 z)
   set(EXTRA_LIBS
     ${COCOA_LIBRARY}
     ${OpenGL_LIBRARY}
     ${OpenAL_LIBRARY}
     ${IOKIT_LIBRARY}
     ${COREVIDEO_LIBRARY}
+    ${BZ}
+    ${Z}
     ${CMAKE_SOURCE_DIR}/lib/OSX/libglfw3.a
-    ${CMAKE_SOURCE_DIR}/lib/OSX/libfreetype.a
+    ${CMAKE_SOURCE_DIR}/lib/OSX/libfreetyped.a
     ${CMAKE_SOURCE_DIR}/lib/OSX/libFTGL.a
     ${CMAKE_SOURCE_DIR}/lib/OSX/libAntTweakBar.a
   )
 elseif(MSVC)
   set(EXTRA_LIBS
     ${CMAKE_SOURCE_DIR}/lib/Windows/OpenGL32.lib
-    ${CMAKE_SOURCE_DIR}/lib/Windows/freetyped.lib
+    ${CMAKE_SOURCE_DIR}/lib/Windows/freetype.lib
     ${CMAKE_SOURCE_DIR}/lib/Windows/ftgld.lib
     ${CMAKE_SOURCE_DIR}/lib/Windows/glfw3d.lib
     ${CMAKE_SOURCE_DIR}/lib/Windows/AntTweakBar64.lib

@@ -20,6 +20,9 @@ AppNative_LIB_DEPENDS:STATIC=
 //Dependencies for target
 Audio_LIB_DEPENDS:STATIC=
 
+//Path to a library.
+BZ:FILEPATH=/usr/lib/libbz2.dylib
+
 //Path to a program.
 CMAKE_AR:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar
 
@@ -246,6 +249,9 @@ Utility_LIB_DEPENDS:STATIC=
 
 //Dependencies for target
 Vector_LIB_DEPENDS:STATIC=
+
+//Path to a library.
+Z:FILEPATH=/usr/lib/libz.dylib
 
 
 ########################
