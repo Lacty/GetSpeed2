@@ -69,6 +69,7 @@ set(MY_LIBS
   Utility
   MainCamera
   Scene
+  Title
 )
 foreach(loop_var IN LISTS MY_LIBS)
   add_subdirectory(${loop_var})
