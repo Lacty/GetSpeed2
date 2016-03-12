@@ -101,6 +101,7 @@ void AppNative::setCallBackFunc() {
 
 
 bool AppNative::isOpen() {
+  end().begin();
   return !glfwWindowShouldClose(gl_win_);
 }
 

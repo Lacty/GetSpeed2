@@ -10,11 +10,7 @@ int main() {
   SceneManager scene(&app);
 
   while (app.isOpen()) {
-    app.begin();
-
     scene.update();
     scene.draw();
-
-    app.end();
   }
 }

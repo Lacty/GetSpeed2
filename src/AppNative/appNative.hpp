@@ -41,6 +41,9 @@ private:
   static void windowSizeCallBack(GLFWwindow* window, int width, int height);
 
   void setCallBackFunc();
+  
+  AppNative& begin();
+  AppNative& end();
 
 public:
   AppNative() = delete;
@@ -48,9 +51,6 @@ public:
             const std::string& title);
 
   bool isOpen();
-
-  AppNative& begin();
-  AppNative& end();
 
   AppNative& setClearColor(const ColorA& color);
 
