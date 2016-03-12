@@ -18,3 +18,5 @@
 /Users/yanai/Desktop/GetSpeed2/xcode/src/Utility/CMakeFiles/Utility.dir
 /Users/yanai/Desktop/GetSpeed2/xcode/src/MainCamera/CMakeFiles/MainCamera.dir
 /Users/yanai/Desktop/GetSpeed2/xcode/src/Scene/CMakeFiles/Scene.dir
+/Users/yanai/Desktop/GetSpeed2/xcode/src/Title/CMakeFiles/Title.dir
+/Users/yanai/Desktop/GetSpeed2/xcode/src/Game/CMakeFiles/Game.dir

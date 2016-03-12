@@ -34,6 +34,11 @@
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
+		<key>Game.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
 		<key>GetSpeed2.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -83,6 +88,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>19</integer>
+		</dict>
+		<key>Title.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>20</integer>
 		</dict>
 		<key>TweakBar.xcscheme</key>
 		<dict>
@@ -177,7 +187,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>9A01BB699801436C82BAAD56</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A11127A90280487AB6992654</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AF0BF6304FFE467C8B464F25</key>
 		<dict>
 			<key>primary</key>
 			<true/>

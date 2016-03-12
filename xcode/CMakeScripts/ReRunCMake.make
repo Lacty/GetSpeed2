@@ -26,6 +26,7 @@
 /Users/yanai/Desktop/GetSpeed2/src/CatmullRom/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/Color/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/Font/CMakeLists.txt\
+/Users/yanai/Desktop/GetSpeed2/src/Game/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/Graphic/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/Key/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/LoadPath/CMakeLists.txt\
@@ -35,6 +36,7 @@
 /Users/yanai/Desktop/GetSpeed2/src/Random/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/Rect/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/Scene/CMakeLists.txt\
+/Users/yanai/Desktop/GetSpeed2/src/Title/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/TweakBar/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/Utility/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/Vector/CMakeLists.txt\

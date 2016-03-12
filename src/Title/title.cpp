@@ -1,6 +1,7 @@
 
 #include "title.hpp"
 #include "../Scene/sceneMaker.hpp"
+#include "../Game/game.hpp"
 
 
 Title::Title(AppNative* app) :

@@ -70,6 +70,7 @@ set(MY_LIBS
   MainCamera
   Scene
   Title
+  Game
 )
 foreach(loop_var IN LISTS MY_LIBS)
   add_subdirectory(${loop_var})
