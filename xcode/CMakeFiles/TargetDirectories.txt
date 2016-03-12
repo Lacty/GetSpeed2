@@ -17,3 +17,4 @@
 /Users/yanai/Desktop/GetSpeed2/xcode/src/TweakBar/CMakeFiles/TweakBar.dir
 /Users/yanai/Desktop/GetSpeed2/xcode/src/Utility/CMakeFiles/Utility.dir
 /Users/yanai/Desktop/GetSpeed2/xcode/src/MainCamera/CMakeFiles/MainCamera.dir
+/Users/yanai/Desktop/GetSpeed2/xcode/src/Scene/CMakeFiles/Scene.dir

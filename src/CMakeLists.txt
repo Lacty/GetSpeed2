@@ -68,6 +68,7 @@ set(MY_LIBS
   TweakBar
   Utility
   MainCamera
+  Scene
 )
 foreach(loop_var IN LISTS MY_LIBS)
   add_subdirectory(${loop_var})

@@ -1,8 +1,9 @@
 
 #pragma once
 #include <memory>
-#include "../AppNative/appNative.hpp"
-#include "../Scene/sceneBase.hpp"
+
+class SceneBase;
+class AppNative;
 
 
 template<class Scene>

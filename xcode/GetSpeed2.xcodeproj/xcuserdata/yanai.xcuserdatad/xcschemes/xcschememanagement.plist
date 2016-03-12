@@ -79,6 +79,11 @@
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
+		<key>Scene.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
 		<key>TweakBar.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -148,6 +153,11 @@
 			<true/>
 		</dict>
 		<key>50426610826649358E37C7F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>629A887D2CD64DDF9A26BD44</key>
 		<dict>
 			<key>primary</key>
 			<true/>

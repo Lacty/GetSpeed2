@@ -34,6 +34,7 @@
 /Users/yanai/Desktop/GetSpeed2/src/Noncopyable/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/Random/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/Rect/CMakeLists.txt\
+/Users/yanai/Desktop/GetSpeed2/src/Scene/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/TweakBar/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/Utility/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/Vector/CMakeLists.txt\

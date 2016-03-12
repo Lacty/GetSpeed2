@@ -45,6 +45,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/yanai/Desktop/GetSpeed2/xcode/src/TweakBar/cmake_install.cmake")
   include("/Users/yanai/Desktop/GetSpeed2/xcode/src/Utility/cmake_install.cmake")
   include("/Users/yanai/Desktop/GetSpeed2/xcode/src/MainCamera/cmake_install.cmake")
+  include("/Users/yanai/Desktop/GetSpeed2/xcode/src/Scene/cmake_install.cmake")
 
 endif()
 
