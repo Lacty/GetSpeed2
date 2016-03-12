@@ -18,4 +18,8 @@ void SceneManager::update() {
 
 void SceneManager::draw() {
   scene_->draw();
+  
+  if(scene_->shouldClose()) {
+    scene_ = scene_->nextScene(app_);
+  }
 }

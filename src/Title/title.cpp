@@ -14,7 +14,11 @@ Title::~Title() {
 }
 
 
-void Title::update() {}
+void Title::update() {
+  if (app_->isPushKey(GLFW_KEY_W)) {
+    is_finish_ = true;
+  }
+}
 
 void Title::draw() {}
 

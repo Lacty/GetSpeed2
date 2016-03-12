@@ -14,7 +14,11 @@ Game::~Game() {
 }
 
 
-void Game::update() {}
+void Game::update() {
+  if (app_->isPushKey(GLFW_KEY_W)) {
+    is_finish_ = true;
+  }
+}
 
 void Game::draw() {}
 
