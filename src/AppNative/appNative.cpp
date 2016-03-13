@@ -88,6 +88,8 @@ void AppNative::windowSizeCallBack(GLFWwindow* window, int width, int height) {
   auto app = static_cast<AppNative*>(glfwGetWindowUserPointer(window));
 
   TweakBar::windowSizeCallBack(window, width, height);
+  glViewport(0, 0, width, height);
+  app->window_.size_ = Vec2i(width, height);
 }
 
 void AppNative::setCallBackFunc() {
