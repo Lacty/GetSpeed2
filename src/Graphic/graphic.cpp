@@ -10,6 +10,9 @@ void drawRect(const Vec3f& pos, const Vec2f& size, const ColorA& color) {
     pos.x + size.x * 0.5f, pos.y + size.y * 0.5f, pos.z
   };
 
+  glEnable(GL_BLEND);
+  glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
   glVertexPointer(3, GL_FLOAT, 0, &vtx[0]);
   glColor4f(color.r, color.g, color.b, color.a);
 
@@ -18,6 +21,8 @@ void drawRect(const Vec3f& pos, const Vec2f& size, const ColorA& color) {
   glDrawArrays(GL_QUADS, 0, 4);
 
   glDisableClientState(GL_VERTEX_ARRAY);
+
+  glDisable(GL_BLEND);
 }
 
 void drawCircle(const Vec3f& center, int vertex_num,
@@ -30,6 +35,9 @@ void drawCircle(const Vec3f& center, int vertex_num,
     vtx.push_back(center.z);
   }
 
+  glEnable(GL_BLEND);
+  glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
   glVertexPointer(3, GL_FLOAT, 0, &vtx[0]);
   glLineWidth(width);
   glColor4f(color.r, color.g, color.b, color.a);
@@ -39,4 +47,6 @@ void drawCircle(const Vec3f& center, int vertex_num,
   glDrawArrays(GL_LINE_LOOP, 0, vertex_num);
 
   glDisableClientState(GL_VERTEX_ARRAY);
+
+  glDisable(GL_BLEND);
 }

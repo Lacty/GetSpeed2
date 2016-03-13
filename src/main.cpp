@@ -7,9 +7,9 @@ int main() {
   AppNative app(Vec2i(600, 600), "Test");
   app.setClearColor(Color::gray());
   
-  SceneManager game(&app);
+  SceneManager scene(&app);
 
   while (app.isOpen()) {
-    game.run();
+    scene.run();
   }
 }
