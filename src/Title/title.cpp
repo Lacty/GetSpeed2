@@ -6,7 +6,8 @@
 
 Title::Title(AppNative* app) :
 SceneBase(app),
-font(loadAsset("ho")) {
+font(loadAsset("rounded-l-mplus-1c-regular.ttf")) {
+  font.setSize(50);
   std::cout << "start title" << std::endl;
 }
 
@@ -21,7 +22,9 @@ void Title::update() {
   }
 }
 
-void Title::draw() {}
+void Title::draw() {
+  font.draw("Title", Vec2f(app_->windowCenter()));
+}
 
 
 std::shared_ptr<SceneBase> Title::nextScene(AppNative *app) {

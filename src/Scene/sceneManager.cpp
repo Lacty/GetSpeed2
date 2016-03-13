@@ -11,12 +11,8 @@ app_(app) {
   scene_ = sceneCreate<Title>(app);
 }
 
-
-void SceneManager::update() {
+void SceneManager::run() {
   scene_->update();
-}
-
-void SceneManager::draw() {
   scene_->draw();
   
   if(scene_->shouldClose()) {

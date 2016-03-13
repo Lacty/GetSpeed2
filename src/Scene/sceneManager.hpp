@@ -15,6 +15,5 @@ private:
 public:
   SceneManager(AppNative* app);
 
-  void update();
-  void draw();
+  void run();
 };

@@ -180,6 +180,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Font/Font.vcxproj">
       <Project>7ECA9F28-C344-373D-A125-E900E88222C5</Project>
     </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Game/Game.vcxproj">
+      <Project>F5120755-7BF0-3478-A039-884E375BD51A</Project>
+    </ProjectReference>
     <ProjectReference Include="C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/GetSpeed2.vcxproj">
       <Project>38940F20-ADBF-33ED-ABDB-2E3C3831827F</Project>
     </ProjectReference>
@@ -206,6 +209,12 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ProjectReference>
     <ProjectReference Include="C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Rect/Rect.vcxproj">
       <Project>54FE8EC1-3278-3F3A-BBD9-1152A1641001</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Scene/Scene.vcxproj">
+      <Project>DCD6531F-8E9D-35E7-818F-168798CEB4CD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Title/Title.vcxproj">
+      <Project>2F95D7EB-D50D-331D-ABFF-4768E8B83F81</Project>
     </ProjectReference>
     <ProjectReference Include="C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/TweakBar/TweakBar.vcxproj">
       <Project>C80A8683-2E34-36A7-98B3-5667D2580D6F</Project>
