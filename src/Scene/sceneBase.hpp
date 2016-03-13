@@ -17,7 +17,6 @@ public:
 
   virtual void update() = 0;
   virtual void draw() = 0;
-  virtual std::shared_ptr<SceneBase> nextScene(AppNative* app) = 0;
 
   bool shouldClose() { return is_finish_; }
 };
