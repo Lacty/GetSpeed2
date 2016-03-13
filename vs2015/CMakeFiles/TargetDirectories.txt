@@ -18,5 +18,6 @@ C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/TweakBar/CMakeFiles/TweakBar.dir
 C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Utility/CMakeFiles/Utility.dir
 C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/MainCamera/CMakeFiles/MainCamera.dir
 C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Scene/CMakeFiles/Scene.dir
+C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Fade/CMakeFiles/Fade.dir
 C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Title/CMakeFiles/Title.dir
 C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Game/CMakeFiles/Game.dir

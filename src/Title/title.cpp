@@ -5,7 +5,7 @@
 
 
 Title::Title(AppNative* app) :
-SceneBase(app),
+SceneBase(app, Fade(Fade::Type::In)),
 font(loadAsset("rounded-l-mplus-1c-regular.ttf")) {
   font.setSize(50);
   std::cout << "start title" << std::endl;

@@ -69,6 +69,7 @@ set(MY_LIBS
   Utility
   MainCamera
   Scene
+  Fade
   Title
   Game
 )

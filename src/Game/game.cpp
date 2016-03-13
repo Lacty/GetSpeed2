@@ -5,7 +5,7 @@
 
 
 Game::Game(AppNative* app) :
-SceneBase(app) {
+SceneBase(app, Fade(Fade::Type::In)) {
   std::cout << "start game" << std::endl;
 }
 
@@ -16,6 +16,7 @@ Game::~Game() {
 
 void Game::update() {
   if (app_->isPushKey(GLFW_KEY_W)) {
+    fade_ = Fade(Fade::Type::Out);
     is_finish_ = true;
   }
 }

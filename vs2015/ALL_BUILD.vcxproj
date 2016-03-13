@@ -177,6 +177,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Color/Color.vcxproj">
       <Project>9688A7B0-8CA3-3944-A0E4-42689BC4B453</Project>
     </ProjectReference>
+    <ProjectReference Include="C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Fade/Fade.vcxproj">
+      <Project>D972EF08-D1FD-3DAC-B372-4CD0B15D1B83</Project>
+    </ProjectReference>
     <ProjectReference Include="C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Font/Font.vcxproj">
       <Project>7ECA9F28-C344-373D-A125-E900E88222C5</Project>
     </ProjectReference>

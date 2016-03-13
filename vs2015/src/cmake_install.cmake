@@ -46,6 +46,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Utility/cmake_install.cmake")
   include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/MainCamera/cmake_install.cmake")
   include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Scene/cmake_install.cmake")
+  include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Fade/cmake_install.cmake")
   include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Title/cmake_install.cmake")
   include("C:/Users/Yanai/Desktop/GetSpeed2/vs2015/src/Game/cmake_install.cmake")
 
