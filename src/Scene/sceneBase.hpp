@@ -12,7 +12,7 @@ protected:
   bool       is_finish_;
 
 public:
-  SceneBase(AppNative* app, Fade& fade) :
+  SceneBase(AppNative* app, Fade fade) :
     app_(app),
     fade_(fade),
     is_finish_(false){}

@@ -29,6 +29,11 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>Fade.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>22</integer>
+		</dict>
 		<key>Font.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -173,6 +178,11 @@
 			<true/>
 		</dict>
 		<key>63A323A47A93427283C19B64</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6891E85985064DFD9B6722FD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

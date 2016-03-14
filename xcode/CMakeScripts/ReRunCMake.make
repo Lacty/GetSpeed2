@@ -25,6 +25,7 @@
 /Users/yanai/Desktop/GetSpeed2/src/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/CatmullRom/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/Color/CMakeLists.txt\
+/Users/yanai/Desktop/GetSpeed2/src/Fade/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/Font/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/Game/CMakeLists.txt\
 /Users/yanai/Desktop/GetSpeed2/src/Graphic/CMakeLists.txt\
