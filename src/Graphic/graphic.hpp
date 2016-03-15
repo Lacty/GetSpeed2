@@ -6,6 +6,8 @@
 #include "../Color/color.hpp"
 
 
+void drawLine(const Vec2f& begin, const Vec2f& end, const ColorA& color = ColorA::white());
+
 void drawRect(const Vec3f& pos, const Vec2f& size, const ColorA& color);
 
 void drawCircle(const Vec3f& center, int vertex_num,

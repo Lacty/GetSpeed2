@@ -8,13 +8,9 @@ int main() {
   app.setClearColor(Color::gray());
   
   SceneManager scene(&app);
-  
-  float arr[] = { 1, 2, 3, 4, 5 };
-  Vec2f p = convertArrayToVec<Vec2f>(&arr[1]);
-  
-  std::cout << p << std::endl;
 
   while (app.isOpen()) {
     scene.run();
+    drawLine(Vec2f(0, 0), Vec2f(1.f, .5f));
   }
 }
