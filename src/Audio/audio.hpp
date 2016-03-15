@@ -35,11 +35,13 @@ public:
   Media(const Media& src) = delete;
   Media& operator=(const Audio& src) = delete;
 
-  Media* play();
-  Media* stop();
-  Media* pause();
-  Media* setVolume(const float volume);
-  Media* setPitch(const float pitch);
-  Media* enableLoop();
-  Media* disableLoop();
+  Media& play();
+  Media& stop();
+  Media& pause();
+  Media& setVolume(const float volume);
+  Media& setPitch(const float pitch);
+  Media& enableLoop();
+  Media& disableLoop();
+
+  const float currentTime();
 };

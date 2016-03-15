@@ -40,37 +40,43 @@ Media::~Media() {
   alDeleteBuffers(1, &buf_id_);
 }
 
-Media* Media::play() {
+Media& Media::play() {
   alSourcePlay(src_id_);
-  return this;
+  return *this;
 }
 
-Media* Media::stop() {
+Media& Media::stop() {
   alSourceStop(src_id_);
-  return this;
+  return *this;
 }
 
-Media* Media::pause() {
+Media& Media::pause() {
   alSourcePause(src_id_);
-  return this;
+  return *this;
 }
 
-Media* Media::setVolume(const float volume) {
+Media& Media::setVolume(const float volume) {
   alSourcef(src_id_, AL_GAIN, volume);
-  return this;
+  return *this;
 }
 
-Media* Media::setPitch(const float pitch) {
+Media& Media::setPitch(const float pitch) {
   alSourcef(src_id_, AL_PITCH, pitch);
-  return this;
+  return *this;
 }
 
-Media* Media::enableLoop() {
+Media& Media::enableLoop() {
   alSourcei(src_id_, AL_LOOPING, true);
-  return this;
+  return *this;
 }
 
-Media* Media::disableLoop() {
+Media& Media::disableLoop() {
   alSourcei(src_id_, AL_LOOPING, false);
-  return this;
+  return *this;
+}
+
+const float Media::currentTime() {
+  ALfloat current_time;
+  alGetSourcef(src_id_, AL_SEC_OFFSET, &current_time);
+  return current_time;
 }
