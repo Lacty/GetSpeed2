@@ -7,6 +7,7 @@
 #include <GLFW/glfw3.h>
 #include <Eigen/Core>
 #include <Eigen/Geometry>
+#include <unsupported/Eigen/FFT>
 
 
 template<typename T>
