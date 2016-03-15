@@ -4,7 +4,7 @@
 
 
 Audio::Audio() {
-  device_  = alcOpenDevice(nullptr);
+  device_ = alcOpenDevice(nullptr);
   context_ = alcCreateContext(device_, nullptr);
   alcMakeContextCurrent(context_);
 }
@@ -17,7 +17,7 @@ Audio::~Audio() {
 
 
 Media::Media(const std::string& _path) :
-source_(_path.c_str())
+  source_(_path.c_str())
 {
   alGenBuffers(1, &buf_id_);
   alGenSources(1, &src_id_);
@@ -73,6 +73,17 @@ Media& Media::enableLoop() {
 Media& Media::disableLoop() {
   alSourcei(src_id_, AL_LOOPING, false);
   return *this;
+}
+
+const float Media::scale() {
+  ALint size, frequency, channels, bits;
+
+  alGetBufferi(buf_id_, AL_SIZE, &size);
+  alGetBufferi(buf_id_, AL_FREQUENCY, &frequency);
+  alGetBufferi(buf_id_, AL_CHANNELS, &channels);
+  alGetBufferi(buf_id_, AL_BITS, &bits);
+
+  return (float)size / (float)(frequency*channels*(bits / 8));
 }
 
 const float Media::currentTime() {

@@ -11,6 +11,5 @@ int main() {
 
   while (app.isOpen()) {
     scene.run();
-    drawLine(Vec2f(0, 0), Vec2f(1.f, .5f));
   }
 }

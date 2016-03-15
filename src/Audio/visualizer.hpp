@@ -12,7 +12,8 @@ private:
   Vec2f  size_;
   float  width_;
   int    split_num_;
-  float  height_limit_;
+  float  height_upper_;
+  float  height_lower_;
 
   float  last_time_;
 
@@ -28,5 +29,6 @@ public:
   Visualizer& setSize(const Vec2f& size);
   Visualizer& setLineWidth(const float width);
   Visualizer& setSplitNum(const int num);
-  Visualizer& setHeightLight(const float limit);
+  Visualizer& setHeightUpper(const float limit);
+  Visualizer& setHeightLower(const float limit);
 };

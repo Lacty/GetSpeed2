@@ -43,6 +43,7 @@ public:
   Media& enableLoop();
   Media& disableLoop();
 
+  const float scale();
   const float currentTime();
 
   Wav& getWavData();
