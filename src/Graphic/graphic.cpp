@@ -2,7 +2,7 @@
 #include "graphic.hpp"
 
 
-void drawLine(const Vec2f& begin, const Vec2f& end, const ColorA& color) {
+void drawLine(const Vec2f& begin, const Vec2f& end, const float width, const ColorA& color) {
   std::vector<GLfloat> vtx{
     begin.x, begin.y,
     end.x, end.y
@@ -13,6 +13,7 @@ void drawLine(const Vec2f& begin, const Vec2f& end, const ColorA& color) {
 
   glVertexPointer(2, GL_FLOAT, 0, &vtx[0]);
   glColor4f(color.r, color.g, color.b, color.a);
+  glLineWidth(width);
 
   glEnableClientState(GL_VERTEX_ARRAY);
 

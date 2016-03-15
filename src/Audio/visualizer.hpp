@@ -10,10 +10,21 @@ private:
   Media* media_;
   Vec2f  pos_;
   Vec2f  size_;
+  float  width_;
   int    split_num_;
   float  height_limit_;
 
 public:
   Visualizer() = default;
-  Visualizer(const Vec2f& pos, const Vec2f& size, int split_num);
+  Visualizer(Media* media);
+  Visualizer(Media* media, const Vec2f& pos, const Vec2f& size, int split_num = 20);
+
+  
+  void draw();
+
+  Visualizer& setPos(const Vec2f& pos);
+  Visualizer& setSize(const Vec2f& size);
+  Visualizer& setLineWidth(const float width);
+  Visualizer& setSplitNum(const int num);
+  Visualizer& setHeightLight(const float limit);
 };
