@@ -27,6 +27,8 @@ public:
   static Vec2<T> yAxis() { return Vec2<T>(0, 1); }
 
   T sum() const { return x + y; }
+  
+  const int rows() const { return 2; }
 
   Vec2<T>& operator+=(const Vec2<T>& rhs) {
     x += rhs.x;
@@ -157,6 +159,8 @@ public:
   static Vec3<T> zAxis() { return Vec3<T>(0, 0, 1); }
 
   T sum() const { return x + y + z; }
+  
+  const int rows() const { return 3; }
 
   Vec3<T>& operator+=(const Vec3<T>& rhs) {
     x += rhs.x;

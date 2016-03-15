@@ -17,7 +17,7 @@ public:
     fade_(fade),
     is_finish_(false){}
   virtual ~SceneBase() = default;
-
+	
   virtual void update() = 0;
   virtual void draw() = 0;
   virtual std::shared_ptr<SceneBase> nextScene(AppNative* app) = 0;
