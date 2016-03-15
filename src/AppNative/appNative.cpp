@@ -1,11 +1,12 @@
 
 // これはWindowsだけの設定
 #if _WINDOWS
-  // 競合がおきるのでmsvcrt.libを除外
-  #pragma comment(linker, "/NODEFAULTLIB:\"msvcrt.lib\"")
-#elif !_DEBUG
+#if !_DEBUG
   // デバッグ時のみコンソールを表示させる
   #pragma comment(linker, "/subsystem:\"windows\" /entry:\"mainCRTStartup\"")
+#endif
+  // 競合がおきるのでmsvcrt.libを除外
+  #pragma comment(linker, "/NODEFAULTLIB:\"msvcrt.lib\"")
 #endif
 
 #include "appNative.hpp"
