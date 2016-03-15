@@ -16,6 +16,7 @@ camera_(Vec3f::zero(), Vec3f(0, 0, -1), 0.0f, 5.0f, 35.0f, size) {
   gl_win_ = createWindow(size, title);
   glfwSetWindowUserPointer(gl_win_, this);
   glfwSwapInterval(1); // 60 fps
+  glOrtho(window_.left(), window_.right(), window_.bottom(), window_.top(), .0, -1);
   setCallBackFunc();
 }
 

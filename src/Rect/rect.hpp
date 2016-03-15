@@ -14,10 +14,10 @@ public:
   Rect2d(const Vec2<T>& size) : pos_(int(size.x * 0.5f), int(size.y * 0.5f)), size_(size) {}
   Rect2d(const Vec2<T>& pos, const Vec2<T>& size) : pos_(pos), size_(size) {}
 
-  T left()   const { return pos_.x - size_.x * 0.5f; }
-  T right()  const { return pos_.x + size_.x * 0.5f; }
-  T top()    const { return pos_.y + size_.y * 0.5f; }
-  T bottom() const { return pos_.y - size_.y * 0.5f; }
+  T left()   const { return static_cast<T>(-size_.x * 0.5f); }
+  T right()  const { return static_cast<T>(size_.x * 0.5f); }
+  T top()    const { return static_cast<T>(size_.y * 0.5f); }
+  T bottom() const { return static_cast<T>(-size_.y * 0.5f); }
 
   T width()  const { return size_.x; }
   T height() const { return size_.y; }
