@@ -15,7 +15,7 @@ private:
   float  height_upper_;
   float  height_lower_;
 
-  float  last_time_;
+  bool is_data_available_;
 
 public:
   Visualizer() = default;
