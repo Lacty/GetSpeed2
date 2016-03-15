@@ -44,4 +44,6 @@ public:
   Media& disableLoop();
 
   const float currentTime();
+
+  Wav& getWavData();
 };

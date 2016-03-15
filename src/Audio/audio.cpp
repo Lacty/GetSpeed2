@@ -80,3 +80,7 @@ const float Media::currentTime() {
   alGetSourcef(src_id_, AL_SEC_OFFSET, &current_time);
   return current_time;
 }
+
+Wav& Media::getWavData() {
+  return source_;
+}

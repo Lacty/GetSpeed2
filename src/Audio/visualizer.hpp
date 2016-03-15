@@ -14,6 +14,8 @@ private:
   int    split_num_;
   float  height_limit_;
 
+  float  last_time_;
+
 public:
   Visualizer() = default;
   Visualizer(Media* media);
