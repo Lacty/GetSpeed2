@@ -23,7 +23,7 @@ add_executable(GetSpeed2 main.cpp)
 if (APPLE)
   find_library(COCOA_LIBRARY     Cocoa)
   find_library(OpenGL_LIBRARY    OpenGL)
-  find_library(OpenAL_LIBRARY    OPENAL_FOUND)
+  find_library(OpenAL_LIBRARY    OpenAL)
   find_library(IOKIT_LIBRARY     IOKit)
   find_library(COREVIDEO_LIBRARY CoreVideo)
   set(EXTRA_LIBS
