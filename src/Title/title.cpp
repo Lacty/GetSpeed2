@@ -7,7 +7,7 @@
 Title::Title(AppNative* app) :
 SceneBase(app, Fade(Fade::Type::In)),
 font_(loadAsset("rounded-l-mplus-1c-regular.ttf")),
-media_(loadAsset("fanfare.wav")),
+media_(loadAsset("sound.wav")),
 visualizer_(&media_) {
   font_.setSize(50);
   media_.setVolume(1.0);

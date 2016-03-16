@@ -4,4 +4,6 @@ add_library(Audio STATIC
   audio.cpp
   wav.cpp
   wav.hpp
+  visualizer.hpp
+  visualizer.cpp
 )

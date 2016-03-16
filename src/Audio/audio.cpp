@@ -1,5 +1,6 @@
 
 #include "Audio.hpp"
+#include "../Vector/vector.hpp"
 #include <iostream>
 
 
@@ -92,6 +93,27 @@ const float Media::currentTime() {
   return current_time;
 }
 
-Wav& Media::getWavData() {
-  return source_;
+std::vector<float> Media::currentWavData(int sample_num) {
+  // 再生位置(秒)を取得
+  float t = currentTime();
+
+  // 波形データのどの位置か割り出す
+  int offset = int(t * source_.sampleRate());
+
+  // 取り出すサンプル数を決める
+  // FIXME:量子化ビット数が16固定
+  int sample_max_size = source_.size() / sizeof(short);
+  int sample_size = std::min(sample_num, sample_max_size - offset);
+
+  // TIPS:void* 経由で安全に型キャスト
+  const void* ptr = source_.data();
+  const short* pcm_data = static_cast<const short*>(ptr);
+
+  // short→float
+  std::vector<float> samples(sample_num, 0.0f);
+  for (int i = 0; i < sample_size; ++i) {
+    samples[i] = float(pcm_data[offset + i]) / 32768.0f;
+  }
+
+  return samples;
 }

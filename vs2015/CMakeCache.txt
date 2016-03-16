@@ -152,9 +152,6 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_VERBOSE_MAKEFILE:BOOL=OFF
 
 //Dependencies for target
-Camera_LIB_DEPENDS:STATIC=
-
-//Dependencies for target
 CatmullRom_LIB_DEPENDS:STATIC=
 
 //Dependencies for target

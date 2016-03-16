@@ -5,7 +5,7 @@
 
 
 Visualizer::Visualizer(Media* media) :
-  media_(media), height_lower_(1), is_data_available_(false) {
+  media_(media), height_lower_(1) {
   assert(media_ != nullptr);
 }
 
@@ -16,77 +16,48 @@ Visualizer::Visualizer(Media* media, const Vec2f& pos, const Vec2f& size, int sp
   split_num_(split_num),
   width_(size.x / split_num),
   height_upper_(size.y),
-  height_lower_(1),
-  is_data_available_(false) {
+  height_lower_(1) {
   assert(media_ != nullptr);
 }
 
 
 void Visualizer::draw() {
-  static double last_time;    // 前フレーム時の音生の再生時間
-  static double diff_time;    // 前フレームと現在フレームの再生時間の差
-  static double percent;      // 上の差から全体の何パーセントを流し終わったか
-  static double time_percent; // 全体を1として0~のパーセンテージ
-  static int count;           // フレーム計測用
-  static size_t size = 8820;  // 差分の要素数 フレーム落ちして計算量が増えた場合、
-                              // その分またフレーム落ちするので計算はさせず決め打ちとする
-  static size_t index;        // last時の要素番号
+  std::vector<float> samples = media_->currentWavData(1024);
   
-  // FFTの結果を格納するコンテナ
-  static std::vector<float> samples;
-  static std::vector<std::complex<float>> freqvec;
+  // 取り出した波形を折れ線グラフで描画
+  for (size_t i = 1; i < samples.size(); ++i) {
+    float x1 = (float(size_.x) / samples.size()) * (i - 1) - (size_.x  / 2);
+    float x2 = (float(size_.x) / samples.size()) * i - (size_.x / 2);
 
-  // currentTimeの性能が悪いので
-  // フレーム制限をかけている
-  if (count == 3) {
-    diff_time = media_->currentTime() - last_time;
-    last_time = media_->currentTime();
-    percent = diff_time / media_->scale();
-    time_percent = media_->currentTime() / media_->scale();
-    //size = media_->getWavData().size() * percent;
-    index = media_->getWavData().size() * time_percent;
-    count = 0;
-  } count++;
+    float y1 = float(size_.y / 2) * samples[i - 1];
+    float y2 = float(size_.y / 2) * samples[i];
 
-  if (diff_time <= 0) diff_time = 0; // stop時にマイナスになるので、応急処置
-  if (diff_time) is_data_available_ = true;
-  else is_data_available_ = false;
-
-  // データが有効である場合のみFFTを実行する
-  if (is_data_available_) {
-    samples.clear();
-    freqvec.clear();
-
-    // 音生の最後に要素数を振り切らないようにする
-    if (index + size > media_->getWavData().size()) {
-      int diff = media_->getWavData().size() - index + size;
-      size += diff;
-    }
-    
-    // データを取得する
-    auto data = media_->getWavData().data();
-
-    // 取得したデータから計算するデータだけコピーする
-    for (int i = index; i < index + size; i += 2) {
-      samples.push_back(wchar_t(data[i] + data[i + 1]));
-    }
-
-    // FFTを実行する
-    Eigen::FFT<float> fft;
-    fft.fwd(freqvec, samples);
+    drawLine(Vec2f(x1, y1), Vec2f(x2, y2), 2, Color(1, 0, 0));
   }
+}
 
+void Visualizer::drawWithFFT() {
+  std::vector<float> samples = media_->currentWavData(1024);
 
-  for (size_t i = 0; i < size_.x; i++) {
-    std::cout << (freqvec.size() / size_.x) << std::endl;
-    float x = freqvec.size() == 0 ? 1 : freqvec[int(i * (freqvec.size() / size_.x))].real();
-    float y = freqvec.size() == 0 ? 1 : freqvec[int(i * (freqvec.size() / size_.x))].imag();
+  // FFT実行
+  Eigen::FFT<float> fft;
+  std::vector<std::complex<float> > freq;
+  fft.fwd(freq, samples);
 
-    float p = std::sqrt(x * x + y * y); // 振幅
-    drawLine(Vec2f(i * (freqvec.size() / size_.x) + pos_.x,
-                   pos_.y),
-             Vec2f(i * (freqvec.size() / size_.x) + pos_.x,
-                   p * 0.0001f + pos_.y));
+  // FFT解析結果を折れ線グラフで表示
+  //  左右対称な結果が得られるので、半分だけ表示している
+  size_t freq_size = freq.size() / 6;
+  for (size_t i = 1; i < freq_size; ++i) {
+    float x1 = (float(size_.x) / freq_size) * (i - 1) - (size_.x / 2);
+    float x2 = (float(size_.x) / freq_size) * i - (size_.x / 2);
+
+    std::complex<float> a = freq[i - 1];
+    std::complex<float> b = freq[i];
+
+    float y1 = std::sqrt(a.real() * a.real() + a.imag() * a.imag()) * 2.5f - (size_.y / 2 - 5);
+    float y2 = std::sqrt(b.real() * b.real() + b.imag() * b.imag()) * 2.5f - (size_.y / 2 - 5);
+
+    drawLine(Vec2f(x1, y1), Vec2f(x2, y2), 2, Color(0, 0, 1));
   }
 }
 

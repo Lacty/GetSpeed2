@@ -15,8 +15,6 @@ private:
   float  height_upper_;
   float  height_lower_;
 
-  bool is_data_available_;
-
 public:
   Visualizer() = default;
   Visualizer(Media* media);
@@ -24,6 +22,7 @@ public:
 
   
   void draw();
+  void drawWithFFT();
 
   Visualizer& setPos(const Vec2f& pos);
   Visualizer& setSize(const Vec2f& size);

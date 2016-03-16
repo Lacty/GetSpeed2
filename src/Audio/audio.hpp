@@ -46,5 +46,6 @@ public:
   const float scale();
   const float currentTime();
 
-  Wav& getWavData();
+  // 現在の再生場所から指定した範囲のサンプルを取り出す
+  std::vector<float> currentWavData(int sample_num);
 };
