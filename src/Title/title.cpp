@@ -7,11 +7,12 @@
 Title::Title(AppNative* app) :
 SceneBase(app, Fade(Fade::Type::In)),
 font_(loadAsset("rounded-l-mplus-1c-regular.ttf")),
-media_(loadAsset("sound.wav")),
+media_(loadAsset("sound2.wav")),
 visualizer_(&media_) {
   font_.setSize(50);
-  media_.setVolume(1.0);
-  visualizer_.setPos(Vec2f(-300, -200))
+  media_.setVolume(1.0)
+    .enableLoop();
+  visualizer_.setPos(Vec2f(0, 0))
     .setSize(Vec2f(600, 200))
     .setHeightUpper(200)
     .setHeightLower(1)
@@ -34,7 +35,7 @@ void Title::update() {
 
 void Title::draw() {
   font_.draw("Title", Vec2f(app_->windowCenter()));
-  visualizer_.draw();
+  visualizer_.drawWithFFT();
 }
 
 

@@ -77,14 +77,7 @@ Media& Media::disableLoop() {
 }
 
 const float Media::scale() {
-  ALint size, frequency, channels, bits;
-
-  alGetBufferi(buf_id_, AL_SIZE, &size);
-  alGetBufferi(buf_id_, AL_FREQUENCY, &frequency);
-  alGetBufferi(buf_id_, AL_CHANNELS, &channels);
-  alGetBufferi(buf_id_, AL_BITS, &bits);
-
-  return (float)size / (float)(frequency*channels*(bits / 8));
+  return source_.time();
 }
 
 const float Media::currentTime() {
@@ -112,7 +105,7 @@ std::vector<float> Media::currentWavData(int sample_num) {
   // shortÅ®float
   std::vector<float> samples(sample_num, 0.0f);
   for (int i = 0; i < sample_size; ++i) {
-    samples[i] = float(pcm_data[offset + i]) / 32768.0f;
+    samples[i] = float(pcm_data[offset + i]) / 200000.0f;
   }
 
   return samples;

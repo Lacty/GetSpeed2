@@ -37,7 +37,7 @@ void Visualizer::draw() {
 }
 
 void Visualizer::drawWithFFT() {
-  std::vector<float> samples = media_->currentWavData(1024);
+  std::vector<float> samples = media_->currentWavData(1024 * 10);
 
   // FFT実行
   Eigen::FFT<float> fft;
@@ -46,7 +46,7 @@ void Visualizer::drawWithFFT() {
 
   // FFT解析結果を折れ線グラフで表示
   //  左右対称な結果が得られるので、半分だけ表示している
-  size_t freq_size = freq.size() / 6;
+  size_t freq_size = freq.size() / 40;
   for (size_t i = 1; i < freq_size; ++i) {
     float x1 = (float(size_.x) / freq_size) * (i - 1) - (size_.x / 2);
     float x2 = (float(size_.x) / freq_size) * i - (size_.x / 2);
@@ -54,10 +54,10 @@ void Visualizer::drawWithFFT() {
     std::complex<float> a = freq[i - 1];
     std::complex<float> b = freq[i];
 
-    float y1 = std::sqrt(a.real() * a.real() + a.imag() * a.imag()) * 2.5f - (size_.y / 2 - 5);
-    float y2 = std::sqrt(b.real() * b.real() + b.imag() * b.imag()) * 2.5f - (size_.y / 2 - 5);
+    float y1 = std::sqrt(a.real() * a.real() + a.imag() * a.imag()) - (size_.y / 2);
+    float y2 = std::sqrt(b.real() * b.real() + b.imag() * b.imag()) - (size_.y / 2);
 
-    drawLine(Vec2f(x1, y1), Vec2f(x2, y2), 2, Color(0, 0, 1));
+    drawLine(pos_ + Vec2f(x1, y1), pos_ + Vec2f(x2, y2), 2, Color(0, 0, 1));
   }
 }
 
