@@ -12,8 +12,8 @@ Fade::Fade(Type type, float speed) :
 }
 
 
-void Fade::draw() {
-  drawRect(Vec3f::zero(), Vec2f(2, 2), ColorA(0, 0, 0, alpha_));
+void Fade::draw(const Vec2f& size) {
+  drawRect(Vec3f::zero(), size, ColorA(0, 0, 0, alpha_));
 
   if (isFinish()) return;
   alpha_ += speed_;

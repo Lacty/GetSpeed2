@@ -19,7 +19,7 @@ public:
   // input 0 ~ 100
   Fade(Type type, float speed = 4.0f);
 
-  void draw();
+  void draw(const Vec2f& size);
 
   bool isFinish();
 };

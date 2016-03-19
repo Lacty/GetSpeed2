@@ -3,7 +3,7 @@
 
 
 void SceneBase::drawFade() {
-  fade_.draw();
+  fade_.draw((Vec2f)app_->windowSize());
 }
 
 bool SceneBase::shouldClose() {
