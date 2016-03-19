@@ -40,6 +40,7 @@ public:
   Media& pause();
   Media& setVolume(const float volume);
   Media& setPitch(const float pitch);
+  Media& setOffset(const float offset);
   Media& enableLoop();
   Media& disableLoop();
 

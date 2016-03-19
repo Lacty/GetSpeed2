@@ -66,6 +66,11 @@ Media& Media::setPitch(const float pitch) {
   return *this;
 }
 
+Media& Media::setOffset(const float offset) {
+  alSourcef(src_id_, AL_SEC_OFFSET, offset);
+  return *this;
+}
+
 Media& Media::enableLoop() {
   alSourcei(src_id_, AL_LOOPING, true);
   return *this;

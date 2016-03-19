@@ -31,11 +31,12 @@ void Title::update() {
   if (app_->isPushKey(GLFW_KEY_A)) { media_.play(); }
   if (app_->isPushKey(GLFW_KEY_S)) { media_.stop(); }
   if (app_->isPushKey(GLFW_KEY_D)) { media_.pause(); }
+  if (app_->isPushKey(GLFW_KEY_F)) { media_.setOffset(100.0f); }
 }
 
 void Title::draw() {
   font_.draw("Title", Vec2f(app_->windowCenter()));
-  visualizer_.drawWithFFT();
+  visualizer_.draw();
 }
 
 
