@@ -113,5 +113,5 @@ std::vector<float> Media::currentWavData(int sample_num) {
     samples[i] = float(pcm_data[offset + i]) / 200000.0f;
   }
 
-  return samples;
+  return std::move(samples);
 }
